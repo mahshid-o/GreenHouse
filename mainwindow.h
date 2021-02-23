@@ -20,6 +20,10 @@ private slots:
 
     void on_pushButtonLaboratory_clicked();
 
+    void on_pushButtonStore_clicked();
+
+    void on_pushButtonGreenHouse_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -27,16 +27,22 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     flower.cpp \
-    Forooshgah.cpp
+    Forooshgah.cpp \
+    second.cpp \
+    fourth.cpp
 
 HEADERS += \
         mainwindow.h \
     gol.hpp \
-    Forooshgah.h
+    Forooshgah.h \
+    second.h \
+    fourth.h
 
 FORMS += \
         mainwindow.ui \
-    Forooshgah.ui
+    Forooshgah.ui \
+    second.ui \
+    fourth.ui
 
 RESOURCES += \
     resource.qrc

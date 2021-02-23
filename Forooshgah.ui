@@ -14,7 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/new/prefix1/assets/background.png);</string>
+   <string notr="true">background-image: url(:/new/prefix1/background.png);</string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">

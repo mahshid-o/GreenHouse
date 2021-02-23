@@ -29,14 +29,18 @@ SOURCES += \
     flower.cpp \
     Forooshgah.cpp \
     second.cpp \
-    fourth.cpp
+    fourth.cpp \
+    normalflower.cpp \
+    rareflower.cpp
 
 HEADERS += \
         mainwindow.h \
-    gol.hpp \
     Forooshgah.h \
     second.h \
-    fourth.h
+    fourth.h \
+    flower.hpp \
+    normalflower.h \
+    rareflower.h
 
 FORMS += \
         mainwindow.ui \

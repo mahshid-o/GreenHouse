@@ -1,54 +1,54 @@
-#include "gol.hpp"
+#include "flower.hpp"
 
 Flower::Flower()
 {
-
 }
-void Flower:: SetCount(int cnt)
+void Flower::SetName(QString nm)
+{
+    Name = nm;
+}
+void Flower::Flower::SetCount(int cnt)
 {
     Count = cnt;
 }
-void Flower:: SetPriceSaleFlower(int price)
+void Flower::SetSeedPurchasPrice(int prc)
 {
-    PriceSaleFlower = price;
+    SeedPurchasPrice = prc;
 }
-void Flower:: SetPriceSaleSeed(int price)
+void Flower::GetSeedSalesPrice(int prc)
 {
-    PriceSaleSeed = price;
+    SeedSalesPrice = prc;
 }
-void Flower:: SetPriceBuy(int price)
+void Flower::SetReturnPrice(int prc)
 {
-    PriceBuy = price;
+    ReturnPrice = prc;
 }
-void Flower:: SetWater(int wtr)
+void Flower::SetFlowerPurchasePrice(int prc)
 {
-    Water = wtr;
+    FlowerPurchasPrice = prc;
 }
-void Flower:: SetSoil(int sil)
+
+QString Flower::GetName()
 {
-    Soil = sil;
+    return Name;
 }
-int Flower:: GetCount()
+int Flower::GetCount()
 {
     return Count;
 }
-int Flower:: GetPriceSaleFlower()
+int Flower::GetSeedPurchasPrice()
 {
-    return PriceSaleFlower;
+    return SeedPurchasPrice;
 }
-int Flower:: GetPriceSaleSeed()
+int Flower::GetSeedSalesPrice()
 {
-    return PriceSaleSeed;
+    return SeedSalesPrice;
 }
-int Flower:: GettPriceBuy()
+int Flower::GetReturnPrice()
 {
-    return PriceBuy;
+    return ReturnPrice;
 }
-int Flower:: GetWater()
+int Flower::GetFlowerPurchasPrice()
 {
-    return Water;
-}
-int Flower:: GetSoil()
-{
-    return Soil;
+    return FlowerPurchasPrice;
 }

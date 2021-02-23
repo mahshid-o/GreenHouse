@@ -1,0 +1,32 @@
+#ifndef GOL_HPP
+#define GOL_HPP
+// #include <QString>
+
+class Flower
+{
+public:
+    Flower();
+    void SetName(QString);
+    void SetCount(int);
+    void SetSeedPurchasPrice(int);
+    void GetSeedSalesPrice(int);
+    void SetReturnPrice(int);
+    void SetFlowerPurchasePrice(int);
+
+    QString GetName();
+    int GetCount();
+    int GetSeedPurchasPrice();
+    int GetSeedSalesPrice();
+    int GetReturnPrice();
+    int GetFlowerPurchasPrice();
+
+protected:
+    QString Name;
+    int Count;
+    int SeedPurchasPrice;
+    int SeedSalesPrice;
+    int ReturnPrice;
+    int FlowerPurchasPrice;
+};
+
+#endif // GOL_HPP

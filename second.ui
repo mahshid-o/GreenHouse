@@ -6,20 +6,23 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>400</height>
+    <width>900</width>
+    <height>522</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/new/prefix1/background.png);</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>30</y>
-     <width>77</width>
-     <height>121</height>
+     <width>95</width>
+     <height>146</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -65,8 +68,8 @@
     <rect>
      <x>130</x>
      <y>30</y>
-     <width>77</width>
-     <height>121</height>
+     <width>95</width>
+     <height>146</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -112,8 +115,8 @@
     <rect>
      <x>240</x>
      <y>30</y>
-     <width>77</width>
-     <height>121</height>
+     <width>95</width>
+     <height>146</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -159,8 +162,8 @@
     <rect>
      <x>350</x>
      <y>30</y>
-     <width>77</width>
-     <height>121</height>
+     <width>95</width>
+     <height>146</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -206,8 +209,8 @@
     <rect>
      <x>460</x>
      <y>30</y>
-     <width>77</width>
-     <height>121</height>
+     <width>95</width>
+     <height>146</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_5">

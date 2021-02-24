@@ -29,7 +29,7 @@
     <item>
      <widget class="QLabel" name="labelName1">
       <property name="text">
-       <string>empty</string>
+       <string>locked</string>
       </property>
      </widget>
     </item>
@@ -76,7 +76,7 @@
     <item>
      <widget class="QLabel" name="labelName2">
       <property name="text">
-       <string>empty</string>
+       <string>locked</string>
       </property>
      </widget>
     </item>
@@ -123,7 +123,7 @@
     <item>
      <widget class="QLabel" name="labelName3">
       <property name="text">
-       <string>empty</string>
+       <string>locked</string>
       </property>
      </widget>
     </item>
@@ -170,7 +170,7 @@
     <item>
      <widget class="QLabel" name="labelName4">
       <property name="text">
-       <string>empty</string>
+       <string>locked</string>
       </property>
      </widget>
     </item>
@@ -217,7 +217,7 @@
     <item>
      <widget class="QLabel" name="labelName5">
       <property name="text">
-       <string>empty</string>
+       <string>locked</string>
       </property>
      </widget>
     </item>

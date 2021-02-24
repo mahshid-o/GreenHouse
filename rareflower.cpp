@@ -3,9 +3,6 @@
 RareFlower::RareFlower()
 {
 }
-RareFlower::RareFlower()
-{
-}
 void RareFlower::SetWater(bool wtr)
 {
     Water = wtr;

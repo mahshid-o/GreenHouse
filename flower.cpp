@@ -7,9 +7,13 @@ void Flower::SetName(QString nm)
 {
     Name = nm;
 }
-void Flower::Flower::SetCount(int cnt)
+//void Flower::Flower::SetCount(int cnt)
+//{
+//    Count = cnt;
+//}
+void Flower::SetNum(int n)
 {
-    Count = cnt;
+    number=n;
 }
 void Flower::SetSeedPurchasPrice(int prc)
 {
@@ -31,6 +35,10 @@ void Flower::SetFlowerPurchasePrice(int prc)
 QString Flower::GetName()
 {
     return Name;
+}
+int Flower::GetNum()
+{
+    return number;
 }
 int Flower::GetCount()
 {

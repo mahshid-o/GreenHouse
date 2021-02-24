@@ -4,6 +4,8 @@
 #include <QString>
 #include "second.h"
 #include "fourth.h"
+#include <iostream>
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

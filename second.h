@@ -14,6 +14,7 @@ class second : public QDialog
 public:
     explicit second(QWidget *parent = 0);
     ~second();
+    int GenRandom(int,int);
 
 private slots:
 

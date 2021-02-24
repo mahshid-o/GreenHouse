@@ -31,7 +31,8 @@ SOURCES += \
     second.cpp \
     fourth.cpp \
     normalflower.cpp \
-    rareflower.cpp
+    rareflower.cpp \
+    decorativeflower.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -40,7 +41,8 @@ HEADERS += \
     fourth.h \
     flower.hpp \
     normalflower.h \
-    rareflower.h
+    rareflower.h \
+    decorativeflower.h
 
 FORMS += \
         mainwindow.ui \

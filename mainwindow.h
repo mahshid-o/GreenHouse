@@ -15,6 +15,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+
 private slots:
     void on_pushButtonSaveName_clicked();
 
@@ -23,6 +24,8 @@ private slots:
     void on_pushButtonStore_clicked();
 
     void on_pushButtonGreenHouse_clicked();
+
+
 
 private:
     Ui::MainWindow *ui;

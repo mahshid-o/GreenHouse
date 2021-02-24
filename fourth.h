@@ -16,7 +16,7 @@ public:
     ~fourth();
 
 private slots:
-    void on_pushButtonOrkideT_clicked();
+
 
 private:
     Ui::fourth *uiFourth;

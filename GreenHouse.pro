@@ -34,7 +34,15 @@ SOURCES += \
     rareflower.cpp \
     decorativeflower.cpp \
     information.cpp \
-    warehouse.cpp
+    warehouse.cpp \
+    laleh.cpp \
+    maryam.cpp \
+    sonbol.cpp \
+    narges.cpp \
+    lilium.cpp \
+    magnolia.cpp \
+    kokab.cpp \
+    orkideh.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -46,7 +54,15 @@ HEADERS += \
     rareflower.h \
     decorativeflower.h \
     information.h \
-    warehouse.h
+    warehouse.h \
+    narges.h \
+    kokab.h \
+    magnolia.h \
+    lilium.h \
+    laleh.h \
+    maryam.h \
+    sonbol.h \
+    orkideh.h
 
 FORMS += \
         mainwindow.ui \

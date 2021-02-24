@@ -19,7 +19,7 @@ fourth::~fourth()
 
 //}
 
-void fourth::on_pushButtonOrkideT_clicked()
-{
+//void fourth::on_pushButtonOrkideT_clicked()
+//{
 
-}
+//}

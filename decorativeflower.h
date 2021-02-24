@@ -19,7 +19,6 @@ protected:
     bool Water;
     bool Soil;
     bool SoilExtract;
-    int number;
 };
 
 #endif // DECORATIVEFLOWER_H

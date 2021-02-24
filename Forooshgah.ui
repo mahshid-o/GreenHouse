@@ -54,7 +54,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonBuyAadi">
         <property name="text">
-         <string>gol Aadi</string>
+         <string>گل عادی</string>
         </property>
        </widget>
       </item>
@@ -85,7 +85,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonBuyZinati">
         <property name="text">
-         <string>zinati</string>
+         <string>گل زینتی</string>
         </property>
        </widget>
       </item>
@@ -116,7 +116,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonBuyNader">
         <property name="text">
-         <string>nader</string>
+         <string>گل نادر</string>
         </property>
        </widget>
       </item>
@@ -147,7 +147,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonBuyKhak">
         <property name="text">
-         <string>khak</string>
+         <string>خاک</string>
         </property>
        </widget>
       </item>
@@ -178,7 +178,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonBuyAb">
         <property name="text">
-         <string>ab</string>
+         <string>آب</string>
         </property>
        </widget>
       </item>
@@ -209,7 +209,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonBuyOs">
         <property name="text">
-         <string>osare</string>
+         <string>ماده سمپاشی</string>
         </property>
        </widget>
       </item>
@@ -255,7 +255,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonMagnoliaWH">
         <property name="text">
-         <string>magnolia</string>
+         <string>مگنولیا</string>
         </property>
        </widget>
       </item>
@@ -286,7 +286,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonLiliumWH">
         <property name="text">
-         <string>lilum</string>
+         <string>لیلیوم</string>
         </property>
        </widget>
       </item>
@@ -317,7 +317,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOrkideWH">
         <property name="text">
-         <string>orkide</string>
+         <string>ارکیده</string>
         </property>
        </widget>
       </item>
@@ -348,7 +348,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonKokabWH">
         <property name="text">
-         <string>kokab</string>
+         <string>کوکب</string>
         </property>
        </widget>
       </item>
@@ -379,7 +379,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonLaleWH">
         <property name="text">
-         <string>lale</string>
+         <string>لاله</string>
         </property>
        </widget>
       </item>
@@ -410,7 +410,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOrkideWH_3">
         <property name="text">
-         <string>maryam</string>
+         <string>مریم</string>
         </property>
        </widget>
       </item>
@@ -441,7 +441,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonSonbolWH">
         <property name="text">
-         <string>sonbol</string>
+         <string>سنبل</string>
         </property>
        </widget>
       </item>
@@ -474,7 +474,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonNargesWH">
         <property name="text">
-         <string>narges</string>
+         <string>نرگس</string>
         </property>
        </widget>
       </item>
@@ -492,7 +492,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOsMagnoliaWH">
         <property name="text">
-         <string>osare magnolia</string>
+         <string>عصاره مگنولیا</string>
         </property>
        </widget>
       </item>
@@ -510,7 +510,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOsLiliumWH">
         <property name="text">
-         <string>osare lilum</string>
+         <string>عصاره لیلیوم</string>
         </property>
        </widget>
       </item>
@@ -528,7 +528,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOsOrkideWH">
         <property name="text">
-         <string>osare orkide</string>
+         <string>عصاره ارکیده</string>
         </property>
        </widget>
       </item>
@@ -546,7 +546,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOrkideWH_8">
         <property name="text">
-         <string>zinati pia</string>
+         <string>پیاز گل زینتی</string>
         </property>
        </widget>
       </item>
@@ -564,7 +564,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonZinatiNumberWJ">
         <property name="text">
-         <string>nader</string>
+         <string>پیاز گل نادر</string>
         </property>
        </widget>
       </item>
@@ -582,7 +582,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonAadiWH">
         <property name="text">
-         <string>aadi</string>
+         <string>پیاز گل عادی</string>
         </property>
        </widget>
       </item>

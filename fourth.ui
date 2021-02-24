@@ -38,7 +38,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>osare khak orkideh</string>
+     <string>عصاره خاک ارکیده</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -51,7 +51,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>osare khak lilium</string>
+     <string>عصاره خاک لیلیوم</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -64,7 +64,7 @@
      </rect>
     </property>
     <property name="text">
-     <string> osare khak magnolia</string>
+     <string>عصاره خاک مگنولیا</string>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -80,28 +80,28 @@
      <item>
       <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>ab</string>
+        <string>آب</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_5">
        <property name="text">
-        <string>gol sonbol</string>
+        <string>گل سنبل</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_6">
        <property name="text">
-        <string>5000 t</string>
+        <string>5000 ت</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButtonOrkideT">
        <property name="text">
-        <string>tolid</string>
+        <string>تولید</string>
        </property>
       </widget>
      </item>
@@ -120,28 +120,28 @@
      <item>
       <widget class="QLabel" name="label_7">
        <property name="text">
-        <string>ab</string>
+        <string>آب</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_8">
        <property name="text">
-        <string>gol narges</string>
+        <string>گل نرگس</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_9">
        <property name="text">
-        <string>gol maryam</string>
+        <string>گل مریم</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButtonLiliumT">
        <property name="text">
-        <string>tolid</string>
+        <string>تولید</string>
        </property>
       </widget>
      </item>
@@ -160,28 +160,28 @@
      <item>
       <widget class="QLabel" name="label_10">
        <property name="text">
-        <string>ab</string>
+        <string>آب</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_11">
        <property name="text">
-        <string>gol kokab</string>
+        <string>گل کوکب</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QLabel" name="label_12">
        <property name="text">
-        <string>gol laleh</string>
+        <string>گل لاله</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButtonMagnoliaT">
        <property name="text">
-        <string>toild</string>
+        <string>تولید</string>
        </property>
       </widget>
      </item>

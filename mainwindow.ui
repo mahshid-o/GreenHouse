@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>save name</string>
+     <string>ذخیره نام</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox">
@@ -57,7 +57,7 @@
         <item>
          <widget class="QLabel" name="labelAadiName">
           <property name="text">
-           <string>gol aadi</string>
+           <string>گل های عادی</string>
           </property>
          </widget>
         </item>
@@ -75,7 +75,7 @@
         <item>
          <widget class="QLabel" name="labelNaderNAme">
           <property name="text">
-           <string>TextLabel</string>
+           <string>گل های نادر</string>
           </property>
          </widget>
         </item>
@@ -93,7 +93,7 @@
         <item>
          <widget class="QLabel" name="labelZinatiName">
           <property name="text">
-           <string>TextLabel</string>
+           <string>گل های زینتی</string>
           </property>
          </widget>
         </item>
@@ -135,7 +135,7 @@
          <item>
           <widget class="QLabel" name="labelHazfNumber_2">
            <property name="text">
-            <string>hazf</string>
+            <string> گل های حذف شده</string>
            </property>
           </widget>
          </item>
@@ -153,7 +153,7 @@
          <item>
           <widget class="QLabel" name="labelOsareName">
            <property name="text">
-            <string>osare</string>
+            <string>عصاره ها</string>
            </property>
           </widget>
          </item>
@@ -171,7 +171,7 @@
          <item>
           <widget class="QLabel" name="labelKashteName">
            <property name="text">
-            <string>kashte</string>
+            <string>گل های کاشته شده</string>
            </property>
           </widget>
          </item>
@@ -191,17 +191,20 @@
    <widget class="QLabel" name="labelWarehouse">
     <property name="geometry">
      <rect>
-      <x>840</x>
+      <x>810</x>
       <y>30</y>
-      <width>31</width>
-      <height>16</height>
+      <width>61</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
     <property name="text">
-     <string>anbar</string>
+     <string>انبار</string>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -217,7 +220,7 @@
      <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>rial</string>
+        <string>پس انداز</string>
        </property>
       </widget>
      </item>
@@ -243,7 +246,7 @@
      <item>
       <widget class="QLabel" name="labelProfileName">
        <property name="text">
-        <string>name</string>
+        <string>نام</string>
        </property>
       </widget>
      </item>
@@ -265,14 +268,14 @@
      <item>
       <widget class="QPushButton" name="pushButtonLoad">
        <property name="text">
-        <string>load</string>
+        <string>بارگزاری</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButtonSave">
        <property name="text">
-        <string>save</string>
+        <string>ذخیره</string>
        </property>
       </widget>
      </item>
@@ -291,21 +294,21 @@
      <item>
       <widget class="QPushButton" name="pushButtonLaboratory">
        <property name="text">
-        <string>azmayeshgah</string>
+        <string>آزمایشگاه</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButtonStore">
        <property name="text">
-        <string>forushgah</string>
+        <string>فروشگاه</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="pushButtonGreenHouse">
        <property name="text">
-        <string>golkhane</string>
+        <string>گلخانه</string>
        </property>
       </widget>
      </item>
@@ -316,7 +319,7 @@
      <rect>
       <x>810</x>
       <y>60</y>
-      <width>67</width>
+      <width>76</width>
       <height>341</height>
      </rect>
     </property>
@@ -326,7 +329,7 @@
        <item>
         <widget class="QLabel" name="labelOs">
          <property name="text">
-          <string>osare</string>
+          <string>عصاره ها</string>
          </property>
         </widget>
        </item>
@@ -344,7 +347,7 @@
        <item>
         <widget class="QLabel" name="labelWater">
          <property name="text">
-          <string>ab</string>
+          <string>ذخیره آب</string>
          </property>
         </widget>
        </item>
@@ -362,7 +365,7 @@
        <item>
         <widget class="QLabel" name="labelPoison">
          <property name="text">
-          <string>sam</string>
+          <string>ماده سم پاشی</string>
          </property>
         </widget>
        </item>
@@ -380,7 +383,7 @@
        <item>
         <widget class="QLabel" name="labelSoil">
          <property name="text">
-          <string>khak</string>
+          <string>ذخیره خاک</string>
          </property>
         </widget>
        </item>

@@ -29,35 +29,35 @@
     <item>
      <widget class="QLabel" name="labelName1">
       <property name="text">
-       <string>locked</string>
+       <string>قفل</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>goldan</string>
+       <string>گلدان</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="openButton1">
       <property name="text">
-       <string>open</string>
+       <string>بازگشایی</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="selectButton1">
       <property name="text">
-       <string>select</string>
+       <string>ورود به فروشگاه</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="saleButton1">
       <property name="text">
-       <string>sale</string>
+       <string>چیدن گل</string>
       </property>
      </widget>
     </item>
@@ -76,35 +76,35 @@
     <item>
      <widget class="QLabel" name="labelName2">
       <property name="text">
-       <string>locked</string>
+       <string>قفل</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>goldan</string>
+       <string>گلدان</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="openButton2">
       <property name="text">
-       <string>open</string>
+       <string>بازگشایی</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="selectButton2">
       <property name="text">
-       <string>select</string>
+       <string>ورود به فروشگاه</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="saleButton2">
       <property name="text">
-       <string>sale</string>
+       <string>چیدن گل</string>
       </property>
      </widget>
     </item>
@@ -123,35 +123,35 @@
     <item>
      <widget class="QLabel" name="labelName3">
       <property name="text">
-       <string>locked</string>
+       <string>قفل</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QLabel" name="label_4">
       <property name="text">
-       <string>goldan</string>
+       <string>گلدان</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="openButton3">
       <property name="text">
-       <string>open</string>
+       <string>بازگشایی</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="selectButton3">
       <property name="text">
-       <string>select</string>
+       <string>ورود به فروشگاه</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="saleButton3">
       <property name="text">
-       <string>sale</string>
+       <string>چیدن گل</string>
       </property>
      </widget>
     </item>
@@ -170,35 +170,35 @@
     <item>
      <widget class="QLabel" name="labelName4">
       <property name="text">
-       <string>locked</string>
+       <string>قفل</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QLabel" name="label_5">
       <property name="text">
-       <string>goldan</string>
+       <string>گلدان</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="openButton4">
       <property name="text">
-       <string>open</string>
+       <string>بازگشایی</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="selectButton4">
       <property name="text">
-       <string>select</string>
+       <string>ورود به فروشگاه</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="saleButton4">
       <property name="text">
-       <string>sale</string>
+       <string>چیدن گل</string>
       </property>
      </widget>
     </item>
@@ -217,35 +217,35 @@
     <item>
      <widget class="QLabel" name="labelName5">
       <property name="text">
-       <string>locked</string>
+       <string>قفل</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>goldan</string>
+       <string>گلدان</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="openButton5">
       <property name="text">
-       <string>open</string>
+       <string>بازگشایی</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="selectButton5">
       <property name="text">
-       <string>select</string>
+       <string>ورود به فروشگاه</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="saleButton5">
       <property name="text">
-       <string>sale</string>
+       <string>چیدن گل</string>
       </property>
      </widget>
     </item>

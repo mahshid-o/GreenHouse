@@ -1,14 +1,25 @@
 #include "fourth.h"
 #include "ui_fourth.h"
+#include "mainwindow.h"
 
 fourth::fourth(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::fourth)
+    uiFourth(new Ui::fourth)
 {
-    ui->setupUi(this);
+    uiFourth->setupUi(this);
 }
 
 fourth::~fourth()
 {
-    delete ui;
+    delete uiFourth;
+}
+
+//void fourth::on_pushButtonMagnoliaT_clicked()
+//{
+
+//}
+
+void fourth::on_pushButtonOrkideT_clicked()
+{
+
 }

@@ -11,7 +11,14 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
+    ui->labelOsWH->setText("100");
+    ui->labelWaterWH->setText("100");
+    ui->labelSoilWH->setText("100");
+    ui->labelPoisonWH->setText("100");
+    ui->labelMoney->setText("10000");
+    MainWindowPtr = this;
 }
 
 MainWindow::~MainWindow()
@@ -40,7 +47,7 @@ void MainWindow::on_pushButtonStore_clicked()
 
 void MainWindow::on_pushButtonGreenHouse_clicked()
 {
-    second second;
+    second second(1);
     second.setModal(true);
     second.exec();
 }

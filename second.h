@@ -12,7 +12,8 @@ class second : public QDialog
     Q_OBJECT
 
 public:
-    explicit second(QWidget *parent = 0);
+    explicit second(int a, QWidget *parent = 0);
+
     ~second();
     int GenRandom(int,int);
 

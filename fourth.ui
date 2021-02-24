@@ -99,9 +99,9 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="pushButtonOrkideT">
        <property name="text">
-        <string>PushButton</string>
+        <string>tolid</string>
        </property>
       </widget>
      </item>
@@ -139,9 +139,9 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="pushButtonLiliumT">
        <property name="text">
-        <string>PushButton</string>
+        <string>tolid</string>
        </property>
       </widget>
      </item>
@@ -179,9 +179,9 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="pushButtonMagnoliaT">
        <property name="text">
-        <string>PushButton</string>
+        <string>toild</string>
        </property>
       </widget>
      </item>

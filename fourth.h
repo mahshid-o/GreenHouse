@@ -15,8 +15,11 @@ public:
     explicit fourth(QWidget *parent = 0);
     ~fourth();
 
+private slots:
+    void on_pushButtonOrkideT_clicked();
+
 private:
-    Ui::fourth *ui;
+    Ui::fourth *uiFourth;
 };
 
 #endif // FOURTH_H

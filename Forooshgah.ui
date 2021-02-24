@@ -501,16 +501,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_16">
       <item>
-       <widget class="QLabel" name="labelOrkide_4">
+       <widget class="QLabel" name="labelLiliumNumber_2">
         <property name="text">
          <string>500</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonOrkideWH_5">
+       <widget class="QPushButton" name="pushButtonOsLiliumWH">
         <property name="text">
-         <string>orkide</string>
+         <string>osare lilum</string>
         </property>
        </widget>
       </item>
@@ -519,16 +519,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_17">
       <item>
-       <widget class="QLabel" name="labelOrkide_5">
+       <widget class="QLabel" name="labelOsOrkideNumber">
         <property name="text">
          <string>500</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonOrkideWH_6">
+       <widget class="QPushButton" name="pushButtonOsOrkideWH">
         <property name="text">
-         <string>orkide</string>
+         <string>osare orkide</string>
         </property>
        </widget>
       </item>
@@ -537,7 +537,7 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_21">
       <item>
-       <widget class="QLabel" name="labelOrkide_6">
+       <widget class="QLabel" name="labelZinatiNumber_3">
         <property name="text">
          <string>500</string>
         </property>
@@ -546,7 +546,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOrkideWH_8">
         <property name="text">
-         <string>orkide</string>
+         <string>zinati pia</string>
         </property>
        </widget>
       </item>
@@ -555,16 +555,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_19">
       <item>
-       <widget class="QLabel" name="labelOrkide_2">
+       <widget class="QLabel" name="labelNaderNumber">
         <property name="text">
          <string>500</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonOrkideWH_4">
+       <widget class="QPushButton" name="pushButtonZinatiNumberWJ">
         <property name="text">
-         <string>orkide</string>
+         <string>nader</string>
         </property>
        </widget>
       </item>
@@ -573,16 +573,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_20">
       <item>
-       <widget class="QLabel" name="labelOrkide_3">
+       <widget class="QLabel" name="labelAadiNumber_2">
         <property name="text">
          <string>500</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonOrkideWH_7">
+       <widget class="QPushButton" name="pushButtonAadiWH">
         <property name="text">
-         <string>orkide</string>
+         <string>aadi</string>
         </property>
        </widget>
       </item>

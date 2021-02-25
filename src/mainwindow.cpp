@@ -7,7 +7,6 @@
 #include <iostream>
 #include <string>
 
-
 using namespace std;
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -27,6 +26,14 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
+    if(Information.Flowers.size() != 0)
+    {
+        for(size_t i = 0; i < Information.Flowers.size(); i++)
+        {
+            delete Information.Flowers[i];
+        }
+    }
+    cout << Information.Flowers.size() << endl;
     delete ui;
 }
 
@@ -50,14 +57,18 @@ void MainWindow::on_pushButtonStore_clicked()
     Forooshgah Forooshgah(&Information);
     Forooshgah.setModal(true);
     Forooshgah.exec();
+    Information.SetNumbers(Information.Flowers);
     ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
     ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
     ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));
+    ui->labelAadiNumber->setText(QString::number(Information.GetNormalFlowerNumber()));
+    ui->labelNaderNumber->setText(QString::number(Information.GetRareFlowerNumber()));
+    ui->labelZinatiNumber->setText(QString::number(Information.GetDecorativeFlowerNumber()));
 }
 
 void MainWindow::on_pushButtonGreenHouse_clicked()
 {
-    second second(1);
+    second second(&Information);
     second.setModal(true);
     second.exec();
 }

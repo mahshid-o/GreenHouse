@@ -35,3 +35,18 @@ void Forooshgah::on_pushButtonBuyOs_clicked()
 {
     InfPtr->WareHouse.Poison++;
 }
+
+void Forooshgah::on_pushButtonBuyAadi_clicked()
+{
+    InfPtr->Flowers.push_back(new Kokab);
+}
+
+void Forooshgah::on_pushButtonBuyZinati_clicked()
+{
+    InfPtr->Flowers.push_back(new Orkideh);
+}
+
+void Forooshgah::on_pushButtonBuyNader_clicked()
+{
+    InfPtr->Flowers.push_back(new Laleh);
+}

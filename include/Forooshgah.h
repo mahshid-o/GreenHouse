@@ -24,6 +24,12 @@ private slots:
 
     void on_pushButtonBuyOs_clicked();
 
+    void on_pushButtonBuyAadi_clicked();
+
+    void on_pushButtonBuyZinati_clicked();
+
+    void on_pushButtonBuyNader_clicked();
+
 private:
     Ui::Forooshgah *ui;
     Information * InfPtr = nullptr;

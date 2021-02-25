@@ -1,4 +1,4 @@
-#include "../include/magnolia.h".h"
+#include "../include/magnolia.h"
 
 int Magnolia::Count = 0;
 

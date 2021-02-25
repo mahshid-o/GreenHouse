@@ -10,6 +10,7 @@ public:
     void SetWater(bool);
     void SetSoil(bool);
     void SetSoilExtract(bool);
+    void SetName(QString);
 
     bool GetWater();
     bool GetSoil();

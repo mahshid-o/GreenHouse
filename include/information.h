@@ -10,20 +10,24 @@
 #include "maryam.h"
 #include "orkideh.h"
 #include "sonbol.h"
+#include <vector>
 
 class Information
 {
 public:
     Information();
     WareHouse WareHouse;
-    Narges Narges;
-    Kokab Kokab;
-    Laleh Laleh;
-    Lilium Lilium;
-    Magnolia Magnolia;
-    Maryam Maryam;
-    Orkideh Orkideh;
-    Sonbol Sonbol;
+    int GetNormalFlowerNumber();
+    int GetRareFlowerNumber();
+    int GetDecorativeFlowerNumber();
+    void SetNumbers(std::vector<Flower *>&);
+
+    std::vector<Flower*>Flowers;
+
+private:
+    int NormalFlowerNumber = 0;
+    int RareFlowerNumber = 0;
+    int DecorativeFlowerNumber = 0;
 };
 
 #endif // INFORMATION_H

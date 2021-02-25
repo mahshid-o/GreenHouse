@@ -27,3 +27,7 @@ bool RareFlower::GetPoison()
 {
     return Poison;
 }
+void RareFlower::SetName(QString nm)
+{
+    Name = nm;
+}

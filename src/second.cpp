@@ -9,10 +9,11 @@
 #include <QDateTime>
 #include <QPixmap>
 
-second::second(int a,QWidget *parent) :
+second::second(Information * in,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::second)
 {
+    InfPtr = in;
     ui->setupUi(this);
     QPixmap pix("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/lock0.png");
     ui->labelName1->setPixmap(pix.scaled(150,80,Qt::KeepAspectRatio));

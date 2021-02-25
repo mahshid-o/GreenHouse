@@ -8,6 +8,7 @@ class NormalFlower : public Flower
 public:
     NormalFlower();
     void SetWater(bool);
+    void SetName(QString);
     void SetSoil(bool);
 
     bool GetWater();

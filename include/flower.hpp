@@ -6,7 +6,7 @@ class Flower
 {
 public:
     Flower();
-    void SetName(QString);
+    virtual void SetName(QString) = 0;
     void SetSeedPurchasPrice(int);
     void GetSeedSalesPrice(int);
     void SetReturnPrice(int);

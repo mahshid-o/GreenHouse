@@ -20,3 +20,7 @@ bool NormalFlower::GetSoil()
 {
     return Soil;
 }
+void NormalFlower::SetName(QString nm)
+{
+    Name = nm;
+}

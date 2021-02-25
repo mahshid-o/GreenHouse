@@ -28,3 +28,7 @@ bool DecorativeFlower::GetSoilExtract()
 {
     return SoilExtract;
 }
+void DecorativeFlower::SetName(QString nm)
+{
+    Name = nm;
+}

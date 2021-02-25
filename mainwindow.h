@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "information.h"
 #include <QMainWindow>
 
 namespace Ui {
@@ -14,6 +15,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     MainWindow * MainWindowPtr;
+    Information Information;
     ~MainWindow();
 
 

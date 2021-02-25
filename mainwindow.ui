@@ -17,19 +17,6 @@
    <string notr="true">background-image: url(:/new/prefix1/background.png);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButtonSaveName">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>80</y>
-      <width>93</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>ذخیره نام</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
@@ -236,28 +223,6 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>80</y>
-      <width>178</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="labelProfileName">
-       <property name="text">
-        <string>نام</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEditProfileName"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
       <x>350</x>
       <y>320</y>
       <width>195</width>
@@ -319,7 +284,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <rect>
       <x>810</x>
       <y>60</y>
-      <width>76</width>
+      <width>91</width>
       <height>341</height>
      </rect>
     </property>
@@ -327,14 +292,14 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_7">
        <item>
-        <widget class="QLabel" name="labelOs">
+        <widget class="QLabel" name="labelOsOrkide">
          <property name="text">
-          <string>عصاره ها</string>
+          <string>عصاره ارکیده</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="labelOsWH">
+        <widget class="QLabel" name="labelOsOrkideWH">
          <property name="text">
           <string>0</string>
          </property>
@@ -398,6 +363,52 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
      </item>
     </layout>
    </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>80</y>
+      <width>264</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <widget class="QPushButton" name="pushButtonSaveName">
+       <property name="text">
+        <string>ذخیره نام</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="lineEditProfileName"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelProfileName">
+         <property name="text">
+          <string>نام</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -405,7 +416,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <x>0</x>
      <y>0</y>
      <width>900</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

@@ -5,19 +5,21 @@
 #include "second.h"
 #include "fourth.h"
 #include <iostream>
+#include <string>
 
+
+using namespace std;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-
     ui->setupUi(this);
-    ui->labelOsWH->setText("100");
-    ui->labelWaterWH->setText("100");
-    ui->labelSoilWH->setText("100");
-    ui->labelPoisonWH->setText("100");
-    ui->labelMoney->setText("10000");
+    ui->labelOsOrkideWH->setText(QString::number(Information.WareHouse.OsLilium));
+    ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
+    ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
+    ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));
+    ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
     MainWindowPtr = this;
 }
 

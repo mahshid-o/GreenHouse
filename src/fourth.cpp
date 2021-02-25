@@ -1,6 +1,6 @@
-#include "fourth.h"
+#include "../include/fourth.h"
 #include "ui_fourth.h"
-#include "mainwindow.h"
+#include "../include/mainwindow.h"
 
 fourth::fourth(Information * in ,QWidget *parent) :
     QDialog(parent),

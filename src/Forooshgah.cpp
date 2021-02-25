@@ -1,4 +1,4 @@
-#include "Forooshgah.h"
+#include "../include/Forooshgah.h"
 #include "ui_Forooshgah.h"
 
 Forooshgah::Forooshgah(Information * in, QWidget *parent) :

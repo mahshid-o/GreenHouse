@@ -1,8 +1,8 @@
-#include "second.h"
+#include "../include/second.h"
 #include "ui_second.h"
 #include <QString>
 #include <QDebug>
-#include "Forooshgah.h"
+#include "../include/Forooshgah.h"
 #include <QTime>
 #include <QDebug>
 #include <random>

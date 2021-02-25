@@ -9,7 +9,7 @@ void Flower::SetName(QString nm)
 }
 void Flower::SetNum(int n)
 {
-    number=n;
+    Number=n;
 }
 void Flower::SetSeedPurchasPrice(int prc)
 {
@@ -33,7 +33,7 @@ QString Flower::GetName()
 }
 int Flower::GetNum()
 {
-    return number;
+    return Number;
 }
 int Flower::GetSeedPurchasPrice()
 {

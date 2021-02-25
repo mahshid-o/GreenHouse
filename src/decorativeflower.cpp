@@ -1,8 +1,8 @@
-#include "decorativeflower.h"
+#include "../include/decorativeflower.h"
 
 DecorativeFlower::DecorativeFlower()
 {
-    number=3;
+    Number = 3;
 }
 void DecorativeFlower::SetWater(bool wtr)
 {

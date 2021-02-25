@@ -1,4 +1,4 @@
-#include "rareflower.h"
+#include "../include/rareflower.h"
 
 RareFlower::RareFlower()
 {

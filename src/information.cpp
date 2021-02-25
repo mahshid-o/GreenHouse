@@ -1,4 +1,4 @@
-#include "information.h"
+#include "../include/information.h"
 
 Information::Information()
 {

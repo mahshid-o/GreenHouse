@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "../include/mainwindow.h"
 #include <QApplication>
 #include <QFontDatabase>
 #pragma execution_character_set("utf-8")

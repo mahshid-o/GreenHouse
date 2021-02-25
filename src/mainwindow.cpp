@@ -1,9 +1,9 @@
-#include "mainwindow.h"
+#include "../include/mainwindow.h"
 #include "ui_mainwindow.h"
-#include "Forooshgah.h"
+#include "../include/Forooshgah.h"
 #include <QString>
-#include "second.h"
-#include "fourth.h"
+#include "../include/second.h"
+#include "../include/fourth.h"
 #include <iostream>
 #include <string>
 

@@ -7,7 +7,6 @@ class Flower
 public:
     Flower();
     void SetName(QString);
-    void SetCount(int);
     void SetSeedPurchasPrice(int);
     void GetSeedSalesPrice(int);
     void SetReturnPrice(int);
@@ -15,7 +14,6 @@ public:
     void SetNum(int);
 
     QString GetName();
-    int GetCount();
     int GetSeedPurchasPrice();
     int GetSeedSalesPrice();
     int GetReturnPrice();
@@ -24,8 +22,7 @@ public:
 
 protected:
     QString Name;
-    int Count;
-    int number;
+    int Number;
     int SeedPurchasPrice;
     int SeedSalesPrice;
     int ReturnPrice;

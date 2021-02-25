@@ -7,6 +7,7 @@ class Orkideh : public DecorativeFlower
 {
 public:
     Orkideh();
+    static int Count;
 };
 
 #endif // ORKIDEH_H

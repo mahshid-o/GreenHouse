@@ -1,4 +1,4 @@
-#include "flower.hpp"
+#include "../include/flower.hpp"
 
 Flower::Flower()
 {
@@ -7,10 +7,6 @@ void Flower::SetName(QString nm)
 {
     Name = nm;
 }
-//void Flower::Flower::SetCount(int cnt)
-//{
-//    Count = cnt;
-//}
 void Flower::SetNum(int n)
 {
     number=n;
@@ -31,7 +27,6 @@ void Flower::SetFlowerPurchasePrice(int prc)
 {
     FlowerPurchasPrice = prc;
 }
-
 QString Flower::GetName()
 {
     return Name;
@@ -39,10 +34,6 @@ QString Flower::GetName()
 int Flower::GetNum()
 {
     return number;
-}
-int Flower::GetCount()
-{
-    return Count;
 }
 int Flower::GetSeedPurchasPrice()
 {

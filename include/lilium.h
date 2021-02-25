@@ -6,5 +6,6 @@ class Lilium : public DecorativeFlower
 {
 public:
     Lilium();
+    static int Count;
 };
 #endif // LILIUM_H

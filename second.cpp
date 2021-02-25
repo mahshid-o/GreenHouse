@@ -7,12 +7,23 @@
 #include <QDebug>
 #include <random>
 #include <QDateTime>
+#include <QPixmap>
 
 second::second(int a,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::second)
 {
     ui->setupUi(this);
+    QPixmap pix("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/lock0.png");
+    ui->labelName1->setPixmap(pix.scaled(150,80,Qt::KeepAspectRatio));
+    QPixmap pix2("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/lock0.png");
+    ui->labelName2->setPixmap(pix2.scaled(150,80,Qt::KeepAspectRatio));
+    QPixmap pix3("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/lock0.png");
+    ui->labelName3->setPixmap(pix3.scaled(150,80,Qt::KeepAspectRatio));
+    QPixmap pix4("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/lock0.png");
+    ui->labelName4->setPixmap(pix4.scaled(150,80,Qt::KeepAspectRatio));
+    QPixmap pix5("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/lock0.png");
+    ui->labelName5->setPixmap(pix5.scaled(150,80,Qt::KeepAspectRatio));
 }
 second::~second()
 {
@@ -43,6 +54,8 @@ void second::on_openButton1_clicked()
     //Qstring n;
     ui->labelName1->setText("empty");
     ui->openButton1->setEnabled(false);
+    QPixmap pix6("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/empty0.png");
+    ui->labelName1->setPixmap(pix6.scaled(150,80,Qt::KeepAspectRatio));
 
 }
 
@@ -50,24 +63,32 @@ void second::on_openButton2_clicked()
 {
     ui->labelName2->setText("empty");
     ui->openButton2->setEnabled(false);
+    QPixmap pix7("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/empty0.png");
+    ui->labelName2->setPixmap(pix7.scaled(150,80,Qt::KeepAspectRatio));
 }
 
 void second::on_openButton3_clicked()
 {
     ui->labelName3->setText("empty");
     ui->openButton3->setEnabled(false);
+    QPixmap pix8("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/empty0.png");
+    ui->labelName3->setPixmap(pix8.scaled(150,80,Qt::KeepAspectRatio));
 }
 
 void second::on_openButton4_clicked()
 {
     ui->labelName4->setText("empty");
     ui->openButton4->setEnabled(false);
+    QPixmap pix9("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/empty0.png");
+    ui->labelName4->setPixmap(pix9.scaled(150,80,Qt::KeepAspectRatio));
 }
 
 void second::on_openButton5_clicked()
 {
     ui->labelName5->setText("empty");
     ui->openButton5->setEnabled(false);
+    QPixmap pix10("C:/Users/pc/Desktop/final5/GreenHouse/assets/lock - empty/empty0.png");
+    ui->labelName5->setPixmap(pix10.scaled(150,80,Qt::KeepAspectRatio));
 }
 
 void second::on_selectButton1_clicked()

@@ -21,22 +21,15 @@
     <rect>
      <x>10</x>
      <y>30</y>
-     <width>95</width>
-     <height>146</height>
+     <width>101</width>
+     <height>171</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QLabel" name="labelName1">
       <property name="text">
-       <string>قفل</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>گلدان</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -68,22 +61,15 @@
     <rect>
      <x>130</x>
      <y>30</y>
-     <width>95</width>
-     <height>146</height>
+     <width>101</width>
+     <height>171</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <widget class="QLabel" name="labelName2">
       <property name="text">
-       <string>قفل</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>گلدان</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -115,22 +101,15 @@
     <rect>
      <x>240</x>
      <y>30</y>
-     <width>95</width>
-     <height>146</height>
+     <width>101</width>
+     <height>171</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
      <widget class="QLabel" name="labelName3">
       <property name="text">
-       <string>قفل</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_4">
-      <property name="text">
-       <string>گلدان</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -162,22 +141,15 @@
     <rect>
      <x>350</x>
      <y>30</y>
-     <width>95</width>
-     <height>146</height>
+     <width>101</width>
+     <height>171</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
     <item>
      <widget class="QLabel" name="labelName4">
       <property name="text">
-       <string>قفل</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_5">
-      <property name="text">
-       <string>گلدان</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -209,22 +181,15 @@
     <rect>
      <x>460</x>
      <y>30</y>
-     <width>95</width>
-     <height>146</height>
+     <width>101</width>
+     <height>171</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_5">
     <item>
      <widget class="QLabel" name="labelName5">
       <property name="text">
-       <string>قفل</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_6">
-      <property name="text">
-       <string>گلدان</string>
+       <string/>
       </property>
      </widget>
     </item>

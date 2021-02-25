@@ -178,9 +178,9 @@
    <widget class="QLabel" name="labelWarehouse">
     <property name="geometry">
      <rect>
-      <x>810</x>
-      <y>30</y>
-      <width>61</width>
+      <x>820</x>
+      <y>20</y>
+      <width>31</width>
       <height>21</height>
      </rect>
     </property>
@@ -282,7 +282,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>810</x>
+      <x>800</x>
       <y>60</y>
       <width>91</width>
       <height>341</height>
@@ -300,6 +300,42 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        </item>
        <item>
         <widget class="QLabel" name="labelOsOrkideWH">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLabel" name="labelOsLilium">
+         <property name="text">
+          <string>عصاره لیلیوم</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelOsLiliumWH">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QLabel" name="labelOsMagnolia">
+         <property name="text">
+          <string>عصاره مگنولیا</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelOsMagnoliaWH">
          <property name="text">
           <string>0</string>
          </property>
@@ -363,7 +399,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>310</x>

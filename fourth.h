@@ -2,6 +2,7 @@
 #define FOURTH_H
 
 #include <QDialog>
+#include "information.h"
 
 namespace Ui {
 class fourth;
@@ -12,14 +13,20 @@ class fourth : public QDialog
     Q_OBJECT
 
 public:
-    explicit fourth(QWidget *parent = 0);
+    explicit fourth(Information *, QWidget *parent = 0);
     ~fourth();
 
 private slots:
 
+    void on_pushButtonOrkideT_clicked();
+
+    void on_pushButtonLiliumT_clicked();
+
+    void on_pushButtonMagnoliaT_clicked();
 
 private:
     Ui::fourth *uiFourth;
+    Information * InfPtr = nullptr;
 };
 
 #endif // FOURTH_H

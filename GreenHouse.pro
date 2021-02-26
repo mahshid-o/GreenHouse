@@ -28,7 +28,9 @@ SOURCES += \
     src/lilium.cpp \
     src/magnolia.cpp \
     src/kokab.cpp \
-    src/orkideh.cpp
+    src/orkideh.cpp \
+    store2.cpp \
+    vase.cpp
 
 HEADERS += \
         include/mainwindow.h \
@@ -48,13 +50,16 @@ HEADERS += \
     include/laleh.h \
     include/maryam.h \
     include/sonbol.h \
-    include/orkideh.h
+    include/orkideh.h \
+    store2.h \
+    vase.h
 
 FORMS += \
     form/mainwindow.ui \
     form/store.ui \
     form/greenHouse.ui \
-    form/laboratory.ui
+    form/laboratory.ui \
+    store2.ui
 
 
 RESOURCES += \

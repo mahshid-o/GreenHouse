@@ -2,7 +2,9 @@
 #define SECOND_H
 
 #include <QDialog>
+#include <vector>
 #include "information.h"
+#include "vase.h"
 
 namespace Ui {
 class second;

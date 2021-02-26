@@ -8,6 +8,7 @@
 #include <random>
 #include <QDateTime>
 #include <QPixmap>
+#include "store2.h"
 
 second::second(Information * in,QWidget *parent) :
     QDialog(parent),
@@ -68,53 +69,70 @@ void second::on_openButton5_clicked()
 
 void second::on_selectButton1_clicked()
 {
-    this->hide();
-    Forooshgah Forooshgah(InfPtr);
-    Forooshgah.setModal(true);
-    Forooshgah.exec();
-    this->show();
-    ui->selectButton1->setEnabled(false);
+//    this->hide();
+//    Forooshgah Forooshgah(InfPtr);
+//    Forooshgah.setModal(true);
+//    Forooshgah.exec();
+//    this->show();
+//    ui->selectButton1->setEnabled(false);
+    Store2 Store2(InfPtr);
+    Store2.setModal(true);
+    Store2.exec();
+//    if(InfPtr->VaseL[1].FlowerNum == 2)
+//    ui->labelName1->setText("mewww");
 }
 
 void second::on_selectButton2_clicked()
 {
-    this->hide();
-    Forooshgah Forooshgah(InfPtr);
-    Forooshgah.setModal(true);
-    Forooshgah.exec();
-    this->show();
-    ui->selectButton2->setEnabled(false);
+//    this->hide();
+//    Forooshgah Forooshgah(InfPtr);
+//    Forooshgah.setModal(true);
+//    Forooshgah.exec();
+//    this->show();
+//    ui->selectButton2->setEnabled(false);
+    Store2 Store2(InfPtr);
+    Store2.setModal(true);
+    Store2.exec();
 }
 
 
 void second::on_selectButton3_clicked()
 {
-    this->hide();
-    Forooshgah Forooshgah(InfPtr);
-    Forooshgah.setModal(true);
-    Forooshgah.exec();
-    this->show();
-    ui->selectButton3->setEnabled(false);
+//    this->hide();
+//    Forooshgah Forooshgah(InfPtr);
+//    Forooshgah.setModal(true);
+//    Forooshgah.exec();
+//    this->show();
+//    ui->selectButton3->setEnabled(false);
+    Store2 Store2(InfPtr);
+    Store2.setModal(true);
+    Store2.exec();
 }
 
 void second::on_selectButton4_clicked()
 {
-    this->hide();
-    Forooshgah Forooshgah(InfPtr);
-    Forooshgah.setModal(true);
-    Forooshgah.exec();
-    this->show();
-    ui->selectButton4->setEnabled(false);
+//    this->hide();
+//    Forooshgah Forooshgah(InfPtr);
+//    Forooshgah.setModal(true);
+//    Forooshgah.exec();
+//    this->show();
+//    ui->selectButton4->setEnabled(false);
+    Store2 Store2(InfPtr);
+    Store2.setModal(true);
+    Store2.exec();
 }
 
 void second::on_selectButton5_clicked()
 {
-    this->hide();
-    Forooshgah Forooshgah(InfPtr);
-    Forooshgah.setModal(true);
-    Forooshgah.exec();
-    this->show();
-    ui->selectButton5->setEnabled(false);
+//    this->hide();
+//    Forooshgah Forooshgah(InfPtr);
+//    Forooshgah.setModal(true);
+//    Forooshgah.exec();
+//    this->show();
+//    ui->selectButton5->setEnabled(false);
+    Store2 Store2(InfPtr);
+    Store2.setModal(true);
+    Store2.exec();
 }
 
 void second::on_saleButton1_clicked()

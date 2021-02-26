@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include <cstdlib>
 #include <ctime>
 
 using namespace std;
@@ -65,10 +66,7 @@ void Information::SetNumbers(vector<Flower *> &Flower)
 //}
 int Information::GenRan()
 {
-    int x;
-    default_random_engine eng(static_cast<unsigned int>(time(0)));
-    uniform_int_distribution<unsigned int>myran(0,2);
-    x=myran(eng);
-    return x;
+    srand(static_cast<unsigned int>(time(0)));
+    return (rand() % 3);
 }
 

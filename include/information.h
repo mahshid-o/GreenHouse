@@ -21,6 +21,7 @@ public:
     int GetRareFlowerNumber();
     int GetDecorativeFlowerNumber();
     void SetNumbers(std::vector<Flower *>&);
+    int GenRan();
 
     std::vector<Flower*>Flowers;
 

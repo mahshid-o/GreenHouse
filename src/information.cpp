@@ -1,6 +1,8 @@
 #include "../include/information.h"
 #include <iostream>
 #include <vector>
+#include <random>
+#include <ctime>
 
 using namespace std;
 
@@ -50,3 +52,12 @@ int Information::GetDecorativeFlowerNumber()
 {
     return DecorativeFlowerNumber;
 }
+int Information::GenRan()
+{
+    int x;
+    default_random_engine eng(static_cast<unsigned int>(time(0)));
+    uniform_int_distribution<unsigned int>myran(0,2);
+    x=myran(eng);
+    return x;
+}
+

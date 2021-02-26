@@ -1,5 +1,5 @@
 #include "../include/Forooshgah.h"
-#include "ui_Forooshgah.h"
+#include "ui_store.h".h"
 
 Forooshgah::Forooshgah(Information * in, QWidget *parent) :
     QDialog(parent),

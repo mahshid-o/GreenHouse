@@ -31,6 +31,9 @@
       <property name="text">
        <string/>
       </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+      </property>
      </widget>
     </item>
     <item>
@@ -70,6 +73,9 @@
      <widget class="QLabel" name="labelName2">
       <property name="text">
        <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
       </property>
      </widget>
     </item>
@@ -111,6 +117,9 @@
       <property name="text">
        <string/>
       </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+      </property>
      </widget>
     </item>
     <item>
@@ -150,6 +159,9 @@
      <widget class="QLabel" name="labelName4">
       <property name="text">
        <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
       </property>
      </widget>
     </item>
@@ -191,6 +203,9 @@
       <property name="text">
        <string/>
       </property>
+      <property name="pixmap">
+       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+      </property>
      </widget>
     </item>
     <item>
@@ -217,6 +232,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

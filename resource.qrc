@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/new/prefix1">
         <file>background.png</file>
+        <file>assets/empty0.png</file>
+        <file>assets/lock0.png</file>
     </qresource>
 </RCC>

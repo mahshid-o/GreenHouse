@@ -1,5 +1,5 @@
 #include "../include/fourth.h"
-#include "ui_fourth.h"
+#include "ui_laboratory.h"
 #include "../include/mainwindow.h"
 
 fourth::fourth(Information * in ,QWidget *parent) :

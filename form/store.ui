@@ -34,7 +34,7 @@
       <item>
        <widget class="QLabel" name="labelAadiNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -65,7 +65,7 @@
       <item>
        <widget class="QLabel" name="labelZinatiNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -94,9 +94,9 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QLabel" name="labelZinatiNumber_2">
+       <widget class="QLabel" name="labelRareNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -127,7 +127,7 @@
       <item>
        <widget class="QLabel" name="labelKhakNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -158,7 +158,7 @@
       <item>
        <widget class="QLabel" name="labelAbNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -187,9 +187,9 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
-       <widget class="QLabel" name="labelOsNumber">
+       <widget class="QLabel" name="labelPoisonNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -207,7 +207,7 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonBuyOs">
+       <widget class="QPushButton" name="pushButtonBuyPoison">
         <property name="text">
          <string>ماده سمپاشی</string>
         </property>
@@ -235,7 +235,7 @@
       <item>
        <widget class="QLabel" name="labelMagnoliaNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -266,7 +266,7 @@
       <item>
        <widget class="QLabel" name="labelLiliumNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -297,7 +297,7 @@
       <item>
        <widget class="QLabel" name="labelOrkideNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -328,7 +328,7 @@
       <item>
        <widget class="QLabel" name="labelKokabNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -359,7 +359,7 @@
       <item>
        <widget class="QLabel" name="labelLaleNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -390,7 +390,7 @@
       <item>
        <widget class="QLabel" name="labelMaryamNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -421,7 +421,7 @@
       <item>
        <widget class="QLabel" name="labelSonbolNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -467,7 +467,7 @@
       <item>
        <widget class="QLabel" name="labelNargesNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -485,7 +485,7 @@
       <item>
        <widget class="QLabel" name="labelOsMagnoliaNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -503,7 +503,7 @@
       <item>
        <widget class="QLabel" name="labelLiliumNumber_2">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -521,7 +521,7 @@
       <item>
        <widget class="QLabel" name="labelOsOrkideNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -539,7 +539,7 @@
       <item>
        <widget class="QLabel" name="labelZinatiNumber_3">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -557,7 +557,7 @@
       <item>
        <widget class="QLabel" name="labelNaderNumber">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
@@ -575,7 +575,7 @@
       <item>
        <widget class="QLabel" name="labelAadiNumber_2">
         <property name="text">
-         <string>500</string>
+         <string>0</string>
         </property>
        </widget>
       </item>

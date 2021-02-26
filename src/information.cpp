@@ -14,11 +14,22 @@ void Information::SetNumbers(vector<Flower *> &Flower)
 {
     for(size_t i = 0; i < Flower.size(); i++)
     {
-        NormalFlower * ptrl = nullptr;
-        ptrl = dynamic_cast<NormalFlower*>(Flower[i]);
-        if(ptrl != nullptr)
+        NormalFlower * PtrN = nullptr;
+        PtrN = dynamic_cast<NormalFlower*>(Flower[i]);
+        if(PtrN != nullptr)
         {
-            NormalFlowerNumber++;
+            WareHouse.NormalFlowerCount++;
+
+            Kokab * PtrK = nullptr;
+            PtrK = dynamic_cast<Kokab*>(Flower[i]);
+            if(PtrK != nullptr)
+            {
+                WareHouse.KokabCount++;
+            }
+            else
+            {
+                WareHouse.NargesCount++;
+            }
         }
     }
     for(size_t i = 0; i < Flower.size(); i++)
@@ -27,7 +38,7 @@ void Information::SetNumbers(vector<Flower *> &Flower)
         ptr = dynamic_cast<RareFlower*>(Flower[i]);
         if(ptr != nullptr)
         {
-            RareFlowerNumber++;
+            WareHouse.RareFlowerCount++;
         }
     }
     for(size_t i = 0; i < Flower.size(); i++)
@@ -36,22 +47,22 @@ void Information::SetNumbers(vector<Flower *> &Flower)
         ptr = dynamic_cast<DecorativeFlower*>(Flower[i]);
         if(ptr != nullptr)
         {
-            DecorativeFlowerNumber++;
+            WareHouse.DecorativeFlowerCount++;
         }
     }
 }
-int Information::GetNormalFlowerNumber()
-{
-    return NormalFlowerNumber;
-}
-int Information::GetRareFlowerNumber()
-{
-    return RareFlowerNumber;
-}
-int Information::GetDecorativeFlowerNumber()
-{
-    return DecorativeFlowerNumber;
-}
+//int Information::GetNormalFlowerNumber()
+//{
+//    return NormalFlowerNumber;
+//}
+//int Information::GetRareFlowerNumber()
+//{
+//    return RareFlowerNumber;
+//}
+//int Information::GetDecorativeFlowerNumber()
+//{
+//    return DecorativeFlowerNumber;
+//}
 int Information::GenRan()
 {
     int x;

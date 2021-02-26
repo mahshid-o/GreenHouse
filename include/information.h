@@ -17,18 +17,10 @@ class Information
 public:
     Information();
     WareHouse WareHouse;
-    int GetNormalFlowerNumber();
-    int GetRareFlowerNumber();
-    int GetDecorativeFlowerNumber();
     void SetNumbers(std::vector<Flower *>&);
     int GenRan();
 
     std::vector<Flower*>Flowers;
-
-private:
-    int NormalFlowerNumber = 0;
-    int RareFlowerNumber = 0;
-    int DecorativeFlowerNumber = 0;
 };
 
 #endif // INFORMATION_H

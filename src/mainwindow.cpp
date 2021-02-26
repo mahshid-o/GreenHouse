@@ -57,13 +57,13 @@ void MainWindow::on_pushButtonStore_clicked()
     Forooshgah Forooshgah(&Information);
     Forooshgah.setModal(true);
     Forooshgah.exec();
-    Information.SetNumbers(Information.Flowers);
+//    Information.SetNumbers(Information.Flowers);
     ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
     ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
     ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));
-    ui->labelAadiNumber->setText(QString::number(Information.GetNormalFlowerNumber()));
-    ui->labelNaderNumber->setText(QString::number(Information.GetRareFlowerNumber()));
-    ui->labelZinatiNumber->setText(QString::number(Information.GetDecorativeFlowerNumber()));
+    ui->labelAadiNumber->setText(QString::number(Information.WareHouse.NormalFlowerCount));
+    ui->labelNaderNumber->setText(QString::number(Information.WareHouse.RareFlowerCount));
+    ui->labelZinatiNumber->setText(QString::number(Information.WareHouse.DecorativeFlowerCount));
 }
 
 void MainWindow::on_pushButtonGreenHouse_clicked()

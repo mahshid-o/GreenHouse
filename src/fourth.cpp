@@ -14,17 +14,6 @@ fourth::~fourth()
 {
     delete uiFourth;
 }
-
-//void fourth::on_pushButtonMagnoliaT_clicked()
-//{
-
-//}
-
-//void fourth::on_pushButtonOrkideT_clicked()
-//{
-
-//}
-
 void fourth::on_pushButtonOrkideT_clicked()
 {
     InfPtr->WareHouse.OsOrkide++;

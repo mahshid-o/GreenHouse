@@ -22,7 +22,7 @@ private slots:
 
     void on_pushButtonBuyAb_clicked();
 
-    void on_pushButtonBuyOs_clicked();
+    void on_pushButtonBuyPoison_clicked();
 
     void on_pushButtonBuyAadi_clicked();
 

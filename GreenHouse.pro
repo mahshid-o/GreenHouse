@@ -51,13 +51,10 @@ HEADERS += \
     include/orkideh.h
 
 FORMS += \
-    form/azmayeshgah.ui \
-    form/dialogforoushgah.ui \
-    form/Forooshgah.ui \
-    form/fourth.ui \
-    form/golkhane.ui \
     form/mainwindow.ui \
-    form/second.ui
+    form/store.ui \
+    form/greenHouse.ui \
+    form/laboratory.ui
 
 
 RESOURCES += \

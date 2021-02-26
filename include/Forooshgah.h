@@ -30,9 +30,12 @@ private slots:
 
     void on_pushButtonBuyNader_clicked();
 
+    void on_pushButtonOrkideWH_8_clicked();
+
 private:
     Ui::Forooshgah *ui;
     Information * InfPtr = nullptr;
+    void showMessage();
 };
 
 #endif // DIALOGFOROOSHGAH_H

@@ -16,6 +16,7 @@ second::second(Information * in,QWidget *parent) :
 {
     InfPtr = in;
     ui->setupUi(this);
+    this->setWindowTitle("گلخانه");
 }
 second::~second()
 {

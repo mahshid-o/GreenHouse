@@ -6,6 +6,5 @@ class Magnolia : public DecorativeFlower
 {
 public:
     Magnolia();
-    static int Count;
 };
 #endif // MAGNOLIA_H

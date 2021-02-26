@@ -6,7 +6,6 @@ class Maryam :public RareFlower
 {
 public:
     Maryam();
-    static int Count;
 };
 
 #endif // MARYAM_H

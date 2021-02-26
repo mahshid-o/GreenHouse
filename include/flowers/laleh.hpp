@@ -7,7 +7,6 @@ class Laleh :public RareFlower
 {
 public:
     Laleh();
-    static int Count;
 };
 
 #endif // LALEH_H

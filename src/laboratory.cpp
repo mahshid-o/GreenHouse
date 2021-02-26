@@ -20,6 +20,8 @@ void fourth::on_pushButtonOrkideT_clicked()
 {
     InfPtr->WareHouse.OsOrkide++;
     InfPtr->WareHouse.Money -= 5000;
+    InfPtr->WareHouse.SonbolCount--;
+    InfPtr->WareHouse.Water--;
 
     QMessageBox msg;
     msg.setText("عصاره جادویی ارکیده ساخته شد و آماده استفاده است");
@@ -30,6 +32,9 @@ void fourth::on_pushButtonOrkideT_clicked()
 void fourth::on_pushButtonLiliumT_clicked()
 {
     InfPtr->WareHouse.OsLilium++;
+    InfPtr->WareHouse.NargesCount--;
+    InfPtr->WareHouse.MaryamCount--;
+    InfPtr->WareHouse.Water--;
 
     QMessageBox msg;
     msg.setText("عصاره جادویی لیلیوم ساخته شد و آماده استفاده است");
@@ -40,6 +45,9 @@ void fourth::on_pushButtonLiliumT_clicked()
 void fourth::on_pushButtonMagnoliaT_clicked()
 {
     InfPtr->WareHouse.OsMagnolia++;
+    InfPtr->WareHouse.KokabCount--;
+    InfPtr->WareHouse.LalehCount--;
+    InfPtr->WareHouse.Water--;
 
     QMessageBox msg;
     msg.setText("عصاره جادویی مگنولیا ساخته شد و آماده استفاده است");

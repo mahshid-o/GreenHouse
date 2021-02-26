@@ -1,10 +1,13 @@
 #ifndef WAREHOUSE_H
 #define WAREHOUSE_H
 
+#include <QString>
+
 class WareHouse
 {
 public:
     WareHouse();
+    QString UserName = "نام کاربری";
     int OsMagnolia = 0;
     int OsLilium = 0;
     int OsOrkide = 0;

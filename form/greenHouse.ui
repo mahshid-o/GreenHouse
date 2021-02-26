@@ -16,221 +16,6 @@
   <property name="styleSheet">
    <string notr="true">background-image: url(:/new/prefix1/background.png);</string>
   </property>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>190</y>
-     <width>101</width>
-     <height>171</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLabel" name="labelName1">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="openButton1">
-      <property name="text">
-       <string>بازگشایی</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="selectButton1">
-      <property name="text">
-       <string>ورود به فروشگاه</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="saleButton1">
-      <property name="text">
-       <string>چیدن گل</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>290</x>
-     <y>190</y>
-     <width>101</width>
-     <height>171</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_2">
-    <item>
-     <widget class="QLabel" name="labelName2">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="openButton2">
-      <property name="text">
-       <string>بازگشایی</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="selectButton2">
-      <property name="text">
-       <string>ورود به فروشگاه</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="saleButton2">
-      <property name="text">
-       <string>چیدن گل</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>190</y>
-     <width>101</width>
-     <height>171</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_3">
-    <item>
-     <widget class="QLabel" name="labelName3">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="openButton3">
-      <property name="text">
-       <string>بازگشایی</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="selectButton3">
-      <property name="text">
-       <string>ورود به فروشگاه</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="saleButton3">
-      <property name="text">
-       <string>چیدن گل</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>510</x>
-     <y>190</y>
-     <width>101</width>
-     <height>171</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_4">
-    <item>
-     <widget class="QLabel" name="labelName4">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="openButton4">
-      <property name="text">
-       <string>بازگشایی</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="selectButton4">
-      <property name="text">
-       <string>ورود به فروشگاه</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="saleButton4">
-      <property name="text">
-       <string>چیدن گل</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>620</x>
-     <y>190</y>
-     <width>101</width>
-     <height>171</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_5">
-    <item>
-     <widget class="QLabel" name="labelName5">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="openButton5">
-      <property name="text">
-       <string>بازگشایی</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="selectButton5">
-      <property name="text">
-       <string>ورود به فروشگاه</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="saleButton5">
-      <property name="text">
-       <string>چیدن گل</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QPushButton" name="openButton1_2">
    <property name="geometry">
     <rect>
@@ -243,6 +28,248 @@
    <property name="text">
     <string>بازگشت</string>
    </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>831</width>
+     <height>235</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>GroupBox</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="5">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="4">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLabel" name="labelName3">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openButton3">
+        <property name="text">
+         <string>بازگشایی</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="selectButton3">
+        <property name="text">
+         <string>ورود به فروشگاه</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saleButton3">
+        <property name="text">
+         <string>چیدن گل</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="6">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="labelName4">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openButton4">
+        <property name="text">
+         <string>بازگشایی</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="selectButton4">
+        <property name="text">
+         <string>ورود به فروشگاه</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saleButton4">
+        <property name="text">
+         <string>چیدن گل</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="8">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QLabel" name="labelName5">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openButton5">
+        <property name="text">
+         <string>بازگشایی</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="selectButton5">
+        <property name="text">
+         <string>ورود به فروشگاه</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saleButton5">
+        <property name="text">
+         <string>چیدن گل</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="labelName1">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openButton1">
+        <property name="text">
+         <string>بازگشایی</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="selectButton1">
+        <property name="text">
+         <string>ورود به فروشگاه</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saleButton1">
+        <property name="text">
+         <string>چیدن گل</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="labelName2">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resource.qrc">:/new/prefix1/assets/lock0.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openButton2">
+        <property name="text">
+         <string>بازگشایی</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="selectButton2">
+        <property name="text">
+         <string>ورود به فروشگاه</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saleButton2">
+        <property name="text">
+         <string>چیدن گل</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="7">
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources>

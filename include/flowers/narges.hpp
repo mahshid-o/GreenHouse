@@ -6,6 +6,5 @@ class Narges : public NormalFlower
 {
 public:
     Narges();
-    static int Count;
 };
 #endif // NARGES_H

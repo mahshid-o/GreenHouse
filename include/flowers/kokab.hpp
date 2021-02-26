@@ -6,6 +6,5 @@ class Kokab : public NormalFlower
 {
 public:
     Kokab();
-    static int Count;
 };
 #endif // KOKAB_H

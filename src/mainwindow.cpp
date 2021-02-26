@@ -2,8 +2,8 @@
 #include "ui_mainwindow.h"
 #include "store.hpp"
 #include <QString>
-#include "greenHouse.hpp".hpp"
-#include "laboratory.hpp".hpp"
+#include "greenHouse.hpp"
+#include "laboratory.hpp"
 #include <iostream>
 #include <string>
 
@@ -14,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+//    ui->labelProfileName->setText(Information.WareHouse.UserName);
+    ui->lineEditProfileName->setText(Information.WareHouse.UserName);
     ui->labelOsOrkideWH->setText(QString::number(Information.WareHouse.OsOrkide));
     ui->labelOsLiliumWH->setText(QString::number(Information.WareHouse.OsLilium));
     ui->labelOsMagnoliaWH->setText(QString::number(Information.WareHouse.OsMagnolia));
@@ -43,6 +45,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButtonSaveName_clicked()
 {
     QString ProfileNameString = ui->lineEditProfileName->text();
+    Information.WareHouse.UserName = ui->lineEditProfileName->text();
 }
 
 void MainWindow::on_pushButtonLaboratory_clicked()
@@ -53,6 +56,7 @@ void MainWindow::on_pushButtonLaboratory_clicked()
     fourth.exec();
     this->show();
     ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
+    ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
     ui->labelOsOrkideWH->setText(QString::number(Information.WareHouse.OsOrkide));
     ui->labelOsLiliumWH->setText(QString::number(Information.WareHouse.OsLilium));
     ui->labelOsMagnoliaWH->setText(QString::number(Information.WareHouse.OsMagnolia));
@@ -84,4 +88,8 @@ void MainWindow::on_pushButtonGreenHouse_clicked()
     second.setModal(true);
     second.exec();
     this->show();
+    ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
+    ui->labelAadiNumber->setText(QString::number(Information.WareHouse.NormalFlowerCount));
+    ui->labelNaderNumber->setText(QString::number(Information.WareHouse.RareFlowerCount));
+    ui->labelZinatiNumber->setText(QString::number(Information.WareHouse.DecorativeFlowerCount));
 }

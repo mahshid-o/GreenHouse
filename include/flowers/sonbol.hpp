@@ -7,7 +7,6 @@ class Sonbol : public RareFlower
 {
 public:
     Sonbol();
-    static int Count;
 };
 
 #endif // SONBOL_H

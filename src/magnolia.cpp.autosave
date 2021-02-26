@@ -1,0 +1,9 @@
+#include "../include/magnolia.h"
+
+int Magnolia::Count = 0;
+
+Magnolia::Magnolia()
+{
+  Number = 0;
+  Count++;
+}

@@ -16,7 +16,6 @@ public:
     explicit second(Information *, QWidget *parent = 0);
 
     ~second();
-    int GenRandom(int,int);
 
 private slots:
 

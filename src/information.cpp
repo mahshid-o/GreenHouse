@@ -64,9 +64,14 @@ void Information::SetNumbers(vector<Flower *> &Flower)
 //{
 //    return DecorativeFlowerNumber;
 //}
-int Information::GenRan()
+int Information::GenRan1()
 {
     srand(static_cast<unsigned int>(time(0)));
     return (rand() % 3);
+}
+int Information::GenRan2()
+{
+    srand(static_cast<unsigned int>(time(0)));
+    return (rand() % 4);
 }
 

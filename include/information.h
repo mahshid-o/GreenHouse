@@ -18,7 +18,8 @@ public:
     Information();
     WareHouse WareHouse;
     void SetNumbers(std::vector<Flower *>&);
-    int GenRan();
+    int GenRan1();
+    int GenRan2();
 
     std::vector<Flower*>Flowers;
 };

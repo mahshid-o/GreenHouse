@@ -86,52 +86,57 @@ void second::on_openButton5_clicked()
 
 void second::on_selectButton1_clicked()
 {
+    this->hide();
     Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
-
+    this->show();
     ui->selectButton1->setEnabled(false);
 }
 
 void second::on_selectButton2_clicked()
 {
+    this->hide();
     Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
-
+    this->show();
     ui->selectButton2->setEnabled(false);
 }
 
 
 void second::on_selectButton3_clicked()
 {
+    this->hide();
     Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
-
+    this->show();
     ui->selectButton3->setEnabled(false);
 }
 
 void second::on_selectButton4_clicked()
 {
+    this->hide();
     Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
-
+    this->show();
     ui->selectButton4->setEnabled(false);
 }
 
 void second::on_selectButton5_clicked()
 {
+    this->hide();
     Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
-
+    this->show();
     ui->selectButton5->setEnabled(false);
 }
 

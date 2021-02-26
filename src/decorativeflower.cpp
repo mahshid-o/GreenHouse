@@ -1,4 +1,4 @@
-#include "../include/decorativeflower.h"
+#include "decorativeflower.hpp"
 
 DecorativeFlower::DecorativeFlower()
 {

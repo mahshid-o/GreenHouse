@@ -1,4 +1,4 @@
-#include "../include/flower.hpp"
+#include "flower.hpp"
 
 Flower::Flower()
 {

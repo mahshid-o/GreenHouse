@@ -5,7 +5,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = GreenHouse
 TEMPLATE = app
 
-INCLUDEPATH += ./include
+INCLUDEPATH += ./include \
+	       ./include/flowers
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
@@ -13,46 +14,46 @@ SOURCES += \
     src/main.cpp \
     src/mainwindow.cpp \
     src/flower.cpp \
-    src/Forooshgah.cpp \
-    src/second.cpp \
-    src/fourth.cpp \
+    src/store.cpp \
+    src/greenHouse.cpp \
+    src/laboratory.cpp \
     src/normalflower.cpp \
     src/rareflower.cpp \
     src/decorativeflower.cpp \
     src/information.cpp \
     src/warehouse.cpp \
-    src/laleh.cpp \
-    src/maryam.cpp \
-    src/sonbol.cpp \
-    src/narges.cpp \
-    src/lilium.cpp \
-    src/magnolia.cpp \
-    src/kokab.cpp \
-    src/orkideh.cpp \
+    src/flowers/laleh.cpp \
+    src/flowers/maryam.cpp \
+    src/flowers/sonbol.cpp \
+    src/flowers/narges.cpp \
+    src/flowers/lilium.cpp \
+    src/flowers/magnolia.cpp \
+    src/flowers/kokab.cpp \
+    src/flowers/orkideh.cpp \
     src/store2.cpp \
     src/vase.cpp
 
 HEADERS += \
-    include/mainwindow.h \
-    include/Forooshgah.h \
-    include/second.h \
-    include/fourth.h \
+    include/mainwindow.hpp \
+    include/store.hpp \
+    include/greenHouse.hpp \
+    include/laboratory.hpp \
     include/flower.hpp \
-    include/normalflower.h \
-    include/rareflower.h \
-    include/decorativeflower.h \
-    include/information.h \
-    include/warehouse.h \
-    include/narges.h \
-    include/kokab.h \
-    include/magnolia.h \
-    include/lilium.h \
-    include/laleh.h \
-    include/maryam.h \
-    include/sonbol.h \
-    include/orkideh.h \
-    include/store2.h \
-    include/vase.h
+    include/normalflower.hpp \
+    include/rareflower.hpp \
+    include/decorativeflower.hpp \
+    include/information.hpp \
+    include/warehouse.hpp \
+    include/flowers/narges.hpp \
+    include/flowers/kokab.hpp \
+    include/flowers/magnolia.hpp \
+    include/flowers/lilium.hpp \
+    include/flowers/laleh.hpp \
+    include/flowers/maryam.hpp \
+    include/flowers/sonbol.hpp \
+    include/flowers/orkideh.hpp \
+    include/store2.hpp \
+    include/vase.hpp
 
 FORMS += \
     form/mainwindow.ui \

@@ -1,4 +1,4 @@
-#include "../include/information.h"
+#include "information.hpp"
 #include <iostream>
 #include <vector>
 #include <random>

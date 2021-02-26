@@ -1,4 +1,4 @@
-#include "store2.h"
+#include "store2.hpp"
 #include "ui_store2.h"
 
 Store2::Store2(int num, Information * in, QWidget *parent) :
@@ -8,6 +8,8 @@ Store2::Store2(int num, Information * in, QWidget *parent) :
     NumV = num;
     ui->setupUi(this);
     InfPtr = in;
+
+    this->setWindowTitle("فروشگاه");
 }
 
 Store2::~Store2()

@@ -1,9 +1,9 @@
-#include "../include/mainwindow.h"
+#include "mainwindow.hpp"
 #include "ui_mainwindow.h"
-#include "../include/Forooshgah.h"
+#include "store.hpp"
 #include <QString>
-#include "../include/second.h"
-#include "../include/fourth.h"
+#include "greenHouse.hpp".hpp"
+#include "laboratory.hpp".hpp"
 #include <iostream>
 #include <string>
 

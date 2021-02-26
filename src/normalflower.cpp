@@ -1,4 +1,4 @@
-#include "../include/normalflower.h"
+#include "normalflower.hpp"
 
 NormalFlower::NormalFlower()
 {

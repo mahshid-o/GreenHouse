@@ -37,6 +37,8 @@ private slots:
     void on_saleButton4_clicked();
     void on_saleButton5_clicked();
 
+    void on_openButton1_2_clicked();
+
 private:
     Ui::second *ui;
     Information * InfPtr;

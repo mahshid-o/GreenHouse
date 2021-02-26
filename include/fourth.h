@@ -24,6 +24,8 @@ private slots:
 
     void on_pushButtonMagnoliaT_clicked();
 
+    void on_pushButtonOrkideT_2_clicked();
+
 private:
     Ui::fourth *uiFourth;
     Information * InfPtr = nullptr;

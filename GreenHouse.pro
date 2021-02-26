@@ -10,8 +10,8 @@ INCLUDEPATH += ./include
 DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
-        src/main.cpp \
-        src/mainwindow.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
     src/flower.cpp \
     src/Forooshgah.cpp \
     src/second.cpp \
@@ -29,11 +29,11 @@ SOURCES += \
     src/magnolia.cpp \
     src/kokab.cpp \
     src/orkideh.cpp \
-    store2.cpp \
-    vase.cpp
+    src/store2.cpp \
+    src/vase.cpp
 
 HEADERS += \
-        include/mainwindow.h \
+    include/mainwindow.h \
     include/Forooshgah.h \
     include/second.h \
     include/fourth.h \
@@ -51,16 +51,15 @@ HEADERS += \
     include/maryam.h \
     include/sonbol.h \
     include/orkideh.h \
-    store2.h \
-    vase.h
+    include/store2.h \
+    include/vase.h
 
 FORMS += \
     form/mainwindow.ui \
     form/store.ui \
     form/greenHouse.ui \
     form/laboratory.ui \
-    store2.ui
-
+    form/store2.ui
 
 RESOURCES += \
     resource.qrc

@@ -3,5 +3,13 @@
         <file>background.png</file>
         <file>assets/empty0.png</file>
         <file>assets/lock0.png</file>
+        <file>assets/3x/flower1-1.png</file>
+        <file>assets/3x/flower2-1.png</file>
+        <file>assets/3x/flower3-1.png</file>
+        <file>assets/3x/flower4-1.png</file>
+        <file>assets/3x/flower5-1.png</file>
+        <file>assets/3x/flower6-1.png</file>
+        <file>assets/3x/flower7-1.png</file>
+        <file>assets/3x/flower8-1.png</file>
     </qresource>
 </RCC>

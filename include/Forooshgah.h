@@ -32,6 +32,8 @@ private slots:
 
     void on_pushButtonOrkideWH_8_clicked();
 
+    void on_pushButtonNargesWH_2_clicked();
+
 private:
     Ui::Forooshgah *ui;
     Information * InfPtr = nullptr;

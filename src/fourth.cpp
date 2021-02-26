@@ -46,3 +46,8 @@ void fourth::on_pushButtonMagnoliaT_clicked()
     msg.show();
     msg.exec();
 }
+
+void fourth::on_pushButtonOrkideT_2_clicked()
+{
+    this->close();
+}

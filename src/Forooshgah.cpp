@@ -107,3 +107,8 @@ void Forooshgah::on_pushButtonOrkideWH_8_clicked()
 {
 
 }
+
+void Forooshgah::on_pushButtonNargesWH_2_clicked()
+{
+    this->close();
+}

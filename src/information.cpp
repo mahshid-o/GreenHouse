@@ -67,11 +67,11 @@ void Information::SetNumbers(vector<Flower *> &Flower)
 int Information::GenRan1()
 {
     srand(static_cast<unsigned int>(time(0)));
-    return (rand() % 3);
+    return (rand() % 2);
 }
 int Information::GenRan2()
 {
     srand(static_cast<unsigned int>(time(0)));
-    return (rand() % 4);
+    return (rand() % 3);
 }
 

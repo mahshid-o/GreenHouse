@@ -18,7 +18,6 @@ Forooshgah::Forooshgah(QWidget *parent) :
 
     ui->setupUi(this);
 }
-
 Forooshgah::~Forooshgah()
 {
     delete ui;

@@ -35,6 +35,7 @@ private slots:
 private:
     Ui::Forooshgah *ui;
     Information * InfPtr = nullptr;
+    void showMessage();
 };
 
 #endif // DIALOGFOROOSHGAH_H

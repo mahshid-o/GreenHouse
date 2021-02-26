@@ -42,14 +42,6 @@ int second::GenRandom(int min, int max)
 
 }
 
-
-//void second::on_openButton_clicked()
-//{
-//    QString n;
-//    n=ui->labelName->text();
-//    qDebug()<<n;
-//}
-
 void second::on_openButton1_clicked()
 {
     //Qstring n;
@@ -94,7 +86,7 @@ void second::on_openButton5_clicked()
 
 void second::on_selectButton1_clicked()
 {
-    Forooshgah Forooshgah;
+    Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
@@ -104,7 +96,7 @@ void second::on_selectButton1_clicked()
 
 void second::on_selectButton2_clicked()
 {
-    Forooshgah Forooshgah;
+    Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
@@ -115,7 +107,7 @@ void second::on_selectButton2_clicked()
 
 void second::on_selectButton3_clicked()
 {
-    Forooshgah Forooshgah;
+    Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
@@ -125,7 +117,7 @@ void second::on_selectButton3_clicked()
 
 void second::on_selectButton4_clicked()
 {
-    Forooshgah Forooshgah;
+    Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
@@ -135,7 +127,7 @@ void second::on_selectButton4_clicked()
 
 void second::on_selectButton5_clicked()
 {
-    Forooshgah Forooshgah;
+    Forooshgah Forooshgah(InfPtr);
     Forooshgah.setModal(true);
     qDebug()<<this->GenRandom(0,3);
     Forooshgah.exec();
@@ -157,7 +149,6 @@ void second::on_saleButton3_clicked()
 {
      ui->labelName3->setText("empty");
 }
-
 void second::on_saleButton4_clicked()
 {
     ui->labelName4->setText("empty");

@@ -21,6 +21,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
     ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));
     ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
+    ui->labelOsareNumber->setText(QString::number(Information.WareHouse.OsLilium +
+                        Information.WareHouse.OsMagnolia + Information.WareHouse.OsOrkide));
     MainWindowPtr = this;
 }
 
@@ -47,9 +49,12 @@ void MainWindow::on_pushButtonLaboratory_clicked()
     fourth fourth(&Information);
     fourth.setModal(true);
     fourth.exec();
+    ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
     ui->labelOsOrkideWH->setText(QString::number(Information.WareHouse.OsOrkide));
     ui->labelOsLiliumWH->setText(QString::number(Information.WareHouse.OsLilium));
     ui->labelOsMagnoliaWH->setText(QString::number(Information.WareHouse.OsMagnolia));
+    ui->labelOsareNumber->setText(QString::number(Information.WareHouse.OsLilium +
+                        Information.WareHouse.OsMagnolia + Information.WareHouse.OsOrkide));
 }
 
 void MainWindow::on_pushButtonStore_clicked()
@@ -58,6 +63,7 @@ void MainWindow::on_pushButtonStore_clicked()
     Forooshgah.setModal(true);
     Forooshgah.exec();
 //    Information.SetNumbers(Information.Flowers);
+    ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
     ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
     ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
     ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));

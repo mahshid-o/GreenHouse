@@ -17,6 +17,7 @@ fourth::~fourth()
 void fourth::on_pushButtonOrkideT_clicked()
 {
     InfPtr->WareHouse.OsOrkide++;
+    InfPtr->WareHouse.Money -= 5000;
 }
 
 void fourth::on_pushButtonLiliumT_clicked()

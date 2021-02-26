@@ -2,8 +2,10 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = projectReal
+TARGET = GreenHouse
 TEMPLATE = app
+
+INCLUDEPATH += ./include
 
 DEFINES += QT_DEPRECATED_WARNINGS
 
@@ -49,10 +51,16 @@ HEADERS += \
     include/orkideh.h
 
 FORMS += \
-        mainwindow.ui \
-    Forooshgah.ui \
-    second.ui \
-    fourth.ui
+    form/azmayeshgah.ui \
+    form/dialogforoushgah.ui \
+    form/Forooshgah.ui \
+    form/fourth.ui \
+    form/golkhane.ui \
+    form/mainwindow.ui \
+    form/second.ui
+
 
 RESOURCES += \
     resource.qrc
+
+message("<<<<< Green House >>>>> is building!")

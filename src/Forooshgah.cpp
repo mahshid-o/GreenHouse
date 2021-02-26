@@ -20,7 +20,10 @@ Forooshgah::Forooshgah(Information * in, QWidget *parent) :
     ui->labelOrkideNumber->setText(QString::number(InfPtr->WareHouse.OrkidehCount));
     ui->labelNargesNumber->setText(QString::number(InfPtr->WareHouse.NargesCount));
     ui->labelMaryamNumber->setText(QString::number(InfPtr->WareHouse.MaryamCount));
+
+    this->setWindowTitle("فروشگاه");
 }
+
 Forooshgah::Forooshgah(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Forooshgah)
@@ -77,4 +80,9 @@ void Forooshgah::on_pushButtonBuyNader_clicked()
     InfPtr->WareHouse.RareFlowerCount++;
     ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.RareFlowerCount));
     InfPtr->WareHouse.Money -= 5000;
+}
+
+void Forooshgah::on_pushButtonOrkideWH_8_clicked()
+{
+
 }

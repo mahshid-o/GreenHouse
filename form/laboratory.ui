@@ -187,6 +187,19 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="pushButtonOrkideT_2">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>330</y>
+      <width>119</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>بازگشت</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

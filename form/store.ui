@@ -761,6 +761,19 @@
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="pushButtonNargesWH_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>86</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>بازگشت</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

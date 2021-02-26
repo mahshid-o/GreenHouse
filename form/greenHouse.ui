@@ -19,8 +19,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>30</y>
+     <x>170</x>
+     <y>190</y>
      <width>101</width>
      <height>171</height>
     </rect>
@@ -62,8 +62,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>30</y>
+     <x>290</x>
+     <y>190</y>
      <width>101</width>
      <height>171</height>
     </rect>
@@ -105,8 +105,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>30</y>
+     <x>400</x>
+     <y>190</y>
      <width>101</width>
      <height>171</height>
     </rect>
@@ -148,8 +148,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>30</y>
+     <x>510</x>
+     <y>190</y>
      <width>101</width>
      <height>171</height>
     </rect>
@@ -191,8 +191,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>30</y>
+     <x>620</x>
+     <y>190</y>
      <width>101</width>
      <height>171</height>
     </rect>
@@ -230,6 +230,19 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QPushButton" name="openButton1_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>99</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>بازگشت</string>
+   </property>
   </widget>
  </widget>
  <resources>

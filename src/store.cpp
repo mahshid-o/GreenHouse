@@ -21,6 +21,9 @@ Forooshgah::Forooshgah(Information * in, QWidget *parent) :
     ui->labelOrkideNumber->setText(QString::number(InfPtr->WareHouse.OrkidehCount));
     ui->labelNargesNumber->setText(QString::number(InfPtr->WareHouse.NargesCount));
     ui->labelMaryamNumber->setText(QString::number(InfPtr->WareHouse.MaryamCount));
+    ui->labelSeedAadiNumberWh->setText(QString::number(InfPtr->WareHouse.NormalFlowerCount));
+    ui->labelSeedDecorativeNumber->setText(QString::number(InfPtr->WareHouse.DecorativeFlowerCount));
+    ui->labelSeedRareNumber->setText(QString::number(InfPtr->WareHouse.RareFlowerCount));
 
     this->setWindowTitle("فروشگاه");
 }
@@ -37,7 +40,6 @@ Forooshgah::Forooshgah(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Forooshgah)
 {
-
     ui->setupUi(this);
 }
 Forooshgah::~Forooshgah()
@@ -74,9 +76,7 @@ void Forooshgah::on_pushButtonBuyPoison_clicked()
 
 void Forooshgah::on_pushButtonBuyAadi_clicked()
 {
-    InfPtr->Flowers.push_back(new Kokab);
     InfPtr->WareHouse.NormalFlowerCount++;
-    InfPtr->WareHouse.KokabCount++;
     ui->labelAadiNumber->setText(QString::number(InfPtr->WareHouse.NormalFlowerCount));
     InfPtr->WareHouse.Money -= 1000;
 
@@ -85,7 +85,6 @@ void Forooshgah::on_pushButtonBuyAadi_clicked()
 
 void Forooshgah::on_pushButtonBuyZinati_clicked()
 {
-    InfPtr->Flowers.push_back(new Orkideh);
     InfPtr->WareHouse.DecorativeFlowerCount++;
     ui->labelZinatiNumber->setText(QString::number(InfPtr->WareHouse.DecorativeFlowerCount));
     InfPtr->WareHouse.Money -= 20000;
@@ -95,7 +94,6 @@ void Forooshgah::on_pushButtonBuyZinati_clicked()
 
 void Forooshgah::on_pushButtonBuyNader_clicked()
 {
-    InfPtr->Flowers.push_back(new Laleh);
     InfPtr->WareHouse.RareFlowerCount++;
     ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.RareFlowerCount));
     InfPtr->WareHouse.Money -= 5000;

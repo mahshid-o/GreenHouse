@@ -33,9 +33,9 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>110</y>
+     <y>70</y>
      <width>831</width>
-     <height>235</height>
+     <height>431</height>
     </rect>
    </property>
    <property name="title">
@@ -108,6 +108,48 @@
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="Soil3">
+        <property name="text">
+         <string>خاک</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Water3">
+        <property name="text">
+         <string>آب</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Poison3">
+        <property name="text">
+         <string>سم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsMagnolia3">
+        <property name="text">
+         <string>عصاره خاک مگنولیا</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsLilium3">
+        <property name="text">
+         <string>عصاره خاک لیلیوم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsOrkide3">
+        <property name="text">
+         <string>عصاره خاک ارکیده</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="saleButton3">
         <property name="text">
          <string>چیدن گل</string>
@@ -139,6 +181,48 @@
        <widget class="QPushButton" name="selectButton4">
         <property name="text">
          <string>ورود به فروشگاه</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Soil4">
+        <property name="text">
+         <string>خاک</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Water4">
+        <property name="text">
+         <string>آب</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Poison4">
+        <property name="text">
+         <string>سم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsMagnolia4">
+        <property name="text">
+         <string>عصاره خاک مگنولیا</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsOrkide4">
+        <property name="text">
+         <string>عصاره خاک ارکیده</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsLilium4">
+        <property name="text">
+         <string>عصاره خاک لیلیوم</string>
         </property>
        </widget>
       </item>
@@ -178,6 +262,48 @@
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="Soil5">
+        <property name="text">
+         <string>خاک</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Water5">
+        <property name="text">
+         <string>آب</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Poison5">
+        <property name="text">
+         <string>سم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsMagnolia5">
+        <property name="text">
+         <string>عصاره خاک مگنولیا</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsLilium5">
+        <property name="text">
+         <string>عصاره خاک لیلیوم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsOrkide5">
+        <property name="text">
+         <string>عصاره خاک ارکیده</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="saleButton5">
         <property name="text">
          <string>چیدن گل</string>
@@ -213,6 +339,48 @@
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="Soil1">
+        <property name="text">
+         <string>خاک</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Water1">
+        <property name="text">
+         <string>آب</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Poison1">
+        <property name="text">
+         <string>سم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsMagnolia1">
+        <property name="text">
+         <string>عصاره خاک مگنولیا</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsLilium1">
+        <property name="text">
+         <string>عصاره خاک لیلیوم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsOrkide1">
+        <property name="text">
+         <string>عصاره خاک ارکیده</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="saleButton1">
         <property name="text">
          <string>چیدن گل</string>
@@ -244,6 +412,48 @@
        <widget class="QPushButton" name="selectButton2">
         <property name="text">
          <string>ورود به فروشگاه</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Soil2">
+        <property name="text">
+         <string>خاک</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Water2">
+        <property name="text">
+         <string>آب</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Poison2">
+        <property name="text">
+         <string>سم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsMagnolia2">
+        <property name="text">
+         <string>عصاره خاک مگنولیا</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsLilium2">
+        <property name="text">
+         <string>عصاره خاک لیلیوم</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OsOrkide2">
+        <property name="text">
+         <string>عصاره خاک ارکیده</string>
         </property>
        </widget>
       </item>

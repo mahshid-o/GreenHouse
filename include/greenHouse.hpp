@@ -16,11 +16,10 @@ class second : public QDialog
 
 public:
     explicit second(Information *, QWidget *parent = 0);
-
+    void SetEnable();
     ~second();
 
 private slots:
-
     void on_openButton1_clicked();
     void on_openButton2_clicked();
     void on_openButton3_clicked();
@@ -36,8 +35,22 @@ private slots:
     void on_saleButton3_clicked();
     void on_saleButton4_clicked();
     void on_saleButton5_clicked();
-
     void on_openButton1_2_clicked();
+    void on_Soil1_clicked();
+    void on_Soil2_clicked();
+    void on_Soil3_clicked();
+    void on_Soil4_clicked();
+    void on_Soil5_clicked();
+    void on_Water1_clicked();
+    void on_Water2_clicked();
+    void on_Water3_clicked();
+    void on_Water4_clicked();
+    void on_Water5_clicked();
+    void on_Poison1_clicked();
+    void on_Poison2_clicked();
+    void on_Poison3_clicked();
+    void on_Poison4_clicked();
+    void on_Poison5_clicked();
 
 private:
     Ui::second *ui;

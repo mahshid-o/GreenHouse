@@ -11,6 +11,14 @@ Information::Information()
 {
 
 }
+void Information::SetIsGrown() // sets IsGrown variable for vases
+{
+    for(size_t i = 0; i < 5; i++)
+    {
+        if(VaseL[i].IsWaterd & VaseL[i].IsPoisoned & VaseL[i].HasSoil & VaseL[i].IsDamaged == false)
+            VaseL[i].IsGrown = true;
+    }
+}
 void Information::SetNumbers(vector<Flower *> &Flower)
 {
     for(size_t i = 0; i < Flower.size(); i++)

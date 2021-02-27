@@ -89,6 +89,9 @@ void MainWindow::on_pushButtonGreenHouse_clicked()
     second.exec();
     this->show();
     ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
+    ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
+    ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
+    ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));
     ui->labelAadiNumber->setText(QString::number(Information.WareHouse.NormalFlowerCount));
     ui->labelNaderNumber->setText(QString::number(Information.WareHouse.RareFlowerCount));
     ui->labelZinatiNumber->setText(QString::number(Information.WareHouse.DecorativeFlowerCount));

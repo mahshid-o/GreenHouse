@@ -32,6 +32,11 @@ void Store2::on_pushButtonBuyAadi_clicked()
         break;
     }
     InfPtr->WareHouse.Money -= 1000;
+    int Damaged = InfPtr->GenRan3();    // if Gen3 returns 1 the flower is damaged
+    if(Damaged == 1)
+    {
+        InfPtr->VaseL[NumV].IsDamaged = true;
+    }
 }
 
 void Store2::on_pushButtonBuyDecorative_clicked()
@@ -53,6 +58,11 @@ void Store2::on_pushButtonBuyDecorative_clicked()
         break;
     }
     InfPtr->WareHouse.Money -= 15000;
+    int Damaged = InfPtr->GenRan3();    // if Gen3 returns 1 the flower is damaged
+    if(Damaged == 1)
+    {
+        InfPtr->VaseL[NumV].IsDamaged = true;
+    }
 }
 
 void Store2::on_pushButtonBuyRare_clicked()
@@ -74,4 +84,10 @@ void Store2::on_pushButtonBuyRare_clicked()
         break;
     }
     InfPtr->WareHouse.Money -= 10000;
+
+    int Damaged = InfPtr->GenRan3();    // if Gen3 returns 1 the flower is damaged
+    if(Damaged == 1)
+    {
+        InfPtr->VaseL[NumV].IsDamaged = true;
+    }
 }

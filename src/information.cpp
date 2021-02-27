@@ -74,4 +74,9 @@ int Information::GenRan2()
     srand(static_cast<unsigned int>(time(0)));
     return (rand() % 3);
 }
+int Information::GenRan3()
+{
+    srand(static_cast<unsigned int>(time(0)));
+    return (rand() % 5);
+}
 

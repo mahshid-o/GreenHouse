@@ -22,6 +22,7 @@ public:
     void SetNumbers(std::vector<Flower *>&);
     int GenRan1();
     int GenRan2();
+    int GenRan3();
 
     std::vector<Flower*>Flowers;
 };

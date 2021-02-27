@@ -67,12 +67,6 @@ void second::on_openButton5_clicked()
 
 void second::on_selectButton1_clicked()
 {
-//    this->hide();
-//    Forooshgah Forooshgah(InfPtr);
-//    Forooshgah.setModal(true);
-//    Forooshgah.exec();
-//    this->show();
-//    ui->selectButton1->setEnabled(false);
     Store2 Store2(1, InfPtr);
     Store2.setModal(true);
     Store2.exec();
@@ -138,12 +132,6 @@ void second::on_selectButton1_clicked()
 
 void second::on_selectButton2_clicked()
 {
-//    this->hide();
-//    Forooshgah Forooshgah(InfPtr);
-//    Forooshgah.setModal(true);
-//    Forooshgah.exec();
-//    this->show();
-//    ui->selectButton2->setEnabled(false);
     Store2 Store2(2, InfPtr);
     Store2.setModal(true);
     Store2.exec();
@@ -209,12 +197,6 @@ void second::on_selectButton2_clicked()
 
 void second::on_selectButton3_clicked()
 {
-//    this->hide();
-//    Forooshgah Forooshgah(InfPtr);
-//    Forooshgah.setModal(true);
-//    Forooshgah.exec();
-//    this->show();
-//    ui->selectButton3->setEnabled(false);
     Store2 Store2(3, InfPtr);
     Store2.setModal(true);
     Store2.exec();
@@ -279,12 +261,6 @@ void second::on_selectButton3_clicked()
 
 void second::on_selectButton4_clicked()
 {
-//    this->hide();
-//    Forooshgah Forooshgah(InfPtr);
-//    Forooshgah.setModal(true);
-//    Forooshgah.exec();
-//    this->show();
-//    ui->selectButton4->setEnabled(false);
     Store2 Store2(4, InfPtr);
     Store2.setModal(true);
     Store2.exec();
@@ -349,12 +325,6 @@ void second::on_selectButton4_clicked()
 
 void second::on_selectButton5_clicked()
 {
-//    this->hide();
-//    Forooshgah Forooshgah(InfPtr);
-//    Forooshgah.setModal(true);
-//    Forooshgah.exec();
-//    this->show();
-//    ui->selectButton5->setEnabled(false);
     Store2 Store2(5, InfPtr);
     Store2.setModal(true);
     Store2.exec();

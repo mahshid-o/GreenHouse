@@ -105,7 +105,7 @@ void MainWindow::on_pushButtonGreenHouse_clicked()
 }
 ostream &operator<<(ostream &output,WareHouse w)//overload << for writing
 {
-    output<<w.NormalFlowerCount<<setw(5)<<w.DecorativeFlowerCount<<setw(5)<<w.RareFlowerCount<<setw(5)<<w.Soil<<setw(5)<<w.Water<<setw(5)<<w.Poison<<setw(5)<<w.OsMagnolia<<setw(5)<<w.OsLilium<<setw(5)<<w.OsOrkide<<setw(5)<<w.Money<<setw(5)<<w.LalehCount<<setw(5)<<w.KokabCount<<setw(5)<<w.LiliumCount<<setw(5)<<w.MagnloiaCount<<setw(5)<<w.MaryamCount<<setw(5)<<w.NargesCount<<w.OrkidehCount<<setw(5)<<w.SonbolCount<<setw(5)<<w.SeedNormalFlowerCount<<setw(5)<<w.SeedRareFlowerCount<<setw(5)<<w.SeedDecorativeFlowerCount;
+    output<<w.NormalFlowerCount<<setw(5)<<w.DecorativeFlowerCount<<setw(5)<<w.RareFlowerCount<<setw(5)<<w.Soil<<setw(5)<<w.Water<<setw(5)<<w.Poison<<setw(5)<<w.OsMagnolia<<setw(5)<<w.OsLilium<<setw(5)<<w.OsOrkide<<setw(5)<<w.Money<<setw(5)<<w.LalehCount<<setw(5)<<w.KokabCount<<setw(5)<<w.LiliumCount<<setw(5)<<w.MagnloiaCount<<setw(5)<<w.MaryamCount<<setw(5)<<w.NargesCount<<w.OrkidehCount<<setw(5)<<w.SonbolCount<<setw(5)<<w.SeedNormalFlowerCount<<setw(5)<<w.SeedRareFlowerCount<<setw(5)<<w.SeedDecorativeFlowerCount<<w.DeletedFlowers<<setw(5)<<w.PlantedFlowers;
     return output;
 }
 ostream &operator<<(ostream &output,Vase v)//overload << for writing
@@ -177,7 +177,7 @@ void MainWindow::on_pushButtonLoad_clicked()
         exit(EXIT_FAILURE);
     }
     WareHouse w=Information.WareHouse;
-    file2>>w.NormalFlowerCount>>w.DecorativeFlowerCount>>w.RareFlowerCount>>w.Soil>>w.Water>>w.Poison>>w.OsMagnolia>>w.OsLilium>>w.OsOrkide>>w.Money>>w.LalehCount>>w.KokabCount>>w.LiliumCount>>w.MagnloiaCount>>w.MaryamCount>>w.NargesCount>>w.OrkidehCount>>w.SonbolCount;
+    file2>>w.NormalFlowerCount>>w.DecorativeFlowerCount>>w.RareFlowerCount>>w.Soil>>w.Water>>w.Poison>>w.OsMagnolia>>w.OsLilium>>w.OsOrkide>>w.Money>>w.LalehCount>>w.KokabCount>>w.LiliumCount>>w.MagnloiaCount>>w.MaryamCount>>w.NargesCount>>w.OrkidehCount>>w.SonbolCount>>w.SeedNormalFlowerCount>>w.SeedRareFlowerCount>>w.SeedDecorativeFlowerCount>>w.DeletedFlowers>>w.PlantedFlowers;
 
     Information.WareHouse.NormalFlowerCount=w.NormalFlowerCount;
     ui->labelAadiNumber->setText(QString::number(Information.WareHouse.NormalFlowerCount));
@@ -240,6 +240,10 @@ void MainWindow::on_pushButtonLoad_clicked()
     Information.WareHouse.SeedRareFlowerCount=w.SeedRareFlowerCount;
 
     Information.WareHouse.SeedDecorativeFlowerCount=w.SeedDecorativeFlowerCount;
+
+    Information.WareHouse.DeletedFlowers=w.DeletedFlowers;
+
+    Information.WareHouse.PlantedFlowers=w.PlantedFlowers;
 
 
 

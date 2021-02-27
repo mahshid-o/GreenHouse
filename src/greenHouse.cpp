@@ -114,38 +114,53 @@ void second::SetLabels()
         case 1:
             if(InfPtr->VaseL[0].FlowerNum == 0)
             {
-
+                QPixmap pix26(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
             }
             else if(InfPtr->VaseL[0].FlowerNum == 1)
             {
+                QPixmap pix26(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 2:
             if(InfPtr->VaseL[0].FlowerNum == 0)
             {
+                QPixmap pix26(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[0].FlowerNum==1)
             {
+                QPixmap pix26(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[0].FlowerNum==2)
             {
+                QPixmap pix26(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 3:
             if(InfPtr->VaseL[0].FlowerNum == 0)
             {
+                QPixmap pix26(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[0].FlowerNum==1)
             {
+                QPixmap pix26(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[0].FlowerNum==2)
             {
+                QPixmap pix26(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName1->setPixmap(pix26.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
@@ -162,38 +177,54 @@ void second::SetLabels()
         case 1:
             if(InfPtr->VaseL[1].FlowerNum == 0)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[1].FlowerNum == 1)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 2:
             if(InfPtr->VaseL[1].FlowerNum == 0)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[1].FlowerNum==1)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[1].FlowerNum==2)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 3:
             if(InfPtr->VaseL[1].FlowerNum == 0)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[1].FlowerNum==1)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[1].FlowerNum==2)
             {
+                QPixmap pix25(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName1->setPixmap(pix25.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
@@ -210,38 +241,54 @@ void second::SetLabels()
         case 1:
             if(InfPtr->VaseL[2].FlowerNum == 0)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[2].FlowerNum == 1)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 2:
             if(InfPtr->VaseL[2].FlowerNum == 0)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[2].FlowerNum==1)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[2].FlowerNum==2)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 3:
             if(InfPtr->VaseL[2].FlowerNum == 0)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[2].FlowerNum==1)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[2].FlowerNum==2)
             {
+                QPixmap pix24(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName1->setPixmap(pix24.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
@@ -258,38 +305,54 @@ void second::SetLabels()
         case 1:
             if(InfPtr->VaseL[3].FlowerNum == 0)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[3].FlowerNum == 1)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 2:
             if(InfPtr->VaseL[3].FlowerNum == 0)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[3].FlowerNum==1)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[3].FlowerNum==2)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 3:
             if(InfPtr->VaseL[3].FlowerNum == 0)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[3].FlowerNum==1)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[3].FlowerNum==2)
             {
+                QPixmap pix22(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName1->setPixmap(pix22.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
@@ -306,38 +369,54 @@ void second::SetLabels()
         case 1:
             if(InfPtr->VaseL[4].FlowerNum == 0)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[4].FlowerNum == 1)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 2:
             if(InfPtr->VaseL[4].FlowerNum == 0)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[4].FlowerNum==1)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[4].FlowerNum==2)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;
         case 3:
             if(InfPtr->VaseL[4].FlowerNum == 0)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[4].FlowerNum==1)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             else if(InfPtr->VaseL[4].FlowerNum==2)
             {
+                QPixmap pix20(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName1->setPixmap(pix20.scaled(250,100,Qt::KeepAspectRatio));
 
             }
             break;

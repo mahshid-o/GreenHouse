@@ -26,6 +26,7 @@ public:
     int GenRan1();
     int GenRan2();
     int GenRan3();
+    bool IsLoadPressed = false;
 
     std::vector<Flower*>Flowers;
 };

@@ -2,9 +2,14 @@
 #define WAREHOUSE_H
 
 #include <QString>
+#include <iostream>
+#include <fstream>
+#include <vase.hpp>
 
 class WareHouse
 {
+    friend std::ostream &operator<<(std::ostream &output, const WareHouse w);
+    friend std::ostream &operator<<(std::ostream &output,Vase v);
 public:
     WareHouse();
     QString UserName = "نام کاربری";

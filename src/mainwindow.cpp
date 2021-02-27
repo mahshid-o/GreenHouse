@@ -6,13 +6,12 @@
 #include "laboratory.hpp"
 #include <iostream>
 #include <string>
-#include <QFile>
 #include <QMessageBox>
-#include <QTextStream>
-#include <QCoreApplication>
 #include <warehouse.hpp>
 #include <iomanip>
 #include <QDebug>
+#include <fstream>
+#include <vase.hpp>
 
 using namespace std;
 
@@ -104,35 +103,95 @@ void MainWindow::on_pushButtonGreenHouse_clicked()
     ui->labelNaderNumber->setText(QString::number(Information.WareHouse.RareFlowerCount));
     ui->labelZinatiNumber->setText(QString::number(Information.WareHouse.DecorativeFlowerCount));
 }
-QTextStream & operator <<(QTextStream &s, WareHouse w)
+ostream &operator<<(ostream &output,WareHouse w)//overload << for writing
 {
-    s<<w.UserName<<"          "<<w.NormalFlowerCount<<"\t"<<w.RareFlowerCount<<"\t"<<w.DecorativeFlowerCount;
-    return s;
+    output<<w.NormalFlowerCount<<setw(5)<<w.DecorativeFlowerCount<<setw(5)<<w.RareFlowerCount<<setw(5)<<w.Soil<<setw(5)<<w.Water<<setw(5)<<w.Poison<<setw(5)<<w.OsLilium;
+    return output;
 }
+ostream &operator<<(ostream &output,Vase v)//overload << for writing
+{
+//    for(size_t i=0;i<5;i++)
+//    {
+      output<<v.IsEmpty<<setw(5)<<v.IsOpen<<setw(5)<<v.IsGrown<<endl;
+//    }
+    return output;
+}
+
 void MainWindow::on_pushButtonSave_clicked()
 {
-    QFile file("C:/Users/pc/Desktop/final15/GreenHouse/infoFile.txt");
-    file.open(QFile::WriteOnly | QFile::Text);
-    if(!file.isOpen())
+    ofstream file("../GreenHouse/myfile.txt",ios::out);
+    if (!file.is_open())
     {
-        QMessageBox::warning(this,"title","file nooot open");
+       exit(EXIT_FAILURE);
     }
-    QTextStream out;
     WareHouse w=Information.WareHouse;
-    out.setDevice(&file);
-    out<<w;
-    file.flush();
-    file.close();
+    file<<w;
+
+    ofstream file3("../GreenHouse/vase.txt",ios::out);
+    if(!file3.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase Vases=Information.VaseL[0];
+    file3<<Vases;
 }
 
 void MainWindow::on_pushButtonLoad_clicked()
 {
-    QFile file("C:/Users/pc/Desktop/final15/GreenHouse/infoFile.txt");
-    file.open(QFile::ReadOnly | QFile::Text);
-    if(!file.isOpen())
+    ifstream file2("../GreenHouse/myfile.txt",ios::in);//declare an ifstream file for read from file
+    if (!file2.is_open())
     {
-        QMessageBox::warning(this,"title","file nooot open");
+        exit(EXIT_FAILURE);
     }
-    QString line=file.readLine();
-    qDebug()<<line;
+    WareHouse w=Information.WareHouse;
+    file2>>w.NormalFlowerCount>>w.DecorativeFlowerCount>>w.RareFlowerCount>>w.Soil>>w.Water>>w.Poison;
+
+    Information.WareHouse.NormalFlowerCount=w.NormalFlowerCount;
+    ui->labelAadiNumber->setText(QString::number(Information.WareHouse.NormalFlowerCount));
+    //qDebug()<<Information.WareHouse.NormalFlowerCount;
+
+    Information.WareHouse.DecorativeFlowerCount=w.DecorativeFlowerCount;
+    ui->labelZinatiNumber->setText(QString::number(Information.WareHouse.DecorativeFlowerCount));
+    //qDebug()<<Information.WareHouse.DecorativeFlowerCount;
+
+    Information.WareHouse.RareFlowerCount=w.RareFlowerCount;
+    ui->labelNaderNumber->setText(QString::number(Information.WareHouse.RareFlowerCount));
+    //qDebug()<<Information.WareHouse.RareFlowerCount;
+
+    Information.WareHouse.Soil=w.Soil;
+    ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
+    //qDebug()<<Information.WareHouse.Soil;
+
+    Information.WareHouse.Water=w.Water;
+    ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
+    //qDebug()<<Information.WareHouse.Water;
+
+    Information.WareHouse.Poison=w.Poison;
+    ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));
+    //qDebug()<<Information.WareHouse.Poison;
+
+
+
+    ifstream file4("../GreenHouse/vase.txt",ios::in);//declare an ifstream file for read from file
+    if (!file4.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase v1;
+    v1=Information.VaseL[0];
+//    for(size_t i=0;i<5;i++)
+//    {
+//       v[i]=Information.VaseL[i];
+//    }
+
+//    for(size_t i=0;i<5;i++)
+//    {
+        file4>>v1.IsEmpty>>v1.IsOpen>>v1.IsGrown;
+        //Information.VaseL[i].IsEmpty=v[i].IsEmpty;
+        Information.VaseL[0].IsOpen=v1.IsOpen;
+        qDebug()<<Information.VaseL[0].IsOpen;
+        //qDebug()<<v[i].IsOpen;
+        //Information.VaseL[i].IsGrown=v[i].IsOpen;
+
+//    }
 }

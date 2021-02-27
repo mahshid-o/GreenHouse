@@ -112,7 +112,7 @@ ostream &operator<<(ostream &output,Vase v)//overload << for writing
 {
 //    for(size_t i=0;i<5;i++)
 //    {
-      output<<v.IsEmpty<<setw(5)<<v.IsOpen<<setw(5)<<v.IsGrown<<endl;
+      output<<v.IsEmpty<<setw(5)<<v.IsOpen<<setw(5)<<v.IsGrown<<v.IsPoisoned<<v.IsWaterd<<endl;
 //    }
     return output;
 }
@@ -134,6 +134,38 @@ void MainWindow::on_pushButtonSave_clicked()
     }
     Vase Vases=Information.VaseL[0];
     file3<<Vases;
+
+    ofstream file5("../GreenHouse/vase2.txt",ios::out);
+    if(!file5.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase Vases2=Information.VaseL[1];
+    file5<<Vases2;
+
+    ofstream file7("../GreenHouse/vase3.txt",ios::out);
+    if(!file7.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase Vases3=Information.VaseL[2];
+    file7<<Vases3;
+
+    ofstream file8("../GreenHouse/vase4.txt",ios::out);
+    if(!file8.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase Vases4=Information.VaseL[3];
+    file8<<Vases4;
+
+    ofstream file10("../GreenHouse/vase5.txt",ios::out);
+    if(!file10.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase Vases5=Information.VaseL[4];
+    file10<<Vases5;
 }
 
 void MainWindow::on_pushButtonLoad_clicked()
@@ -179,19 +211,63 @@ void MainWindow::on_pushButtonLoad_clicked()
     }
     Vase v1;
     v1=Information.VaseL[0];
-//    for(size_t i=0;i<5;i++)
-//    {
-//       v[i]=Information.VaseL[i];
-//    }
 
-//    for(size_t i=0;i<5;i++)
-//    {
-        file4>>v1.IsEmpty>>v1.IsOpen>>v1.IsGrown;
-        //Information.VaseL[i].IsEmpty=v[i].IsEmpty;
-        Information.VaseL[0].IsOpen=v1.IsOpen;
-        qDebug()<<Information.VaseL[0].IsOpen;
-        //qDebug()<<v[i].IsOpen;
-        //Information.VaseL[i].IsGrown=v[i].IsOpen;
+    file4>>v1.IsEmpty>>v1.IsOpen>>v1.IsGrown>>v1.IsPoisoned>>v1.IsWaterd;
+    Information.VaseL[0].IsEmpty=v1.IsEmpty;
+    Information.VaseL[0].IsOpen=v1.IsOpen;
+    Information.VaseL[0].IsGrown=v1.IsGrown;
+    qDebug()<<Information.VaseL[0].IsOpen;
 
-//    }
+
+    ifstream file6("../GreenHouse/vase2.txt",ios::in);//declare an ifstream file for read from file
+    if (!file6.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase v2;
+    v2=Information.VaseL[1];
+    file6>>v2.IsEmpty>>v2.IsOpen>>v2.IsGrown>>v2.IsPoisoned;
+    Information.VaseL[1].IsEmpty=v2.IsEmpty;
+    Information.VaseL[1].IsOpen=v2.IsOpen;
+    Information.VaseL[1].IsGrown=v2.IsGrown;
+    qDebug()<<Information.VaseL[1].IsOpen;
+
+    ifstream file8("../GreenHouse/vase3.txt",ios::in);//declare an ifstream file for read from file
+    if (!file8.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase v3;
+    v3=Information.VaseL[2];
+    file6>>v3.IsEmpty>>v3.IsOpen>>v3.IsGrown>>v3.IsPoisoned;
+    Information.VaseL[2].IsEmpty=v3.IsEmpty;
+    Information.VaseL[2].IsOpen=v3.IsOpen;
+    Information.VaseL[2].IsGrown=v3.IsGrown;
+    qDebug()<<Information.VaseL[2].IsOpen;
+
+    ifstream file9("../GreenHouse/vase4.txt",ios::in);//declare an ifstream file for read from file
+    if (!file9.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase v4;
+    v4=Information.VaseL[3];
+    file6>>v4.IsEmpty>>v4.IsOpen>>v4.IsGrown>>v4.IsPoisoned;
+    Information.VaseL[3].IsEmpty=v4.IsEmpty;
+    Information.VaseL[3].IsOpen=v4.IsOpen;
+    Information.VaseL[3].IsGrown=v4.IsGrown;
+    qDebug()<<Information.VaseL[3].IsOpen;
+
+    ifstream file11("../GreenHouse/vase5.txt",ios::in);//declare an ifstream file for read from file
+    if (!file11.is_open())
+    {
+        exit(EXIT_FAILURE);
+    }
+    Vase v5;
+    v5=Information.VaseL[4];
+    file11>>v4.IsEmpty>>v4.IsOpen>>v5.IsGrown>>v5.IsPoisoned;
+    Information.VaseL[4].IsEmpty=v5.IsEmpty;
+    Information.VaseL[4].IsOpen=v5.IsOpen;
+    Information.VaseL[4].IsGrown=v5.IsGrown;
+    qDebug()<<Information.VaseL[4].IsOpen;
 }

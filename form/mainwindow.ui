@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>پروفایل</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="../resource.qrc">
+    <normaloff>:/new/prefix1/assets/icons/icons8-flower-100.png</normaloff>:/new/prefix1/assets/icons/icons8-flower-100.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-image: url(:/new/prefix1/background.png);</string>
   </property>
@@ -250,6 +254,10 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        <property name="text">
         <string>بارگزاری</string>
        </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-downloads-30.png</normaloff>:/new/prefix1/assets/icons/icons8-downloads-30.png</iconset>
+       </property>
       </widget>
      </item>
      <item>
@@ -259,6 +267,10 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>ذخیره</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-save-30.png</normaloff>:/new/prefix1/assets/icons/icons8-save-30.png</iconset>
        </property>
       </widget>
      </item>
@@ -270,7 +282,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
       <x>50</x>
       <y>420</y>
       <width>811</width>
-      <height>30</height>
+      <height>40</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_8">
@@ -285,6 +297,16 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        <property name="text">
         <string>آزمایشگاه</string>
        </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-test-tube-30.png</normaloff>:/new/prefix1/assets/icons/icons8-test-tube-30.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
       </widget>
      </item>
      <item>
@@ -298,6 +320,16 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        <property name="text">
         <string>فروشگاه</string>
        </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-shop-30.png</normaloff>:/new/prefix1/assets/icons/icons8-shop-30.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
       </widget>
      </item>
      <item>
@@ -310,6 +342,16 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        </property>
        <property name="text">
         <string>گلخانه</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-house-with-garden-30.png</normaloff>:/new/prefix1/assets/icons/icons8-house-with-garden-30.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </item>
@@ -456,6 +498,10 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
        <property name="text">
         <string>ذخیره نام</string>
        </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-person-30.png</normaloff>:/new/prefix1/assets/icons/icons8-person-30.png</iconset>
+       </property>
       </widget>
      </item>
      <item>
@@ -487,9 +533,77 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="labelWarehouse_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../resource.qrc">:/new/prefix1/assets/icons/icons8-money-50.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelWarehouse_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../resource.qrc">:/new/prefix1/assets/icons/icons8-flower-100.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelWarehouse_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../resource.qrc">:/new/prefix1/assets/icons/icons8-flower-100.png</pixmap>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

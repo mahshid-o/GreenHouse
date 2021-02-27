@@ -46,6 +46,10 @@
    <property name="text">
     <string>بازگشت</string>
    </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/new/prefix1/assets/icons/icons8-back-32.png</normaloff>:/new/prefix1/assets/icons/icons8-back-32.png</iconset>
+   </property>
   </widget>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">

@@ -102,6 +102,16 @@
         <property name="text">
          <string>پیاز گل عادی</string>
         </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
        </widget>
       </item>
      </layout>
@@ -135,6 +145,16 @@
         </property>
         <property name="text">
          <string>پیاز گل زینتی</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -170,6 +190,16 @@
         <property name="text">
          <string>پیاز گل نادر</string>
         </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
        </widget>
       </item>
      </layout>
@@ -177,6 +207,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

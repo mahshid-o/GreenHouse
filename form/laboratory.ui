@@ -118,6 +118,16 @@
        <property name="text">
         <string>تولید</string>
        </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
       </widget>
      </item>
     </layout>
@@ -160,6 +170,16 @@
        </property>
        <property name="text">
         <string>تولید</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
        </property>
       </widget>
      </item>
@@ -204,6 +224,16 @@
        <property name="text">
         <string>تولید</string>
        </property>
+       <property name="icon">
+        <iconset resource="../resource.qrc">
+         <normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
       </widget>
      </item>
     </layout>
@@ -226,9 +256,15 @@
     <property name="text">
      <string>بازگشت</string>
     </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/new/prefix1/assets/icons/icons8-back-32.png</normaloff>:/new/prefix1/assets/icons/icons8-back-32.png</iconset>
+    </property>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

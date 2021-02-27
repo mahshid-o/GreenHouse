@@ -142,6 +142,16 @@
         <property name="text">
          <string>پیاز گل عادی</string>
         </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-potted-plant-100.png</normaloff>:/new/prefix1/assets/icons/icons8-potted-plant-100.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
        </widget>
       </item>
      </layout>
@@ -195,6 +205,16 @@
         </property>
         <property name="text">
          <string>پیاز گل زینتی</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-potted-plant-100.png</normaloff>:/new/prefix1/assets/icons/icons8-potted-plant-100.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -250,6 +270,16 @@
         <property name="text">
          <string>پیاز گل نادر</string>
         </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-potted-plant-100.png</normaloff>:/new/prefix1/assets/icons/icons8-potted-plant-100.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
        </widget>
       </item>
      </layout>
@@ -303,6 +333,16 @@
         </property>
         <property name="text">
          <string>خاک</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-ground-32.png</normaloff>:/new/prefix1/assets/icons/icons8-ground-32.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -358,6 +398,16 @@
         <property name="text">
          <string>آب</string>
         </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-water-30.png</normaloff>:/new/prefix1/assets/icons/icons8-water-30.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
        </widget>
       </item>
      </layout>
@@ -411,6 +461,16 @@
         </property>
         <property name="text">
          <string>ماده سمپاشی</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</normaloff>:/new/prefix1/assets/icons/icons8-test-tube-rack-32.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -788,8 +848,14 @@
    <property name="text">
     <string>بازگشت</string>
    </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/new/prefix1/assets/icons/icons8-back-32.png</normaloff>:/new/prefix1/assets/icons/icons8-back-32.png</iconset>
+   </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

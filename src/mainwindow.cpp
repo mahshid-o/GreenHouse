@@ -28,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
     ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
     ui->labelPoisonWH->setText(QString::number(Information.WareHouse.Poison));
+    ui->labelKashteNumber->setText(QString::number(Information.WareHouse.PlantedFlowers));
     ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
     ui->labelOsareNumber->setText(QString::number(Information.WareHouse.OsLilium +
                         Information.WareHouse.OsMagnolia + Information.WareHouse.OsOrkide));
@@ -44,7 +45,6 @@ MainWindow::~MainWindow()
             delete Information.Flowers[i];
         }
     }
-    cout << Information.Flowers.size() << endl;
     delete ui;
 }
 
@@ -78,7 +78,6 @@ void MainWindow::on_pushButtonStore_clicked()
     Forooshgah.setModal(true);
     Forooshgah.exec();
     this->show();
-//    Information.SetNumbers(Information.Flowers);
     ui->labelMoney->setText(QString::number(Information.WareHouse.Money));
     ui->labelWaterWH->setText(QString::number(Information.WareHouse.Water));
     ui->labelSoilWH->setText(QString::number(Information.WareHouse.Soil));
@@ -102,6 +101,7 @@ void MainWindow::on_pushButtonGreenHouse_clicked()
     ui->labelAadiNumber->setText(QString::number(Information.WareHouse.NormalFlowerCount));
     ui->labelNaderNumber->setText(QString::number(Information.WareHouse.RareFlowerCount));
     ui->labelZinatiNumber->setText(QString::number(Information.WareHouse.DecorativeFlowerCount));
+    ui->labelKashteNumber->setText(QString::number(Information.WareHouse.PlantedFlowers));
 }
 ostream &operator<<(ostream &output,WareHouse w)//overload << for writing
 {
@@ -170,6 +170,7 @@ void MainWindow::on_pushButtonSave_clicked()
 
 void MainWindow::on_pushButtonLoad_clicked()
 {
+    Information.IsLoadPressed = true;
     ifstream file2("../GreenHouse/myfile.txt",ios::in);//declare an ifstream file for read from file
     if (!file2.is_open())
     {

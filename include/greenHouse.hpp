@@ -17,6 +17,7 @@ class second : public QDialog
 public:
     explicit second(Information *, QWidget *parent = 0);
     void SetEnable();
+    void SetLabels();
     ~second();
 
 private slots:

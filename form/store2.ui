@@ -10,6 +10,18 @@
     <height>521</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>493</width>
+    <height>521</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>493</width>
+    <height>521</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
@@ -84,8 +96,21 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyAadi">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل عادی</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -115,8 +140,21 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyDecorative">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل زینتی</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -146,8 +184,21 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyRare">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل نادر</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</normaloff>:/new/prefix1/assets/icons/icons8-money-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -156,6 +207,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -11,5 +11,19 @@
         <file>assets/3x/flower6-1.png</file>
         <file>assets/3x/flower7-1.png</file>
         <file>assets/3x/flower8-1.png</file>
+	<file>assets/icons/icons8-back-32.png</file>
+	<file>assets/icons/icons8-downloads-30.png</file>
+	<file>assets/icons/icons8-flower-100.png</file>
+	<file>assets/icons/icons8-ground-32.png</file>
+	<file>assets/icons/icons8-house-with-garden-30.png</file>
+	<file>assets/icons/icons8-money-50.png</file>
+	<file>assets/icons/icons8-person-30.png</file>
+	<file>assets/icons/icons8-potted-plant-100.png</file>
+	<file>assets/icons/icons8-save-30.png</file>
+	<file>assets/icons/icons8-shop-30.png</file>
+	<file>assets/icons/icons8-test-tube-30.png</file>
+	<file>assets/icons/icons8-test-tube-rack-32.png</file>
+	<file>assets/icons/icons8-water-30.png</file>
+
     </qresource>
 </RCC>

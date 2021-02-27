@@ -52,6 +52,16 @@ private slots:
     void on_Poison4_clicked();
     void on_Poison5_clicked();
 
+    void on_OsMagnolia1_clicked();
+
+    void on_OsMagnolia2_clicked();
+
+    void on_OsMagnolia3_clicked();
+
+    void on_OsMagnolia4_clicked();
+
+    void on_OsMagnolia5_clicked();
+
 private:
     Ui::second *ui;
     Information * InfPtr;

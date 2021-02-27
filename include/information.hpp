@@ -19,6 +19,7 @@ public:
     Information();
     WareHouse WareHouse;
     Vase VaseL[5];
+    void SetFlowerNumbers(int , int);
     void SetNumbers(std::vector<Flower *>&);
     void SetIsGrown(); // sets IsGrown variable for vases
     int GenRan1();

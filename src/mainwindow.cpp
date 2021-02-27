@@ -53,6 +53,7 @@ void MainWindow::on_pushButtonSaveName_clicked()
 {
     QString ProfileNameString = ui->lineEditProfileName->text();
     Information.WareHouse.UserName = ui->lineEditProfileName->text();
+    QMessageBox::information(this, "mainWindow", "نام کاربری ذخیره شد");
 }
 
 void MainWindow::on_pushButtonLaboratory_clicked()

@@ -426,7 +426,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonMagnoliaWH">
         <property name="text">
-         <string>مگنولیا</string>
+         <string>فروش مگنولیا</string>
         </property>
        </widget>
       </item>
@@ -457,7 +457,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonLiliumWH">
         <property name="text">
-         <string>لیلیوم</string>
+         <string> فروش لیلیوم</string>
         </property>
        </widget>
       </item>
@@ -488,7 +488,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonOrkideWH">
         <property name="text">
-         <string>ارکیده</string>
+         <string>فروش ارکیده</string>
         </property>
        </widget>
       </item>
@@ -519,7 +519,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonKokabWH">
         <property name="text">
-         <string>کوکب</string>
+         <string>فروش کوکب</string>
         </property>
        </widget>
       </item>
@@ -550,7 +550,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonLaleWH">
         <property name="text">
-         <string>لاله</string>
+         <string>فروش لاله</string>
         </property>
        </widget>
       </item>
@@ -579,9 +579,9 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonOrkideWH_3">
+       <widget class="QPushButton" name="pushButtonMaryamWH">
         <property name="text">
-         <string>مریم</string>
+         <string>فروش مریم</string>
         </property>
        </widget>
       </item>
@@ -612,7 +612,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonSonbolWH">
         <property name="text">
-         <string>سنبل</string>
+         <string>فروش سنبل</string>
         </property>
        </widget>
       </item>
@@ -626,7 +626,7 @@
      <x>89</x>
      <y>80</y>
      <width>201</width>
-     <height>381</height>
+     <height>221</height>
     </rect>
    </property>
    <property name="title">
@@ -645,61 +645,7 @@
       <item>
        <widget class="QPushButton" name="pushButtonNargesWH">
         <property name="text">
-         <string>نرگس</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_15">
-      <item>
-       <widget class="QLabel" name="labelOsMagnoliaNumber">
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonOsMagnoliaWH">
-        <property name="text">
-         <string>عصاره مگنولیا</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_16">
-      <item>
-       <widget class="QLabel" name="labelLiliumNumber_2">
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonOsLiliumWH">
-        <property name="text">
-         <string>عصاره لیلیوم</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_17">
-      <item>
-       <widget class="QLabel" name="labelOsOrkideNumber">
-        <property name="text">
-         <string>0</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonOsOrkideWH">
-        <property name="text">
-         <string>عصاره ارکیده</string>
+         <string>فروش نرگس</string>
         </property>
        </widget>
       </item>
@@ -715,9 +661,9 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonOrkideWH_8">
+       <widget class="QPushButton" name="pushButtonDecorativeWH">
         <property name="text">
-         <string>پیاز گل زینتی</string>
+         <string>فروش پیاز گل زینتی</string>
         </property>
        </widget>
       </item>
@@ -733,9 +679,9 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonZinatiNumberWJ">
+       <widget class="QPushButton" name="pushButtonRareWH">
         <property name="text">
-         <string>پیاز گل نادر</string>
+         <string>فروش پیاز گل نادر</string>
         </property>
        </widget>
       </item>
@@ -751,9 +697,9 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonAadiWH">
+       <widget class="QPushButton" name="pushButtonNormalwH">
         <property name="text">
-         <string>پیاز گل عادی</string>
+         <string>فروش پیاز گل عادی</string>
         </property>
        </widget>
       </item>

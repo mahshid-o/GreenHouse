@@ -9,16 +9,14 @@ public:
 
     bool IsEmpty = true;
     bool IsOpen = false;
-    int FlowerNum;
-    int Kind;
+    int FlowerNum = 0;
+    int Kind = 0;
     bool IsGrown = false;
     bool IsDamaged = false;
     bool IsWaterd  = false;
     bool IsPoisoned = false;
     bool HasSoil = false;
-    bool OsMagnolia = false;
-    bool OsLilium = false;
-    bool OsOrkideh = false;
+    bool Osare = false;
 };
 
 #endif // VASE_H

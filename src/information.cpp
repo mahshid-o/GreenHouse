@@ -60,18 +60,48 @@ void Information::SetNumbers(vector<Flower *> &Flower)
         }
     }
 }
-//int Information::GetNormalFlowerNumber()
-//{
-//    return NormalFlowerNumber;
-//}
-//int Information::GetRareFlowerNumber()
-//{
-//    return RareFlowerNumber;
-//}
-//int Information::GetDecorativeFlowerNumber()
-//{
-//    return DecorativeFlowerNumber;
-//}
+void Information::SetFlowerNumbers(int item, int kind)
+{
+    switch (kind) {
+    case 1:
+        if(item == 1)
+        {
+            WareHouse.KokabCount++;
+        }
+        else if(item == 2)
+        {
+            WareHouse.NargesCount++;
+        }
+        break;
+    case 2:
+        if(item == 1)
+        {
+            WareHouse.LalehCount++;
+        }
+        else if(item == 2)
+        {
+            WareHouse.MaryamCount++;
+        }
+        else
+        {
+            WareHouse.SonbolCount++;
+        }
+        break;
+    case 3:
+        if(item == 1)
+        {
+            WareHouse.MagnloiaCount++;
+        }
+        else if(item == 2)
+        {
+            WareHouse.LiliumCount++;
+        }
+        else
+        {
+            WareHouse.OrkidehCount++;
+        }
+    }
+}
 int Information::GenRan1()
 {
     srand(static_cast<unsigned int>(time(0)));

@@ -30,9 +30,29 @@ private slots:
 
     void on_pushButtonBuyNader_clicked();
 
-    void on_pushButtonOrkideWH_8_clicked();
-
     void on_pushButtonNargesWH_2_clicked();
+
+    void on_pushButtonMagnoliaWH_clicked();
+
+    void on_pushButtonLiliumWH_clicked();
+
+    void on_pushButtonOrkideWH_clicked();
+
+    void on_pushButtonKokabWH_clicked();
+
+    void on_pushButtonLaleWH_clicked();
+
+    void on_pushButtonMaryamWH_clicked();
+
+    void on_pushButtonSonbolWH_clicked();
+
+    void on_pushButtonNargesWH_clicked();
+
+    void on_pushButtonDecorativeWH_clicked();
+
+    void on_pushButtonRareWH_clicked();
+
+    void on_pushButtonNormalwH_clicked();
 
 private:
     Ui::Forooshgah *ui;

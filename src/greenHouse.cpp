@@ -9,7 +9,10 @@
 #include <QDateTime>
 #include <QPixmap>
 #include <QMessageBox>
+#include <iostream>
 #include "store2.hpp"
+
+using namespace std;
 
 second::second(Information * in,QWidget *parent) :
     QDialog(parent),
@@ -140,58 +143,56 @@ void second::on_selectButton1_clicked()
 {
     InfPtr->VaseL[0].IsEmpty = false;
     InfPtr->VaseL[0].IsEmpty = false;
-    Store2 Store2(1, InfPtr);
+    Store2 Store2(0, InfPtr);
     Store2.setModal(true);
     Store2.exec();
-    if(InfPtr->VaseL[1].Kind==1)
+    if(InfPtr->VaseL[0].Kind==1)
     {
-        if(InfPtr->VaseL[1].FlowerNum == 0)
+        if(InfPtr->VaseL[0].FlowerNum == 0)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower1-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
-           //ui->labelName1->setText("mewww1");
         }
-        else if(InfPtr->VaseL[1].FlowerNum==1)
+        else if(InfPtr->VaseL[0].FlowerNum==1)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower2-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
-
         }
     }
-    else if(InfPtr->VaseL[1].Kind==2)
+    else if(InfPtr->VaseL[0].Kind==2)
     {
-        if(InfPtr->VaseL[1].FlowerNum == 0)
+        if(InfPtr->VaseL[0].FlowerNum == 0)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower3-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[1].FlowerNum==1)
+        else if(InfPtr->VaseL[0].FlowerNum==1)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower4-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
 
         }
-        else if(InfPtr->VaseL[1].FlowerNum==2)
+        else if(InfPtr->VaseL[0].FlowerNum==2)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower5-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
 
         }
     }
-    else if(InfPtr->VaseL[1].Kind==3)
+    else if(InfPtr->VaseL[0].Kind==3)
     {
-        if(InfPtr->VaseL[1].FlowerNum == 0)
+        if(InfPtr->VaseL[0].FlowerNum == 0)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower6-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[1].FlowerNum==1)
+        else if(InfPtr->VaseL[0].FlowerNum==1)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower7-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
 
         }
-        else if(InfPtr->VaseL[1].FlowerNum==2)
+        else if(InfPtr->VaseL[0].FlowerNum==2)
         {
             QPixmap pix11(":/new/prefix1/assets/3x/flower8-1.png");
             ui->labelName1->setPixmap(pix11.scaled(250,100,Qt::KeepAspectRatio));
@@ -203,56 +204,55 @@ void second::on_selectButton1_clicked()
 void second::on_selectButton2_clicked()
 {
     InfPtr->VaseL[1].IsEmpty = false;
-    Store2 Store2(2, InfPtr);
+    Store2 Store2(1, InfPtr);
     Store2.setModal(true);
     Store2.exec();
-    if(InfPtr->VaseL[2].Kind==1)
+    if(InfPtr->VaseL[1].Kind==1)
     {
-        if(InfPtr->VaseL[2].FlowerNum == 0)
+        if(InfPtr->VaseL[1].FlowerNum == 0)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower1-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[2].FlowerNum==1)
+        else if(InfPtr->VaseL[1].FlowerNum==1)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower2-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
-
         }
     }
-    else if(InfPtr->VaseL[2].Kind==2)
+    else if(InfPtr->VaseL[1].Kind==2)
     {
-        if(InfPtr->VaseL[2].FlowerNum == 0)
+        if(InfPtr->VaseL[1].FlowerNum == 0)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower3-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[2].FlowerNum==1)
+        else if(InfPtr->VaseL[1].FlowerNum==1)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower4-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
 
         }
-        else if(InfPtr->VaseL[2].FlowerNum==2)
+        else if(InfPtr->VaseL[1].FlowerNum==2)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower5-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
         }
     }
-    else if(InfPtr->VaseL[2].Kind==3)
+    else if(InfPtr->VaseL[1].Kind==3)
     {
-        if(InfPtr->VaseL[2].FlowerNum == 0)
+        if(InfPtr->VaseL[1].FlowerNum == 0)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower6-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
            //ui->labelName1->setText("mewww1");
         }
-        else if(InfPtr->VaseL[2].FlowerNum==1)
+        else if(InfPtr->VaseL[1].FlowerNum==1)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower7-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[2].FlowerNum==2)
+        else if(InfPtr->VaseL[1].FlowerNum==2)
         {
             QPixmap pix12(":/new/prefix1/assets/3x/flower8-1.png");
             ui->labelName2->setPixmap(pix12.scaled(250,100,Qt::KeepAspectRatio));
@@ -262,7 +262,7 @@ void second::on_selectButton2_clicked()
 void second::on_selectButton3_clicked()
 {
     InfPtr->VaseL[2].IsEmpty = false;
-    Store2 Store2(3, InfPtr);
+    Store2 Store2(2, InfPtr);
     Store2.setModal(true);
     Store2.exec();
     if(InfPtr->VaseL[3].Kind==1)
@@ -319,53 +319,53 @@ void second::on_selectButton3_clicked()
 void second::on_selectButton4_clicked()
 {
     InfPtr->VaseL[3].IsEmpty = false;
-    Store2 Store2(4, InfPtr);
+    Store2 Store2(3, InfPtr);
     Store2.setModal(true);
     Store2.exec();
-    if(InfPtr->VaseL[4].Kind==1)
+    if(InfPtr->VaseL[3].Kind==1)
     {
-        if(InfPtr->VaseL[4].FlowerNum == 0)
+        if(InfPtr->VaseL[3].FlowerNum == 0)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower1-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[4].FlowerNum==1)
+        else if(InfPtr->VaseL[3].FlowerNum==1)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower2-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
         }
     }
-    else if(InfPtr->VaseL[4].Kind==2)
+    else if(InfPtr->VaseL[3].Kind==2)
     {
-        if(InfPtr->VaseL[4].FlowerNum == 0)
+        if(InfPtr->VaseL[3].FlowerNum == 0)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower3-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[4].FlowerNum==1)
+        else if(InfPtr->VaseL[3].FlowerNum==1)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower4-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[4].FlowerNum==2)
+        else if(InfPtr->VaseL[3].FlowerNum==2)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower5-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
         }
     }
-    else if(InfPtr->VaseL[4].Kind==3)
+    else if(InfPtr->VaseL[3].Kind==3)
     {
-        if(InfPtr->VaseL[4].FlowerNum == 0)
+        if(InfPtr->VaseL[3].FlowerNum == 0)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower6-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[4].FlowerNum==1)
+        else if(InfPtr->VaseL[3].FlowerNum==1)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower7-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[4].FlowerNum==2)
+        else if(InfPtr->VaseL[3].FlowerNum==2)
         {
             QPixmap pix14(":/new/prefix1/assets/3x/flower8-1.png");
             ui->labelName4->setPixmap(pix14.scaled(250,100,Qt::KeepAspectRatio));
@@ -376,53 +376,53 @@ void second::on_selectButton4_clicked()
 void second::on_selectButton5_clicked()
 {
     InfPtr->VaseL[4].IsEmpty = false;
-    Store2 Store2(5, InfPtr);
+    Store2 Store2(4, InfPtr);
     Store2.setModal(true);
     Store2.exec();
-    if(InfPtr->VaseL[5].Kind==1)
+    if(InfPtr->VaseL[4].Kind==1)
     {
-        if(InfPtr->VaseL[5].FlowerNum == 0)
+        if(InfPtr->VaseL[4].FlowerNum == 0)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower1-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[5].FlowerNum==1)
+        else if(InfPtr->VaseL[4].FlowerNum==1)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower2-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
         }
     }
-    else if(InfPtr->VaseL[5].Kind==2)
+    else if(InfPtr->VaseL[4].Kind==2)
     {
-        if(InfPtr->VaseL[5].FlowerNum == 0)
+        if(InfPtr->VaseL[4].FlowerNum == 0)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower3-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[5].FlowerNum==1)
+        else if(InfPtr->VaseL[4].FlowerNum==1)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower4-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[5].FlowerNum==2)
+        else if(InfPtr->VaseL[4].FlowerNum==2)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower5-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
         }
     }
-    else if(InfPtr->VaseL[5].Kind==3)
+    else if(InfPtr->VaseL[4].Kind==3)
     {
-        if(InfPtr->VaseL[5].FlowerNum == 0)
+        if(InfPtr->VaseL[4].FlowerNum == 0)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower6-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[5].FlowerNum==1)
+        else if(InfPtr->VaseL[4].FlowerNum==1)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower7-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
         }
-        else if(InfPtr->VaseL[5].FlowerNum==2)
+        else if(InfPtr->VaseL[4].FlowerNum==2)
         {
             QPixmap pix15(":/new/prefix1/assets/3x/flower8-1.png");
             ui->labelName5->setPixmap(pix15.scaled(250,100,Qt::KeepAspectRatio));
@@ -442,6 +442,8 @@ void second::on_saleButton1_clicked()
         else if(InfPtr->VaseL[0].IsGrown)
         {
             ui->labelName1->setText("empty");
+            QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
+            InfPtr->SetFlowerNumbers(InfPtr->VaseL[0].FlowerNum, InfPtr->VaseL[0].Kind);
         }
         else
         {
@@ -466,6 +468,8 @@ void second::on_saleButton2_clicked()
         else if(InfPtr->VaseL[1].IsGrown)
         {
             ui->labelName2->setText("empty");
+            QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
+            InfPtr->SetFlowerNumbers(InfPtr->VaseL[1].FlowerNum, InfPtr->VaseL[1].Kind);
         }
         else
         {
@@ -490,6 +494,8 @@ void second::on_saleButton3_clicked()
         else if(InfPtr->VaseL[2].IsGrown)
         {
             ui->labelName3->setText("empty");
+            QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
+            InfPtr->SetFlowerNumbers(InfPtr->VaseL[2].FlowerNum, InfPtr->VaseL[2].Kind);
         }
         else
         {
@@ -513,6 +519,8 @@ void second::on_saleButton4_clicked()
         else if(InfPtr->VaseL[3].IsGrown)
         {
             ui->labelName4->setText("empty");
+            QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
+            InfPtr->SetFlowerNumbers(InfPtr->VaseL[3].FlowerNum, InfPtr->VaseL[3].Kind);
         }
         else
         {
@@ -537,6 +545,8 @@ void second::on_saleButton5_clicked()
         else if(InfPtr->VaseL[4].IsGrown)
         {
             ui->labelName5->setText("empty");
+            QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
+            InfPtr->SetFlowerNumbers(InfPtr->VaseL[4].FlowerNum, InfPtr->VaseL[4].Kind);
         }
         else
         {
@@ -656,4 +666,64 @@ void second::on_Poison5_clicked()
     InfPtr->WareHouse.Poison--;
     InfPtr->VaseL[4].IsPoisoned = true;
     ui->Poison5->setEnabled(false);
+}
+
+void second::on_OsMagnolia1_clicked()
+{
+    if(InfPtr->VaseL[0].FlowerNum == 0 & InfPtr->VaseL[0].Kind == 2)
+    {
+        InfPtr->VaseL[0].Osare = true;
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره مگنولیا نیاز ندارد");
+    }
+}
+
+void second::on_OsMagnolia2_clicked()
+{
+    if(InfPtr->VaseL[1].FlowerNum == 0 & InfPtr->VaseL[1].Kind == 2)
+    {
+        InfPtr->VaseL[1].Osare = true;
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره مگنولیا نیاز ندارد");
+    }
+}
+
+void second::on_OsMagnolia3_clicked()
+{
+    if(InfPtr->VaseL[2].FlowerNum == 0 & InfPtr->VaseL[2].Kind == 2)
+    {
+        InfPtr->VaseL[2].Osare = true;
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره مگنولیا نیاز ندارد");
+    }
+}
+
+void second::on_OsMagnolia4_clicked()
+{
+    if(InfPtr->VaseL[3].FlowerNum == 0 & InfPtr->VaseL[3].Kind == 2)
+    {
+        InfPtr->VaseL[3].Osare = true;
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره مگنولیا نیاز ندارد");
+    }
+}
+
+void second::on_OsMagnolia5_clicked()
+{
+    if(InfPtr->VaseL[4].FlowerNum == 0 & InfPtr->VaseL[4].Kind == 2)
+    {
+        InfPtr->VaseL[4].Osare = true;
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره مگنولیا نیاز ندارد");
+    }
 }

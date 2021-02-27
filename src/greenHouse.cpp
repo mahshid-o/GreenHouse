@@ -21,7 +21,14 @@ second::second(Information * in,QWidget *parent) :
     InfPtr = in;
     ui->setupUi(this);
     this->setWindowTitle("گلخانه");
-    SetEnable();
+    if(InfPtr->IsLoadPressed)
+    {
+        SetLabels();
+    }
+    else
+    {
+        SetEnable();
+    }
 }
 second::~second()
 {
@@ -95,6 +102,248 @@ void second::SetEnable()
             ui->Poison5->setEnabled(false);
     }
 }
+void second::SetLabels()
+{
+    if(InfPtr->VaseL[0].IsOpen == true)
+    {
+        ui->openButton1->setEnabled(false);
+    }
+    if(InfPtr->VaseL[0].IsEmpty == false)
+    {
+        switch (InfPtr->VaseL[0].Kind) {
+        case 1:
+            if(InfPtr->VaseL[0].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[0].FlowerNum == 1)
+            {
+
+            }
+            break;
+        case 2:
+            if(InfPtr->VaseL[0].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[0].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[0].FlowerNum==2)
+            {
+
+            }
+            break;
+        case 3:
+            if(InfPtr->VaseL[0].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[0].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[0].FlowerNum==2)
+            {
+
+            }
+            break;
+        }
+    }
+
+    if(InfPtr->VaseL[1].IsOpen == true)
+    {
+        ui->openButton1->setEnabled(false);
+    }
+    if(InfPtr->VaseL[1].IsEmpty == false)
+    {
+        switch (InfPtr->VaseL[1].Kind) {
+        case 1:
+            if(InfPtr->VaseL[1].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[1].FlowerNum == 1)
+            {
+
+            }
+            break;
+        case 2:
+            if(InfPtr->VaseL[1].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[1].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[1].FlowerNum==2)
+            {
+
+            }
+            break;
+        case 3:
+            if(InfPtr->VaseL[1].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[1].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[1].FlowerNum==2)
+            {
+
+            }
+            break;
+        }
+    }
+
+    if(InfPtr->VaseL[2].IsOpen == true)
+    {
+        ui->openButton1->setEnabled(false);
+    }
+    if(InfPtr->VaseL[2].IsEmpty == false)
+    {
+        switch (InfPtr->VaseL[2].Kind) {
+        case 1:
+            if(InfPtr->VaseL[2].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[2].FlowerNum == 1)
+            {
+
+            }
+            break;
+        case 2:
+            if(InfPtr->VaseL[2].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[2].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[2].FlowerNum==2)
+            {
+
+            }
+            break;
+        case 3:
+            if(InfPtr->VaseL[2].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[2].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[2].FlowerNum==2)
+            {
+
+            }
+            break;
+        }
+    }
+
+    if(InfPtr->VaseL[3].IsOpen == true)
+    {
+        ui->openButton1->setEnabled(false);
+    }
+    if(InfPtr->VaseL[3].IsEmpty == false)
+    {
+        switch (InfPtr->VaseL[3].Kind) {
+        case 1:
+            if(InfPtr->VaseL[3].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[3].FlowerNum == 1)
+            {
+
+            }
+            break;
+        case 2:
+            if(InfPtr->VaseL[3].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[3].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[3].FlowerNum==2)
+            {
+
+            }
+            break;
+        case 3:
+            if(InfPtr->VaseL[3].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[3].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[3].FlowerNum==2)
+            {
+
+            }
+            break;
+        }
+    }
+
+    if(InfPtr->VaseL[4].IsOpen == true)
+    {
+        ui->openButton1->setEnabled(false);
+    }
+    if(InfPtr->VaseL[4].IsEmpty == false)
+    {
+        switch (InfPtr->VaseL[4].Kind) {
+        case 1:
+            if(InfPtr->VaseL[4].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[4].FlowerNum == 1)
+            {
+
+            }
+            break;
+        case 2:
+            if(InfPtr->VaseL[4].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[4].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[4].FlowerNum==2)
+            {
+
+            }
+            break;
+        case 3:
+            if(InfPtr->VaseL[4].FlowerNum == 0)
+            {
+
+            }
+            else if(InfPtr->VaseL[4].FlowerNum==1)
+            {
+
+            }
+            else if(InfPtr->VaseL[4].FlowerNum==2)
+            {
+
+            }
+            break;
+        }
+    }
+}
 void second::on_openButton1_clicked()
 {
     InfPtr->VaseL[0].IsOpen = true;
@@ -106,7 +355,7 @@ void second::on_openButton1_clicked()
 void second::on_openButton2_clicked()
 {
     InfPtr->VaseL[1].IsOpen = true;
-    ui->labelName2->setText("empty");
+    ui->labelName2->setText("خالی");
     ui->openButton2->setEnabled(false);
     QPixmap pix7(":/new/prefix1/assets/empty0.png");
     ui->labelName2->setPixmap(pix7.scaled(150,80,Qt::KeepAspectRatio));
@@ -115,7 +364,7 @@ void second::on_openButton2_clicked()
 void second::on_openButton3_clicked()
 {
     InfPtr->VaseL[2].IsOpen = true;
-    ui->labelName3->setText("empty");
+    ui->labelName3->setText("خالی");
     ui->openButton3->setEnabled(false);
     QPixmap pix8(":/new/prefix1/assets/empty0.png");
     ui->labelName3->setPixmap(pix8.scaled(150,80,Qt::KeepAspectRatio));
@@ -124,7 +373,7 @@ void second::on_openButton3_clicked()
 void second::on_openButton4_clicked()
 {
     InfPtr->VaseL[3].IsOpen = true;
-    ui->labelName4->setText("empty");
+    ui->labelName4->setText("خالی");
     ui->openButton4->setEnabled(false);
     QPixmap pix9(":/new/prefix1/assets/empty0.png");
     ui->labelName4->setPixmap(pix9.scaled(150,80,Qt::KeepAspectRatio));
@@ -133,7 +382,7 @@ void second::on_openButton4_clicked()
 void second::on_openButton5_clicked()
 {
     InfPtr->VaseL[4].IsOpen = true;
-    ui->labelName5->setText("empty");
+    ui->labelName5->setText("خالی");
     ui->openButton5->setEnabled(false);
     QPixmap pix10(":/new/prefix1/assets/empty0.png");
     ui->labelName5->setPixmap(pix10.scaled(150,80,Qt::KeepAspectRatio));
@@ -141,6 +390,7 @@ void second::on_openButton5_clicked()
 
 void second::on_selectButton1_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[0].IsEmpty = false;
     InfPtr->VaseL[0].IsEmpty = false;
     Store2 Store2(0, InfPtr);
@@ -203,6 +453,7 @@ void second::on_selectButton1_clicked()
 }
 void second::on_selectButton2_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[1].IsEmpty = false;
     Store2 Store2(1, InfPtr);
     Store2.setModal(true);
@@ -261,6 +512,7 @@ void second::on_selectButton2_clicked()
 }
 void second::on_selectButton3_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[2].IsEmpty = false;
     Store2 Store2(2, InfPtr);
     Store2.setModal(true);
@@ -318,6 +570,7 @@ void second::on_selectButton3_clicked()
 
 void second::on_selectButton4_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[3].IsEmpty = false;
     Store2 Store2(3, InfPtr);
     Store2.setModal(true);
@@ -375,6 +628,7 @@ void second::on_selectButton4_clicked()
 
 void second::on_selectButton5_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[4].IsEmpty = false;
     Store2 Store2(4, InfPtr);
     Store2.setModal(true);
@@ -441,7 +695,7 @@ void second::on_saleButton1_clicked()
         }
         else if(InfPtr->VaseL[0].IsGrown)
         {
-            ui->labelName1->setText("empty");
+            ui->labelName1->setText("خالی");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[0].FlowerNum, InfPtr->VaseL[0].Kind);
             InfPtr->SetDefault(0);
@@ -468,7 +722,7 @@ void second::on_saleButton2_clicked()
         }
         else if(InfPtr->VaseL[1].IsGrown)
         {
-            ui->labelName2->setText("empty");
+            ui->labelName2->setText("خالی");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[1].FlowerNum, InfPtr->VaseL[1].Kind);
             InfPtr->SetDefault(1);
@@ -495,7 +749,7 @@ void second::on_saleButton3_clicked()
         }
         else if(InfPtr->VaseL[2].IsGrown)
         {
-            ui->labelName3->setText("empty");
+            ui->labelName3->setText("خالی");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[2].FlowerNum, InfPtr->VaseL[2].Kind);
             InfPtr->SetDefault(1);
@@ -521,7 +775,7 @@ void second::on_saleButton4_clicked()
         }
         else if(InfPtr->VaseL[3].IsGrown)
         {
-            ui->labelName4->setText("empty");
+            ui->labelName4->setText("خالی");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[3].FlowerNum, InfPtr->VaseL[3].Kind);
             InfPtr->SetDefault(3);
@@ -548,7 +802,7 @@ void second::on_saleButton5_clicked()
         }
         else if(InfPtr->VaseL[4].IsGrown)
         {
-            ui->labelName5->setText("empty");
+            ui->labelName5->setText("خالی");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[4].FlowerNum, InfPtr->VaseL[4].Kind);
             InfPtr->SetDefault(4);
@@ -727,7 +981,6 @@ void second::on_OsMagnolia4_clicked()
 
 void second::on_OsMagnolia5_clicked()
 {
-    cout <<InfPtr->VaseL[4].FlowerNum << InfPtr->VaseL[4].Kind << endl;
     if((InfPtr->VaseL[4].FlowerNum == 0) & (InfPtr->VaseL[4].Kind == 3))
     {
         InfPtr->VaseL[4].Osare = true;
@@ -879,6 +1132,7 @@ void second::on_DeleteFlower1_clicked()
     {
         InfPtr->SetDefault(0);
         QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+        InfPtr->WareHouse.DeletedFlowers++;
     }
 }
 
@@ -892,6 +1146,7 @@ void second::on_DeleteFlower2_clicked()
     {
         InfPtr->SetDefault(1);
         QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+        InfPtr->WareHouse.DeletedFlowers++;
     }
 }
 
@@ -905,6 +1160,7 @@ void second::on_DeleteFlower3_clicked()
     {
         InfPtr->SetDefault(2);
         QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+        InfPtr->WareHouse.DeletedFlowers++;
     }
 }
 
@@ -918,6 +1174,7 @@ void second::on_DeleteFlower4_clicked()
     {
         InfPtr->SetDefault(3);
         QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+        InfPtr->WareHouse.DeletedFlowers++;
     }
 }
 
@@ -931,5 +1188,6 @@ void second::on_DeleteFlower5_clicked()
     {
         InfPtr->SetDefault(4);
         QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+        InfPtr->WareHouse.DeletedFlowers++;
     }
 }

@@ -10,6 +10,18 @@
     <height>521</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>493</width>
+    <height>521</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>493</width>
+    <height>521</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
@@ -84,6 +96,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyAadi">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل عادی</string>
         </property>
@@ -115,6 +130,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyDecorative">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل زینتی</string>
         </property>
@@ -146,6 +164,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyRare">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل نادر</string>
         </property>

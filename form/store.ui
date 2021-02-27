@@ -10,6 +10,18 @@
     <height>522</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>522</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>522</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
@@ -124,6 +136,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyAadi">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل عادی</string>
         </property>
@@ -175,6 +190,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyZinati">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل زینتی</string>
         </property>
@@ -226,6 +244,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyNader">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>پیاز گل نادر</string>
         </property>
@@ -277,6 +298,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyKhak">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>خاک</string>
         </property>
@@ -328,6 +352,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyAb">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>آب</string>
         </property>
@@ -379,6 +406,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonBuyPoison">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>ماده سمپاشی</string>
         </property>
@@ -425,6 +455,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonMagnoliaWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش مگنولیا</string>
         </property>
@@ -456,6 +489,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonLiliumWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string> فروش لیلیوم</string>
         </property>
@@ -487,6 +523,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonOrkideWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش ارکیده</string>
         </property>
@@ -518,6 +557,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonKokabWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش کوکب</string>
         </property>
@@ -549,6 +591,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonLaleWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش لاله</string>
         </property>
@@ -580,6 +625,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonMaryamWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش مریم</string>
         </property>
@@ -611,6 +659,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonSonbolWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش سنبل</string>
         </property>
@@ -644,6 +695,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonNargesWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش نرگس</string>
         </property>
@@ -662,6 +716,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonDecorativeWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش پیاز گل زینتی</string>
         </property>
@@ -680,6 +737,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonRareWH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش پیاز گل نادر</string>
         </property>
@@ -698,6 +758,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButtonNormalwH">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>فروش پیاز گل عادی</string>
         </property>
@@ -715,6 +778,12 @@
      <width>86</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>تمومه! بیا برگردیم</string>
    </property>
    <property name="text">
     <string>بازگشت</string>

@@ -10,6 +10,18 @@
     <height>522</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>522</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>900</width>
+    <height>522</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>گلخانه</string>
   </property>
@@ -24,6 +36,12 @@
      <width>99</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>تمومه! بیا برگردیم</string>
    </property>
    <property name="text">
     <string>بازگشت</string>
@@ -85,6 +103,9 @@
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
        <widget class="QLabel" name="labelName3">
+        <property name="cursor">
+         <cursorShape>ForbiddenCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -95,6 +116,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="openButton3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>بازگشایی</string>
         </property>
@@ -102,6 +126,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="selectButton3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>ورود به فروشگاه</string>
         </property>
@@ -109,6 +136,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Soil3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>خاک</string>
         </property>
@@ -116,6 +146,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Water3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>آب</string>
         </property>
@@ -123,6 +156,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Poison3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>سم</string>
         </property>
@@ -130,6 +166,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsMagnolia3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک مگنولیا</string>
         </property>
@@ -137,6 +176,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsLilium3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک لیلیوم</string>
         </property>
@@ -144,6 +186,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsOrkide3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک ارکیده</string>
         </property>
@@ -151,6 +196,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="saleButton3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>چیدن گل</string>
         </property>
@@ -158,6 +206,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="DeleteFlower3">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>حذف گل</string>
         </property>
@@ -169,6 +220,9 @@
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <widget class="QLabel" name="labelName4">
+        <property name="cursor">
+         <cursorShape>ForbiddenCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -179,6 +233,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="openButton4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>بازگشایی</string>
         </property>
@@ -186,6 +243,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="selectButton4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>ورود به فروشگاه</string>
         </property>
@@ -193,6 +253,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Soil4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>خاک</string>
         </property>
@@ -200,6 +263,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Water4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>آب</string>
         </property>
@@ -207,6 +273,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Poison4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>سم</string>
         </property>
@@ -214,6 +283,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsMagnolia4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک مگنولیا</string>
         </property>
@@ -221,6 +293,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsLilium4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک لیلیوم</string>
         </property>
@@ -228,6 +303,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsOrkide4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک ارکیده</string>
         </property>
@@ -235,6 +313,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="saleButton4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>چیدن گل</string>
         </property>
@@ -242,6 +323,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="DeleteFlower4">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>حذف گل</string>
         </property>
@@ -253,6 +337,9 @@
      <layout class="QVBoxLayout" name="verticalLayout_5">
       <item>
        <widget class="QLabel" name="labelName5">
+        <property name="cursor">
+         <cursorShape>ForbiddenCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -263,6 +350,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="openButton5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>بازگشایی</string>
         </property>
@@ -270,6 +360,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="selectButton5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>ورود به فروشگاه</string>
         </property>
@@ -277,6 +370,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Soil5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>خاک</string>
         </property>
@@ -284,6 +380,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Water5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>آب</string>
         </property>
@@ -291,6 +390,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Poison5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>سم</string>
         </property>
@@ -298,6 +400,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsMagnolia5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک مگنولیا</string>
         </property>
@@ -305,6 +410,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsLilium5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک لیلیوم</string>
         </property>
@@ -312,6 +420,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsOrkide5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک ارکیده</string>
         </property>
@@ -319,6 +430,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="saleButton5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>چیدن گل</string>
         </property>
@@ -326,6 +440,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="DeleteFlower5">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>حذف گل</string>
         </property>
@@ -337,6 +454,9 @@
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QLabel" name="labelName1">
+        <property name="cursor">
+         <cursorShape>ForbiddenCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -347,6 +467,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="openButton1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>بازگشایی</string>
         </property>
@@ -354,6 +477,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="selectButton1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>ورود به فروشگاه</string>
         </property>
@@ -361,6 +487,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Soil1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>خاک</string>
         </property>
@@ -368,6 +497,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Water1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>آب</string>
         </property>
@@ -375,6 +507,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Poison1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>سم</string>
         </property>
@@ -382,6 +517,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsMagnolia1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک مگنولیا</string>
         </property>
@@ -389,6 +527,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsLilium1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک لیلیوم</string>
         </property>
@@ -396,6 +537,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsOrkide1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک ارکیده</string>
         </property>
@@ -403,6 +547,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="saleButton1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>چیدن گل</string>
         </property>
@@ -410,6 +557,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="DeleteFlower1">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>حذف گل</string>
         </property>
@@ -421,6 +571,9 @@
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QLabel" name="labelName2">
+        <property name="cursor">
+         <cursorShape>ForbiddenCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -431,6 +584,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="openButton2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>بازگشایی</string>
         </property>
@@ -438,6 +594,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="selectButton2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>ورود به فروشگاه</string>
         </property>
@@ -445,6 +604,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Soil2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>خاک</string>
         </property>
@@ -452,6 +614,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Water2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>آب</string>
         </property>
@@ -459,6 +624,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="Poison2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>سم</string>
         </property>
@@ -466,6 +634,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsMagnolia2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک مگنولیا</string>
         </property>
@@ -473,6 +644,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsLilium2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک لیلیوم</string>
         </property>
@@ -480,6 +654,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="OsOrkide2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>عصاره خاک ارکیده</string>
         </property>
@@ -487,6 +664,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="saleButton2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>چیدن گل</string>
         </property>
@@ -494,6 +674,9 @@
       </item>
       <item>
        <widget class="QPushButton" name="DeleteFlower2">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string>حذف گل</string>
         </property>

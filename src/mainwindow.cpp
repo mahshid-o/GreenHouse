@@ -6,6 +6,13 @@
 #include "laboratory.hpp"
 #include <iostream>
 #include <string>
+#include <QFile>
+#include <QMessageBox>
+#include <QTextStream>
+#include <QCoreApplication>
+#include <warehouse.hpp>
+#include <iomanip>
+#include <QDebug>
 
 using namespace std;
 
@@ -95,4 +102,36 @@ void MainWindow::on_pushButtonGreenHouse_clicked()
     ui->labelAadiNumber->setText(QString::number(Information.WareHouse.NormalFlowerCount));
     ui->labelNaderNumber->setText(QString::number(Information.WareHouse.RareFlowerCount));
     ui->labelZinatiNumber->setText(QString::number(Information.WareHouse.DecorativeFlowerCount));
+}
+QTextStream & operator <<(QTextStream &s, WareHouse w)
+{
+    s<<w.UserName<<"          "<<w.NormalFlowerCount<<"\t"<<w.RareFlowerCount<<"\t"<<w.DecorativeFlowerCount;
+    return s;
+}
+void MainWindow::on_pushButtonSave_clicked()
+{
+    QFile file("C:/Users/pc/Desktop/final15/GreenHouse/infoFile.txt");
+    file.open(QFile::WriteOnly | QFile::Text);
+    if(!file.isOpen())
+    {
+        QMessageBox::warning(this,"title","file nooot open");
+    }
+    QTextStream out;
+    WareHouse w=Information.WareHouse;
+    out.setDevice(&file);
+    out<<w;
+    file.flush();
+    file.close();
+}
+
+void MainWindow::on_pushButtonLoad_clicked()
+{
+    QFile file("C:/Users/pc/Desktop/final15/GreenHouse/infoFile.txt");
+    file.open(QFile::ReadOnly | QFile::Text);
+    if(!file.isOpen())
+    {
+        QMessageBox::warning(this,"title","file nooot open");
+    }
+    QString line=file.readLine();
+    qDebug()<<line;
 }

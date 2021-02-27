@@ -21,6 +21,7 @@ public:
     Vase VaseL[5];
     void SetFlowerNumbers(int , int);
     void SetNumbers(std::vector<Flower *>&);
+    void SetDefault(int);
     void SetIsGrown(); // sets IsGrown variable for vases
     int GenRan1();
     int GenRan2();

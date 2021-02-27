@@ -31,6 +31,9 @@ public:
     int NormalFlowerCount = 0;
     int RareFlowerCount = 0;
     int DecorativeFlowerCount = 0;
+    int SeedNormalFlowerCount = 0;
+    int SeedRareFlowerCount = 0;
+    int SeedDecorativeFlowerCount = 0;
 };
 
 #endif // WAREHOUSE_H

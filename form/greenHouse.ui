@@ -156,6 +156,13 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="DeleteFlower3">
+        <property name="text">
+         <string>حذف گل</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item row="0" column="6">
@@ -213,13 +220,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="OsOrkide4">
-        <property name="text">
-         <string>عصاره خاک ارکیده</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="OsLilium4">
         <property name="text">
          <string>عصاره خاک لیلیوم</string>
@@ -227,9 +227,23 @@
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="OsOrkide4">
+        <property name="text">
+         <string>عصاره خاک ارکیده</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="saleButton4">
         <property name="text">
          <string>چیدن گل</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DeleteFlower4">
+        <property name="text">
+         <string>حذف گل</string>
         </property>
        </widget>
       </item>
@@ -310,6 +324,13 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="DeleteFlower5">
+        <property name="text">
+         <string>حذف گل</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item row="0" column="0">
@@ -387,6 +408,13 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="DeleteFlower1">
+        <property name="text">
+         <string>حذف گل</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item row="0" column="2">
@@ -461,6 +489,13 @@
        <widget class="QPushButton" name="saleButton2">
         <property name="text">
          <string>چیدن گل</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DeleteFlower2">
+        <property name="text">
+         <string>حذف گل</string>
         </property>
        </widget>
       </item>

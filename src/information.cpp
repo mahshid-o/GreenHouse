@@ -60,6 +60,19 @@ void Information::SetNumbers(vector<Flower *> &Flower)
         }
     }
 }
+void Information::SetDefault(int i)
+{
+    VaseL[i].IsEmpty = true;
+    VaseL[i].IsOpen = false;
+    VaseL[i].FlowerNum = 0;
+    VaseL[i].Kind = 0;
+    VaseL[i].IsGrown = false;
+    VaseL[i].IsDamaged = false;
+    VaseL[i].IsWaterd  = false;
+    VaseL[i].IsPoisoned = false;
+    VaseL[i].HasSoil = false;
+    VaseL[i].Osare = false;
+}
 void Information::SetFlowerNumbers(int item, int kind)
 {
     switch (kind) {

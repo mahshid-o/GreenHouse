@@ -62,6 +62,36 @@ private slots:
 
     void on_OsMagnolia5_clicked();
 
+    void on_OsLilium1_clicked();
+
+    void on_OsLilium2_clicked();
+
+    void on_OsLilium3_clicked();
+
+    void on_OsLilium4_clicked();
+
+    void on_OsLilium5_clicked();
+
+    void on_OsOrkide1_clicked();
+
+    void on_OsOrkide3_clicked();
+
+    void on_OsOrkide2_clicked();
+
+    void on_OsOrkide4_clicked();
+
+    void on_OsOrkide5_clicked();
+
+    void on_DeleteFlower1_clicked();
+
+    void on_DeleteFlower2_clicked();
+
+    void on_DeleteFlower3_clicked();
+
+    void on_DeleteFlower4_clicked();
+
+    void on_DeleteFlower5_clicked();
+
 private:
     Ui::second *ui;
     Information * InfPtr;

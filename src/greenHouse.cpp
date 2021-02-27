@@ -444,6 +444,7 @@ void second::on_saleButton1_clicked()
             ui->labelName1->setText("empty");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[0].FlowerNum, InfPtr->VaseL[0].Kind);
+            InfPtr->SetDefault(0);
         }
         else
         {
@@ -470,6 +471,7 @@ void second::on_saleButton2_clicked()
             ui->labelName2->setText("empty");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[1].FlowerNum, InfPtr->VaseL[1].Kind);
+            InfPtr->SetDefault(1);
         }
         else
         {
@@ -496,6 +498,7 @@ void second::on_saleButton3_clicked()
             ui->labelName3->setText("empty");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[2].FlowerNum, InfPtr->VaseL[2].Kind);
+            InfPtr->SetDefault(1);
         }
         else
         {
@@ -521,6 +524,7 @@ void second::on_saleButton4_clicked()
             ui->labelName4->setText("empty");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[3].FlowerNum, InfPtr->VaseL[3].Kind);
+            InfPtr->SetDefault(3);
         }
         else
         {
@@ -547,6 +551,7 @@ void second::on_saleButton5_clicked()
             ui->labelName5->setText("empty");
             QMessageBox::information(this, "GreenHouse","گل به انبار اضافه شد");
             InfPtr->SetFlowerNumbers(InfPtr->VaseL[4].FlowerNum, InfPtr->VaseL[4].Kind);
+            InfPtr->SetDefault(4);
         }
         else
         {
@@ -670,9 +675,10 @@ void second::on_Poison5_clicked()
 
 void second::on_OsMagnolia1_clicked()
 {
-    if(InfPtr->VaseL[0].FlowerNum == 0 & InfPtr->VaseL[0].Kind == 2)
+    if((InfPtr->VaseL[0].FlowerNum == 0) & (InfPtr->VaseL[0].Kind == 3))
     {
         InfPtr->VaseL[0].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
     }
     else
     {
@@ -682,9 +688,10 @@ void second::on_OsMagnolia1_clicked()
 
 void second::on_OsMagnolia2_clicked()
 {
-    if(InfPtr->VaseL[1].FlowerNum == 0 & InfPtr->VaseL[1].Kind == 2)
+    if((InfPtr->VaseL[1].FlowerNum == 0) & (InfPtr->VaseL[1].Kind == 3))
     {
         InfPtr->VaseL[1].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
     }
     else
     {
@@ -694,9 +701,10 @@ void second::on_OsMagnolia2_clicked()
 
 void second::on_OsMagnolia3_clicked()
 {
-    if(InfPtr->VaseL[2].FlowerNum == 0 & InfPtr->VaseL[2].Kind == 2)
+    if((InfPtr->VaseL[2].FlowerNum == 0) & (InfPtr->VaseL[2].Kind == 3))
     {
         InfPtr->VaseL[2].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
     }
     else
     {
@@ -706,9 +714,10 @@ void second::on_OsMagnolia3_clicked()
 
 void second::on_OsMagnolia4_clicked()
 {
-    if(InfPtr->VaseL[3].FlowerNum == 0 & InfPtr->VaseL[3].Kind == 2)
+    if((InfPtr->VaseL[3].FlowerNum == 0) & (InfPtr->VaseL[3].Kind == 3))
     {
         InfPtr->VaseL[3].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
     }
     else
     {
@@ -718,12 +727,209 @@ void second::on_OsMagnolia4_clicked()
 
 void second::on_OsMagnolia5_clicked()
 {
-    if(InfPtr->VaseL[4].FlowerNum == 0 & InfPtr->VaseL[4].Kind == 2)
+    cout <<InfPtr->VaseL[4].FlowerNum << InfPtr->VaseL[4].Kind << endl;
+    if((InfPtr->VaseL[4].FlowerNum == 0) & (InfPtr->VaseL[4].Kind == 3))
     {
         InfPtr->VaseL[4].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
     }
     else
     {
         QMessageBox::information(this, "GreenHouse", "این گل به عصاره مگنولیا نیاز ندارد");
+    }
+}
+
+void second::on_OsLilium1_clicked()
+{
+    if((InfPtr->VaseL[0].FlowerNum == 1) & (InfPtr->VaseL[0].Kind == 3))
+    {
+        InfPtr->VaseL[0].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره لیلیوم نیاز ندارد");
+    }
+}
+
+void second::on_OsLilium2_clicked()
+{
+    if((InfPtr->VaseL[1].FlowerNum == 1) & (InfPtr->VaseL[1].Kind == 3))
+    {
+        InfPtr->VaseL[1].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره لیلیوم نیاز ندارد");
+    }
+}
+
+void second::on_OsLilium3_clicked()
+{
+    if((InfPtr->VaseL[2].FlowerNum == 1) & (InfPtr->VaseL[2].Kind == 3))
+    {
+        InfPtr->VaseL[2].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره لیلیوم نیاز ندارد");
+    }
+}
+
+void second::on_OsLilium4_clicked()
+{
+    if((InfPtr->VaseL[3].FlowerNum == 1) & (InfPtr->VaseL[3].Kind == 3))
+    {
+        InfPtr->VaseL[3].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره لیلیوم نیاز ندارد");
+    }
+}
+
+void second::on_OsLilium5_clicked()
+{
+    if((InfPtr->VaseL[4].FlowerNum == 1) & (InfPtr->VaseL[4].Kind == 3))
+    {
+        InfPtr->VaseL[4].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره لیلیوم نیاز ندارد");
+    }
+}
+
+void second::on_OsOrkide1_clicked()
+{
+    if((InfPtr->VaseL[0].FlowerNum == 2) & (InfPtr->VaseL[0].Kind == 3))
+    {
+        InfPtr->VaseL[0].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره اورکیده نیاز ندارد");
+    }
+}
+
+void second::on_OsOrkide2_clicked()
+{
+    if((InfPtr->VaseL[1].FlowerNum == 2) & (InfPtr->VaseL[1].Kind == 3))
+    {
+        InfPtr->VaseL[1].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره اورکیده نیاز ندارد");
+    }
+}
+
+void second::on_OsOrkide3_clicked()
+{
+    if((InfPtr->VaseL[2].FlowerNum == 2) & (InfPtr->VaseL[2].Kind == 3))
+    {
+        InfPtr->VaseL[2].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره اورکیده نیاز ندارد");
+    }
+}
+
+void second::on_OsOrkide4_clicked()
+{
+    if((InfPtr->VaseL[3].FlowerNum == 2) & (InfPtr->VaseL[3].Kind == 3))
+    {
+        InfPtr->VaseL[3].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره اورکیده نیاز ندارد");
+    }
+}
+
+void second::on_OsOrkide5_clicked()
+{
+    if((InfPtr->VaseL[4].FlowerNum == 2) & (InfPtr->VaseL[4].Kind == 3))
+    {
+        InfPtr->VaseL[4].Osare = true;
+        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+    }
+    else
+    {
+        QMessageBox::information(this, "GreenHouse", "این گل به عصاره اورکیده نیاز ندارد");
+    }
+}
+
+void second::on_DeleteFlower1_clicked()
+{
+    if(InfPtr->VaseL[0].IsEmpty || InfPtr->VaseL[0].IsOpen == false)
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+    }
+    else
+    {
+        InfPtr->SetDefault(0);
+        QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+    }
+}
+
+void second::on_DeleteFlower2_clicked()
+{
+    if(InfPtr->VaseL[1].IsEmpty || InfPtr->VaseL[1].IsOpen == false)
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+    }
+    else
+    {
+        InfPtr->SetDefault(1);
+        QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+    }
+}
+
+void second::on_DeleteFlower3_clicked()
+{
+    if(InfPtr->VaseL[2].IsEmpty || InfPtr->VaseL[2].IsOpen == false)
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+    }
+    else
+    {
+        InfPtr->SetDefault(2);
+        QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+    }
+}
+
+void second::on_DeleteFlower4_clicked()
+{
+    if(InfPtr->VaseL[3].IsEmpty || InfPtr->VaseL[3].IsOpen == false)
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+    }
+    else
+    {
+        InfPtr->SetDefault(3);
+        QMessageBox::information(this, "Greenhouse", "گل حذف شد");
+    }
+}
+
+void second::on_DeleteFlower5_clicked()
+{
+    if(InfPtr->VaseL[4].IsEmpty || InfPtr->VaseL[4].IsOpen == false)
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+    }
+    else
+    {
+        InfPtr->SetDefault(4);
+        QMessageBox::information(this, "Greenhouse", "گل حذف شد");
     }
 }

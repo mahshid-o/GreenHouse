@@ -8,9 +8,9 @@ Forooshgah::Forooshgah(Information * in, QWidget *parent) :
 {
     InfPtr = in;
     ui->setupUi(this);
-    ui->labelAadiNumber->setText(QString::number(InfPtr->WareHouse.NormalFlowerCount));
-    ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.RareFlowerCount));
-    ui->labelZinatiNumber->setText(QString::number(InfPtr->WareHouse.DecorativeFlowerCount));
+    ui->labelAadiNumber->setText(QString::number(InfPtr->WareHouse.SeedNormalFlowerCount));
+    ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.SeedRareFlowerCount));
+    ui->labelZinatiNumber->setText(QString::number(InfPtr->WareHouse.SeedDecorativeFlowerCount));
 
     ui->labelKokabNumber->setText(QString::number(InfPtr->WareHouse.KokabCount));
     ui->labelLaleNumber->setText(QString::number(InfPtr->WareHouse.LalehCount));
@@ -76,8 +76,8 @@ void Forooshgah::on_pushButtonBuyPoison_clicked()
 
 void Forooshgah::on_pushButtonBuyAadi_clicked()
 {
-    InfPtr->WareHouse.NormalFlowerCount++;
-    ui->labelAadiNumber->setText(QString::number(InfPtr->WareHouse.NormalFlowerCount));
+    InfPtr->WareHouse.SeedNormalFlowerCount++;
+    ui->labelAadiNumber->setText(QString::number(InfPtr->WareHouse.SeedNormalFlowerCount));
     InfPtr->WareHouse.Money -= 1000;
 
     showMessage();
@@ -85,8 +85,8 @@ void Forooshgah::on_pushButtonBuyAadi_clicked()
 
 void Forooshgah::on_pushButtonBuyZinati_clicked()
 {
-    InfPtr->WareHouse.DecorativeFlowerCount++;
-    ui->labelZinatiNumber->setText(QString::number(InfPtr->WareHouse.DecorativeFlowerCount));
+    InfPtr->WareHouse.SeedDecorativeFlowerCount++;
+    ui->labelZinatiNumber->setText(QString::number(InfPtr->WareHouse.SeedDecorativeFlowerCount));
     InfPtr->WareHouse.Money -= 20000;
 
     showMessage();
@@ -94,8 +94,8 @@ void Forooshgah::on_pushButtonBuyZinati_clicked()
 
 void Forooshgah::on_pushButtonBuyNader_clicked()
 {
-    InfPtr->WareHouse.RareFlowerCount++;
-    ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.RareFlowerCount));
+    InfPtr->WareHouse.SeedRareFlowerCount++;
+    ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.SeedRareFlowerCount));
     InfPtr->WareHouse.Money -= 5000;
 
     showMessage();

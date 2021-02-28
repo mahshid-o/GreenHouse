@@ -2,9 +2,8 @@
 #include "ui_store.h"
 #include <QMessageBox>
 
-Forooshgah::Forooshgah(Information * in, QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Forooshgah)
+Forooshgah::Forooshgah(Information *in, QWidget *parent) : QDialog(parent),
+                                                           ui(new Ui::Forooshgah)
 {
     InfPtr = in;
     ui->setupUi(this);
@@ -36,9 +35,8 @@ void Forooshgah::showMessage()
     msg.exec();
 }
 
-Forooshgah::Forooshgah(QWidget *parent) :
-    QDialog(parent),
-    ui(new Ui::Forooshgah)
+Forooshgah::Forooshgah(QWidget *parent) : QDialog(parent),
+                                          ui(new Ui::Forooshgah)
 {
     ui->setupUi(this);
 }
@@ -108,154 +106,154 @@ void Forooshgah::on_pushButtonNargesWH_2_clicked()
 
 void Forooshgah::on_pushButtonMagnoliaWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.MagnloiaCount)
+    if (0 < InfPtr->WareHouse.MagnloiaCount)
     {
         InfPtr->WareHouse.MagnloiaCount--;
         InfPtr->WareHouse.Money += 30000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonLiliumWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.LiliumCount)
+    if (0 < InfPtr->WareHouse.LiliumCount)
     {
         InfPtr->WareHouse.LiliumCount--;
         InfPtr->WareHouse.Money += 30000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonOrkideWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.OrkidehCount)
+    if (0 < InfPtr->WareHouse.OrkidehCount)
     {
         InfPtr->WareHouse.OrkidehCount--;
         InfPtr->WareHouse.Money += 30000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonKokabWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.KokabCount)
+    if (0 < InfPtr->WareHouse.KokabCount)
     {
         InfPtr->WareHouse.KokabCount--;
         InfPtr->WareHouse.Money += 2000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonLaleWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.LalehCount)
+    if (0 < InfPtr->WareHouse.LalehCount)
     {
         InfPtr->WareHouse.LalehCount--;
         InfPtr->WareHouse.Money += 20000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonMaryamWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.MaryamCount)
+    if (0 < InfPtr->WareHouse.MaryamCount)
     {
         InfPtr->WareHouse.MaryamCount--;
         InfPtr->WareHouse.Money += 20000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonSonbolWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.SonbolCount)
+    if (0 < InfPtr->WareHouse.SonbolCount)
     {
         InfPtr->WareHouse.SonbolCount--;
         InfPtr->WareHouse.Money += 20000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonNargesWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.NargesCount)
+    if (0 < InfPtr->WareHouse.NargesCount)
     {
         InfPtr->WareHouse.NargesCount--;
         InfPtr->WareHouse.Money += 2000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی این گل صفر است");
+        QMessageBox::information(this, "Store", "موجودی این گل صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonDecorativeWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.DecorativeFlowerCount)
+    if (0 < InfPtr->WareHouse.DecorativeFlowerCount)
     {
         InfPtr->WareHouse.DecorativeFlowerCount--;
         InfPtr->WareHouse.Money += 10000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی صفر است");
+        QMessageBox::information(this, "Store", "موجودی صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonRareWH_clicked()
 {
-    if(0 < InfPtr->WareHouse.RareFlowerCount)
+    if (0 < InfPtr->WareHouse.RareFlowerCount)
     {
         InfPtr->WareHouse.RareFlowerCount--;
         InfPtr->WareHouse.Money += 5000;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی صفر است");
+        QMessageBox::information(this, "Store", "موجودی صفر است");
     }
 }
 
 void Forooshgah::on_pushButtonNormalwH_clicked()
 {
-    if(0 < InfPtr->WareHouse.NormalFlowerCount)
+    if (0 < InfPtr->WareHouse.NormalFlowerCount)
     {
         InfPtr->WareHouse.NormalFlowerCount--;
         InfPtr->WareHouse.Money += 500;
-        QMessageBox::information(this,"Store", "فروخته شد");
+        QMessageBox::information(this, "Store", "فروخته شد");
     }
     else
     {
-        QMessageBox::information(this,"Store", "موجودی صفر است");
+        QMessageBox::information(this, "Store", "موجودی صفر است");
     }
 }

@@ -2,7 +2,6 @@
 #define ORKIDEH_H
 #include "decorativeflower.hpp"
 
-
 class Orkideh : public DecorativeFlower
 {
 public:

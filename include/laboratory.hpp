@@ -4,8 +4,9 @@
 #include <QDialog>
 #include "information.hpp"
 
-namespace Ui {
-class fourth;
+namespace Ui
+{
+    class fourth;
 }
 
 class fourth : public QDialog
@@ -28,7 +29,7 @@ private slots:
 
 private:
     Ui::fourth *uiFourth;
-    Information * InfPtr = nullptr;
+    Information *InfPtr = nullptr;
 };
 
 #endif // FOURTH_H

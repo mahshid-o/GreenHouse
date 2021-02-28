@@ -19,8 +19,8 @@ public:
     Information();
     WareHouse WareHouse;
     Vase VaseL[5];
-    void SetFlowerNumbers(int , int);
-    void SetNumbers(std::vector<Flower *>&);
+    void SetFlowerNumbers(int, int);
+    void SetNumbers(std::vector<Flower *> &);
     void SetDefault(int);
     void SetIsGrown(); // sets IsGrown variable for vases
     int GenRan1();
@@ -28,7 +28,7 @@ public:
     int GenRan3();
     bool IsLoadPressed = false;
 
-    std::vector<Flower*>Flowers;
+    std::vector<Flower *> Flowers;
 };
 
 #endif // INFORMATION_H

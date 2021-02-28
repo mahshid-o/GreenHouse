@@ -6,8 +6,9 @@
 #include "information.hpp"
 #include "vase.hpp"
 
-namespace Ui {
-class second;
+namespace Ui
+{
+    class second;
 }
 
 class second : public QDialog
@@ -95,7 +96,7 @@ private slots:
 
 private:
     Ui::second *ui;
-    Information * InfPtr;
+    Information *InfPtr;
 };
 
 #endif // SECOND_H

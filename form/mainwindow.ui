@@ -600,7 +600,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
     </property>
    </widget>
   </widget>
-<<<<<<< HEAD
+
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -612,8 +612,7 @@ font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-=======
->>>>>>> 79292b2c95ff722713eefd7c1bb8c1c3243b5b97
+
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>

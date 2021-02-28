@@ -2,7 +2,6 @@
 #define SONBOL_H
 #include "rareflower.hpp"
 
-
 class Sonbol : public RareFlower
 {
 public:

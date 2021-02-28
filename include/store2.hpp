@@ -4,8 +4,9 @@
 #include <QDialog>
 #include "information.hpp"
 
-namespace Ui {
-class Store2;
+namespace Ui
+{
+    class Store2;
 }
 
 class Store2 : public QDialog
@@ -25,7 +26,7 @@ private slots:
 
 private:
     Ui::Store2 *ui;
-    Information * InfPtr = nullptr;
+    Information *InfPtr = nullptr;
     int NumV = 0;
 };
 

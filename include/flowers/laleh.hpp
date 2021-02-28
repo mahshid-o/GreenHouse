@@ -2,8 +2,7 @@
 #define LALEH_H
 #include "rareflower.hpp"
 
-
-class Laleh :public RareFlower
+class Laleh : public RareFlower
 {
 public:
     Laleh();

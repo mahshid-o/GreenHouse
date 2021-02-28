@@ -9,17 +9,18 @@
 class WareHouse
 {
     friend std::ostream &operator<<(std::ostream &output, const WareHouse w);
-    friend std::ostream &operator<<(std::ostream &output,Vase v);
+    friend std::ostream &operator<<(std::ostream &output, Vase v);
+
 public:
     WareHouse();
     QString UserName = "نام کاربری";
-    int OsMagnolia = 0;
-    int OsLilium = 0;
-    int OsOrkide = 0;
-    int Water = 0;
-    int Soil = 0;
-    int Money = 100000;
-    int Poison = 0;
+    int OsMagnolia = 5;
+    int OsLilium = 5;
+    int OsOrkide = 5;
+    int Water = 5;
+    int Soil = 5;
+    int Money = 1000000;
+    int Poison = 5;
     int LalehCount = 0;
     int KokabCount = 0;
     int LiliumCount = 0;

@@ -2,7 +2,7 @@
 #define MARYAM_H
 #include "rareflower.hpp"
 
-class Maryam :public RareFlower
+class Maryam : public RareFlower
 {
 public:
     Maryam();

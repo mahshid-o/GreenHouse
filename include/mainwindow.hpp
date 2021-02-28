@@ -4,8 +4,9 @@
 #include "information.hpp"
 #include <QMainWindow>
 
-namespace Ui {
-class MainWindow;
+namespace Ui
+{
+    class MainWindow;
 }
 
 class MainWindow : public QMainWindow
@@ -14,10 +15,9 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    MainWindow * MainWindowPtr;
+    MainWindow *MainWindowPtr;
     Information Information;
     ~MainWindow();
-
 
 private slots:
     void on_pushButtonSaveName_clicked();
@@ -27,8 +27,6 @@ private slots:
     void on_pushButtonStore_clicked();
 
     void on_pushButtonGreenHouse_clicked();
-
-
 
     void on_pushButtonSave_clicked();
 

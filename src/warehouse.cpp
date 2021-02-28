@@ -2,5 +2,4 @@
 
 WareHouse::WareHouse()
 {
-
 }

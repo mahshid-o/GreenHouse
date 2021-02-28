@@ -3,9 +3,8 @@
 #include "mainwindow.hpp"
 #include <QMessageBox>
 
-fourth::fourth(Information * in ,QWidget *parent) :
-    QDialog(parent),
-    uiFourth(new Ui::fourth)
+fourth::fourth(Information *in, QWidget *parent) : QDialog(parent),
+                                                   uiFourth(new Ui::fourth)
 {
     InfPtr = in;
     uiFourth->setupUi(this);

@@ -3,8 +3,9 @@
 
 #include <QDialog>
 
-namespace Ui {
-class DialogForoushgah;
+namespace Ui
+{
+    class DialogForoushgah;
 }
 
 class DialogForoushgah : public QDialog

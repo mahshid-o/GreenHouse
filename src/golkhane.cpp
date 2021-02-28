@@ -15,7 +15,6 @@ golkhane::~golkhane()
 
 void second::on_openButton1_clicked()
 {
-    //Qstring n;
     ui->labelName1->setText("laleh");
     ui->openButton1->setEnabled(false);
 

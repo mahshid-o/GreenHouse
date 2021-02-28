@@ -3,8 +3,9 @@
 
 #include <QDialog>
 
-namespace Ui {
-class golkhane;
+namespace Ui
+{
+    class golkhane;
 }
 
 class golkhane : public QDialog
@@ -16,7 +17,6 @@ public:
     ~golkhane();
 
 private:
-
     void on_openButton1_clicked();
 
     void on_openButton2_clicked();

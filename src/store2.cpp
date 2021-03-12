@@ -17,6 +17,7 @@ Store2::~Store2()
 }
 void Store2::on_pushButtonBuyAadi_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[NumV].IsDamaged = false;
     int num = InfPtr->GenRan1();
     InfPtr->VaseL[NumV].FlowerNum = num;
@@ -31,6 +32,7 @@ void Store2::on_pushButtonBuyAadi_clicked()
 
 void Store2::on_pushButtonBuyDecorative_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[NumV].IsDamaged = false;
     int num = InfPtr->GenRan2();
     InfPtr->VaseL[NumV].FlowerNum = num;
@@ -45,6 +47,7 @@ void Store2::on_pushButtonBuyDecorative_clicked()
 
 void Store2::on_pushButtonBuyRare_clicked()
 {
+    InfPtr->WareHouse.PlantedFlowers++;
     InfPtr->VaseL[NumV].IsDamaged = false;
     int num = InfPtr->GenRan2();
     InfPtr->VaseL[NumV].FlowerNum = num;

@@ -435,290 +435,321 @@ void second::on_openButton5_clicked()
 
 void second::on_selectButton1_clicked()
 {
-    InfPtr->WareHouse.PlantedFlowers++;
-    InfPtr->VaseL[0].IsEmpty = false;
-    Store2 Store2(0, InfPtr);
-    Store2.setModal(true);
-    Store2.exec();
-    if (InfPtr->VaseL[0].Kind == 1)
+    if (InfPtr->VaseL[0].IsOpen)
     {
-        if (InfPtr->VaseL[0].FlowerNum == 0)
+        InfPtr->VaseL[0].IsEmpty = false;
+        Store2 Store2(0, InfPtr);
+        Store2.setModal(true);
+        Store2.exec();
+        if (InfPtr->VaseL[0].Kind == 1)
         {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower1-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[0].FlowerNum == 0)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[0].FlowerNum == 1)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
-        else if (InfPtr->VaseL[0].FlowerNum == 1)
+        else if (InfPtr->VaseL[0].Kind == 2)
         {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower2-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[0].FlowerNum == 0)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[0].FlowerNum == 1)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[0].FlowerNum == 2)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+        }
+        else if (InfPtr->VaseL[0].Kind == 3)
+        {
+            if (InfPtr->VaseL[0].FlowerNum == 0)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[0].FlowerNum == 1)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[0].FlowerNum == 2)
+            {
+                QPixmap pix11(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
     }
-    else if (InfPtr->VaseL[0].Kind == 2)
+    else
     {
-        if (InfPtr->VaseL[0].FlowerNum == 0)
-        {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower3-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[0].FlowerNum == 1)
-        {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower4-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[0].FlowerNum == 2)
-        {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower5-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-    }
-    else if (InfPtr->VaseL[0].Kind == 3)
-    {
-        if (InfPtr->VaseL[0].FlowerNum == 0)
-        {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower6-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[0].FlowerNum == 1)
-        {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower7-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[0].FlowerNum == 2)
-        {
-            QPixmap pix11(":/new/prefix1/assets/3x/flower8-1.png");
-            ui->labelName1->setPixmap(pix11.scaled(250, 100, Qt::KeepAspectRatio));
-        }
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
     }
 }
 void second::on_selectButton2_clicked()
 {
-    InfPtr->WareHouse.PlantedFlowers++;
-    InfPtr->VaseL[1].IsEmpty = false;
-    Store2 Store2(1, InfPtr);
-    Store2.setModal(true);
-    Store2.exec();
-    if (InfPtr->VaseL[1].Kind == 1)
+    if (InfPtr->VaseL[1].IsOpen)
     {
-        if (InfPtr->VaseL[1].FlowerNum == 0)
+        InfPtr->VaseL[1].IsEmpty = false;
+        Store2 Store2(1, InfPtr);
+        Store2.setModal(true);
+        Store2.exec();
+        if (InfPtr->VaseL[1].Kind == 1)
         {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower1-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[1].FlowerNum == 0)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[1].FlowerNum == 1)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
-        else if (InfPtr->VaseL[1].FlowerNum == 1)
+        else if (InfPtr->VaseL[1].Kind == 2)
         {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower2-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[1].FlowerNum == 0)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[1].FlowerNum == 1)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[1].FlowerNum == 2)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+        }
+        else if (InfPtr->VaseL[1].Kind == 3)
+        {
+            if (InfPtr->VaseL[1].FlowerNum == 0)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+                //ui->labelName1->setText("mewww1");
+            }
+            else if (InfPtr->VaseL[1].FlowerNum == 1)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[1].FlowerNum == 2)
+            {
+                QPixmap pix12(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
     }
-    else if (InfPtr->VaseL[1].Kind == 2)
+    else
     {
-        if (InfPtr->VaseL[1].FlowerNum == 0)
-        {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower3-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[1].FlowerNum == 1)
-        {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower4-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[1].FlowerNum == 2)
-        {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower5-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-    }
-    else if (InfPtr->VaseL[1].Kind == 3)
-    {
-        if (InfPtr->VaseL[1].FlowerNum == 0)
-        {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower6-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
-            //ui->labelName1->setText("mewww1");
-        }
-        else if (InfPtr->VaseL[1].FlowerNum == 1)
-        {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower7-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[1].FlowerNum == 2)
-        {
-            QPixmap pix12(":/new/prefix1/assets/3x/flower8-1.png");
-            ui->labelName2->setPixmap(pix12.scaled(250, 100, Qt::KeepAspectRatio));
-        }
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
     }
 }
 void second::on_selectButton3_clicked()
 {
-    InfPtr->WareHouse.PlantedFlowers++;
-    InfPtr->VaseL[2].IsEmpty = false;
-    Store2 Store2(2, InfPtr);
-    Store2.setModal(true);
-    Store2.exec();
-    if (InfPtr->VaseL[2].Kind == 1)
+    if (InfPtr->VaseL[2].IsOpen)
     {
-        if (InfPtr->VaseL[2].FlowerNum == 0)
+
+        InfPtr->VaseL[2].IsEmpty = false;
+        Store2 Store2(2, InfPtr);
+        Store2.setModal(true);
+        Store2.exec();
+        if (InfPtr->VaseL[2].Kind == 1)
         {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower1-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[2].FlowerNum == 0)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[2].FlowerNum == 1)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
-        else if (InfPtr->VaseL[2].FlowerNum == 1)
+        else if (InfPtr->VaseL[2].Kind == 2)
         {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower2-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[2].FlowerNum == 0)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[2].FlowerNum == 1)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[2].FlowerNum == 2)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+        }
+        else if (InfPtr->VaseL[2].Kind == 3)
+        {
+            if (InfPtr->VaseL[2].FlowerNum == 0)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[2].FlowerNum == 1)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[2].FlowerNum == 2)
+            {
+                QPixmap pix13(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
     }
-    else if (InfPtr->VaseL[2].Kind == 2)
+    else
     {
-        if (InfPtr->VaseL[2].FlowerNum == 0)
-        {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower3-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[2].FlowerNum == 1)
-        {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower4-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[2].FlowerNum == 2)
-        {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower5-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-    }
-    else if (InfPtr->VaseL[2].Kind == 3)
-    {
-        if (InfPtr->VaseL[2].FlowerNum == 0)
-        {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower6-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[2].FlowerNum == 1)
-        {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower7-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[2].FlowerNum == 2)
-        {
-            QPixmap pix13(":/new/prefix1/assets/3x/flower8-1.png");
-            ui->labelName3->setPixmap(pix13.scaled(250, 100, Qt::KeepAspectRatio));
-        }
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
     }
 }
 
 void second::on_selectButton4_clicked()
 {
-    InfPtr->WareHouse.PlantedFlowers++;
-    InfPtr->VaseL[3].IsEmpty = false;
-    Store2 Store2(3, InfPtr);
-    Store2.setModal(true);
-    Store2.exec();
-    if (InfPtr->VaseL[3].Kind == 1)
+    if (InfPtr->VaseL[3].IsOpen)
     {
-        if (InfPtr->VaseL[3].FlowerNum == 0)
+        InfPtr->VaseL[3].IsEmpty = false;
+        Store2 Store2(3, InfPtr);
+        Store2.setModal(true);
+        Store2.exec();
+        if (InfPtr->VaseL[3].Kind == 1)
         {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower1-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[3].FlowerNum == 0)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[3].FlowerNum == 1)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
-        else if (InfPtr->VaseL[3].FlowerNum == 1)
+        else if (InfPtr->VaseL[3].Kind == 2)
         {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower2-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[3].FlowerNum == 0)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[3].FlowerNum == 1)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[3].FlowerNum == 2)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+        }
+        else if (InfPtr->VaseL[3].Kind == 3)
+        {
+            if (InfPtr->VaseL[3].FlowerNum == 0)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[3].FlowerNum == 1)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[3].FlowerNum == 2)
+            {
+                QPixmap pix14(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
     }
-    else if (InfPtr->VaseL[3].Kind == 2)
+    else
     {
-        if (InfPtr->VaseL[3].FlowerNum == 0)
-        {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower3-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[3].FlowerNum == 1)
-        {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower4-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[3].FlowerNum == 2)
-        {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower5-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-    }
-    else if (InfPtr->VaseL[3].Kind == 3)
-    {
-        if (InfPtr->VaseL[3].FlowerNum == 0)
-        {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower6-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[3].FlowerNum == 1)
-        {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower7-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[3].FlowerNum == 2)
-        {
-            QPixmap pix14(":/new/prefix1/assets/3x/flower8-1.png");
-            ui->labelName4->setPixmap(pix14.scaled(250, 100, Qt::KeepAspectRatio));
-        }
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
     }
 }
 
 void second::on_selectButton5_clicked()
 {
-    InfPtr->WareHouse.PlantedFlowers++;
-    InfPtr->VaseL[4].IsEmpty = false;
-    Store2 Store2(4, InfPtr);
-    Store2.setModal(true);
-    Store2.exec();
-    if (InfPtr->VaseL[4].Kind == 1)
+    if (InfPtr->VaseL[4].IsOpen)
     {
-        if (InfPtr->VaseL[4].FlowerNum == 0)
+        InfPtr->VaseL[4].IsEmpty = false;
+        Store2 Store2(4, InfPtr);
+        Store2.setModal(true);
+        Store2.exec();
+        if (InfPtr->VaseL[4].Kind == 1)
         {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower1-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[4].FlowerNum == 0)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower1-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[4].FlowerNum == 1)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower2-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
-        else if (InfPtr->VaseL[4].FlowerNum == 1)
+        else if (InfPtr->VaseL[4].Kind == 2)
         {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower2-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            if (InfPtr->VaseL[4].FlowerNum == 0)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower3-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[4].FlowerNum == 1)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower4-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[4].FlowerNum == 2)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower5-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+        }
+        else if (InfPtr->VaseL[4].Kind == 3)
+        {
+            if (InfPtr->VaseL[4].FlowerNum == 0)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower6-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[4].FlowerNum == 1)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower7-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
+            else if (InfPtr->VaseL[4].FlowerNum == 2)
+            {
+                QPixmap pix15(":/new/prefix1/assets/3x/flower8-1.png");
+                ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
+            }
         }
     }
-    else if (InfPtr->VaseL[4].Kind == 2)
+    else
     {
-        if (InfPtr->VaseL[4].FlowerNum == 0)
-        {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower3-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[4].FlowerNum == 1)
-        {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower4-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[4].FlowerNum == 2)
-        {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower5-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-    }
-    else if (InfPtr->VaseL[4].Kind == 3)
-    {
-        if (InfPtr->VaseL[4].FlowerNum == 0)
-        {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower6-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[4].FlowerNum == 1)
-        {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower7-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
-        }
-        else if (InfPtr->VaseL[4].FlowerNum == 2)
-        {
-            QPixmap pix15(":/new/prefix1/assets/3x/flower8-1.png");
-            ui->labelName5->setPixmap(pix15.scaled(250, 100, Qt::KeepAspectRatio));
-        }
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
     }
 }
 
@@ -951,105 +982,315 @@ void second::on_openButton1_2_clicked()
 
 void second::on_Soil1_clicked()
 {
-    InfPtr->WareHouse.Soil--;
-    InfPtr->VaseL[0].HasSoil = true;
-    ui->Soil1->setEnabled(false);
+    if (InfPtr->VaseL[0].IsOpen == true)
+    {
+        if (InfPtr->VaseL[0].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Soil--;
+            InfPtr->VaseL[0].HasSoil = true;
+            ui->Soil1->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Soil2_clicked()
 {
-    InfPtr->WareHouse.Soil--;
-    InfPtr->VaseL[1].HasSoil = true;
-    ui->Soil2->setEnabled(false);
+    if (InfPtr->VaseL[1].IsOpen == true)
+    {
+        if (InfPtr->VaseL[1].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Soil--;
+            InfPtr->VaseL[1].HasSoil = true;
+            ui->Soil2->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Soil3_clicked()
 {
-    InfPtr->WareHouse.Soil--;
-    InfPtr->VaseL[2].HasSoil = true;
-    ui->Soil3->setEnabled(false);
+    if (InfPtr->VaseL[2].IsOpen == true)
+    {
+        if (InfPtr->VaseL[2].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Soil--;
+            InfPtr->VaseL[2].HasSoil = true;
+            ui->Soil3->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Soil4_clicked()
 {
-    InfPtr->WareHouse.Soil--;
-    InfPtr->VaseL[3].HasSoil = true;
-    ui->Soil4->setEnabled(false);
+    if (InfPtr->VaseL[3].IsOpen == true)
+    {
+        if (InfPtr->VaseL[3].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Soil--;
+            InfPtr->VaseL[3].HasSoil = true;
+            ui->Soil4->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Soil5_clicked()
 {
-    InfPtr->WareHouse.Soil--;
-    InfPtr->VaseL[4].HasSoil = true;
-    ui->Soil5->setEnabled(false);
+    if (InfPtr->VaseL[4].IsOpen == true)
+    {
+        if (InfPtr->VaseL[4].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Soil--;
+            InfPtr->VaseL[4].HasSoil = true;
+            ui->Soil5->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Water1_clicked()
 {
-    InfPtr->WareHouse.Water--;
-    InfPtr->VaseL[0].IsWaterd = true;
-    ui->Water1->setEnabled(false);
+    if (InfPtr->VaseL[0].IsOpen == true)
+    {
+        if (InfPtr->VaseL[0].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Water--;
+            InfPtr->VaseL[0].IsWaterd = true;
+            ui->Water1->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Water2_clicked()
 {
-    InfPtr->WareHouse.Water--;
-    InfPtr->VaseL[1].IsWaterd = true;
-    ui->Water2->setEnabled(false);
+    if (InfPtr->VaseL[1].IsOpen == true)
+    {
+        if (InfPtr->VaseL[1].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Water--;
+            InfPtr->VaseL[1].IsWaterd = true;
+            ui->Water2->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Water3_clicked()
 {
-    InfPtr->WareHouse.Water--;
-    InfPtr->VaseL[2].IsWaterd = true;
-    ui->Water3->setEnabled(false);
+    if (InfPtr->VaseL[2].IsOpen == true)
+    {
+        if (InfPtr->VaseL[2].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Water--;
+            InfPtr->VaseL[2].IsWaterd = true;
+            ui->Water3->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Water4_clicked()
 {
-    InfPtr->WareHouse.Water--;
-    InfPtr->VaseL[3].IsWaterd = true;
-    ui->Water4->setEnabled(false);
+    if (InfPtr->VaseL[3].IsOpen == true)
+    {
+        if (InfPtr->VaseL[3].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Water--;
+            InfPtr->VaseL[3].IsWaterd = true;
+            ui->Water4->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Water5_clicked()
 {
-    InfPtr->WareHouse.Water--;
-    InfPtr->VaseL[4].IsWaterd = true;
-    ui->Water5->setEnabled(false);
+    if (InfPtr->VaseL[4].IsOpen == true)
+    {
+        if (InfPtr->VaseL[4].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Water--;
+            InfPtr->VaseL[4].IsWaterd = true;
+            ui->Water5->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Poison1_clicked()
 {
-    InfPtr->WareHouse.Poison--;
-    InfPtr->VaseL[0].IsPoisoned = true;
-    ui->Poison1->setEnabled(false);
+    if (InfPtr->VaseL[0].IsOpen == true)
+    {
+        if (InfPtr->VaseL[0].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Poison--;
+            InfPtr->VaseL[0].IsPoisoned = true;
+            ui->Poison1->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Poison2_clicked()
 {
-    InfPtr->WareHouse.Poison--;
-    InfPtr->VaseL[1].IsPoisoned = true;
-    ui->Poison2->setEnabled(false);
+    if (InfPtr->VaseL[1].IsOpen == true)
+    {
+        if (InfPtr->VaseL[1].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Poison--;
+            InfPtr->VaseL[1].IsPoisoned = true;
+            ui->Poison2->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_Poison3_clicked()
 {
-    InfPtr->WareHouse.Poison--;
-    InfPtr->VaseL[2].IsPoisoned = true;
-    ui->Poison3->setEnabled(false);
+    if (InfPtr->VaseL[2].IsOpen == true)
+    {
+        if (InfPtr->VaseL[2].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Poison--;
+            InfPtr->VaseL[2].IsPoisoned = true;
+            ui->Poison3->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 void second::on_Poison4_clicked()
 {
-    InfPtr->WareHouse.Poison--;
-    InfPtr->VaseL[3].IsPoisoned = true;
-    ui->Poison4->setEnabled(false);
+    if (InfPtr->VaseL[3].IsOpen == true)
+    {
+        if (InfPtr->VaseL[3].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Poison--;
+            InfPtr->VaseL[3].IsPoisoned = true;
+            ui->Poison4->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 void second::on_Poison5_clicked()
 {
-    InfPtr->WareHouse.Poison--;
-    InfPtr->VaseL[4].IsPoisoned = true;
-    ui->Poison5->setEnabled(false);
+    if (InfPtr->VaseL[4].IsOpen == true)
+    {
+        if (InfPtr->VaseL[4].IsEmpty == false)
+        {
+            InfPtr->WareHouse.Poison--;
+            InfPtr->VaseL[4].IsPoisoned = true;
+            ui->Poison5->setEnabled(false);
+        }
+        else
+        {
+            QMessageBox::information(this, "Greenhouse", "گلدان خالی است");
+        }
+    }
+    else
+    {
+        QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
+    }
 }
 
 void second::on_OsMagnolia1_clicked()

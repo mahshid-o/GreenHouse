@@ -61,7 +61,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string/>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="5">

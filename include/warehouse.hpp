@@ -14,9 +14,9 @@ class WareHouse
 public:
     WareHouse();
     QString UserName = "نام کاربری";
-    int OsMagnolia = 5;
-    int OsLilium = 5;
-    int OsOrkide = 5;
+    int OsMagnolia = 0;
+    int OsLilium = 0;
+    int OsOrkide = 0;
     int Water = 5;
     int Soil = 5;
     int Money = 1000000;

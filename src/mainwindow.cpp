@@ -119,6 +119,7 @@ ostream &operator<<(ostream &output, Vase v) //overload << for writing
 
 void MainWindow::on_pushButtonSave_clicked()
 {
+    QMessageBox::information(this, "ذخیره", "بازی ذخیره شد");
     ofstream file("../myfile.txt", ios::out);
     if (!file.is_open())
     {

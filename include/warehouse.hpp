@@ -17,10 +17,10 @@ public:
     int OsMagnolia = 0;
     int OsLilium = 0;
     int OsOrkide = 0;
-    int Water = 5;
-    int Soil = 5;
+    int Water = 0;
+    int Soil = 0;
     int Money = 1000000;
-    int Poison = 5;
+    int Poison = 0;
     int LalehCount = 0;
     int KokabCount = 0;
     int LiliumCount = 0;

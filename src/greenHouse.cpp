@@ -986,9 +986,16 @@ void second::on_Soil1_clicked()
     {
         if (InfPtr->VaseL[0].IsEmpty == false)
         {
-            InfPtr->WareHouse.Soil--;
-            InfPtr->VaseL[0].HasSoil = true;
-            ui->Soil1->setEnabled(false);
+            if(InfPtr->WareHouse.Soil > 0)
+            {
+                InfPtr->WareHouse.Soil--;
+                InfPtr->VaseL[0].HasSoil = true;
+                ui->Soil1->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی خاک صفر است");
+            }
         }
         else
         {
@@ -1007,9 +1014,16 @@ void second::on_Soil2_clicked()
     {
         if (InfPtr->VaseL[1].IsEmpty == false)
         {
-            InfPtr->WareHouse.Soil--;
-            InfPtr->VaseL[1].HasSoil = true;
-            ui->Soil2->setEnabled(false);
+            if(InfPtr->WareHouse.Soil > 0)
+            {
+                InfPtr->WareHouse.Soil--;
+                InfPtr->VaseL[1].HasSoil = true;
+                ui->Soil2->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی خاک صفر است");
+            }
         }
         else
         {
@@ -1028,9 +1042,16 @@ void second::on_Soil3_clicked()
     {
         if (InfPtr->VaseL[2].IsEmpty == false)
         {
-            InfPtr->WareHouse.Soil--;
-            InfPtr->VaseL[2].HasSoil = true;
-            ui->Soil3->setEnabled(false);
+            if(InfPtr->WareHouse.Soil > 0)
+            {
+                InfPtr->WareHouse.Soil--;
+                InfPtr->VaseL[2].HasSoil = true;
+                ui->Soil3->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی خاک صفر است");
+            }
         }
         else
         {
@@ -1049,9 +1070,16 @@ void second::on_Soil4_clicked()
     {
         if (InfPtr->VaseL[3].IsEmpty == false)
         {
-            InfPtr->WareHouse.Soil--;
-            InfPtr->VaseL[3].HasSoil = true;
-            ui->Soil4->setEnabled(false);
+            if(InfPtr->WareHouse.Soil > 0)
+            {
+                InfPtr->WareHouse.Soil--;
+                InfPtr->VaseL[3].HasSoil = true;
+                ui->Soil4->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی خاک صفر است");
+            }
         }
         else
         {
@@ -1070,9 +1098,16 @@ void second::on_Soil5_clicked()
     {
         if (InfPtr->VaseL[4].IsEmpty == false)
         {
-            InfPtr->WareHouse.Soil--;
-            InfPtr->VaseL[4].HasSoil = true;
-            ui->Soil5->setEnabled(false);
+            if(InfPtr->WareHouse.Soil > 0)
+            {
+                InfPtr->WareHouse.Soil--;
+                InfPtr->VaseL[4].HasSoil = true;
+                ui->Soil5->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی خاک صفر است");
+            }
         }
         else
         {
@@ -1091,9 +1126,16 @@ void second::on_Water1_clicked()
     {
         if (InfPtr->VaseL[0].IsEmpty == false)
         {
-            InfPtr->WareHouse.Water--;
-            InfPtr->VaseL[0].IsWaterd = true;
-            ui->Water1->setEnabled(false);
+            if(InfPtr->WareHouse.Water > 0)
+            {
+                InfPtr->WareHouse.Water--;
+                InfPtr->VaseL[0].IsWaterd = true;
+                ui->Water1->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی آب صفر است");
+            }
         }
         else
         {
@@ -1112,9 +1154,16 @@ void second::on_Water2_clicked()
     {
         if (InfPtr->VaseL[1].IsEmpty == false)
         {
-            InfPtr->WareHouse.Water--;
-            InfPtr->VaseL[1].IsWaterd = true;
-            ui->Water2->setEnabled(false);
+            if(InfPtr->WareHouse.Water > 0)
+            {
+                InfPtr->WareHouse.Water--;
+                InfPtr->VaseL[1].IsWaterd = true;
+                ui->Water2->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی آب صفر است");
+            }
         }
         else
         {
@@ -1133,9 +1182,16 @@ void second::on_Water3_clicked()
     {
         if (InfPtr->VaseL[2].IsEmpty == false)
         {
-            InfPtr->WareHouse.Water--;
-            InfPtr->VaseL[2].IsWaterd = true;
-            ui->Water3->setEnabled(false);
+            if(InfPtr->WareHouse.Water > 0)
+            {
+                InfPtr->WareHouse.Water--;
+                InfPtr->VaseL[2].IsWaterd = true;
+                ui->Water3->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی آب صفر است");
+            }
         }
         else
         {
@@ -1154,9 +1210,16 @@ void second::on_Water4_clicked()
     {
         if (InfPtr->VaseL[3].IsEmpty == false)
         {
-            InfPtr->WareHouse.Water--;
-            InfPtr->VaseL[3].IsWaterd = true;
-            ui->Water4->setEnabled(false);
+            if(InfPtr->WareHouse.Water > 0)
+            {
+                InfPtr->WareHouse.Water--;
+                InfPtr->VaseL[3].IsWaterd = true;
+                ui->Water4->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی آب صفر است");
+            }
         }
         else
         {
@@ -1175,9 +1238,16 @@ void second::on_Water5_clicked()
     {
         if (InfPtr->VaseL[4].IsEmpty == false)
         {
-            InfPtr->WareHouse.Water--;
-            InfPtr->VaseL[4].IsWaterd = true;
-            ui->Water5->setEnabled(false);
+            if(InfPtr->WareHouse.Water > 0)
+            {
+                InfPtr->WareHouse.Water--;
+                InfPtr->VaseL[4].IsWaterd = true;
+                ui->Water5->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی آب صفر است");
+            }
         }
         else
         {
@@ -1196,9 +1266,16 @@ void second::on_Poison1_clicked()
     {
         if (InfPtr->VaseL[0].IsEmpty == false)
         {
-            InfPtr->WareHouse.Poison--;
-            InfPtr->VaseL[0].IsPoisoned = true;
-            ui->Poison1->setEnabled(false);
+            if(InfPtr->WareHouse.Poison > 0)
+            {
+                InfPtr->WareHouse.Poison--;
+                InfPtr->VaseL[0].IsPoisoned = true;
+                ui->Poison1->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی سم صفر است");
+            }
         }
         else
         {
@@ -1217,9 +1294,16 @@ void second::on_Poison2_clicked()
     {
         if (InfPtr->VaseL[1].IsEmpty == false)
         {
-            InfPtr->WareHouse.Poison--;
-            InfPtr->VaseL[1].IsPoisoned = true;
-            ui->Poison2->setEnabled(false);
+            if(InfPtr->WareHouse.Poison > 0)
+            {
+                InfPtr->WareHouse.Poison--;
+                InfPtr->VaseL[1].IsPoisoned = true;
+                ui->Poison2->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی سم صفر است");
+            }
         }
         else
         {
@@ -1238,9 +1322,16 @@ void second::on_Poison3_clicked()
     {
         if (InfPtr->VaseL[2].IsEmpty == false)
         {
-            InfPtr->WareHouse.Poison--;
-            InfPtr->VaseL[2].IsPoisoned = true;
-            ui->Poison3->setEnabled(false);
+            if(InfPtr->WareHouse.Poison > 0)
+            {
+                InfPtr->WareHouse.Poison--;
+                InfPtr->VaseL[2].IsPoisoned = true;
+                ui->Poison3->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی سم صفر است");
+            }
         }
         else
         {
@@ -1252,15 +1343,23 @@ void second::on_Poison3_clicked()
         QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
     }
 }
+
 void second::on_Poison4_clicked()
 {
     if (InfPtr->VaseL[3].IsOpen == true)
     {
         if (InfPtr->VaseL[3].IsEmpty == false)
         {
-            InfPtr->WareHouse.Poison--;
-            InfPtr->VaseL[3].IsPoisoned = true;
-            ui->Poison4->setEnabled(false);
+            if(InfPtr->WareHouse.Poison > 0)
+            {
+                InfPtr->WareHouse.Poison--;
+                InfPtr->VaseL[3].IsPoisoned = true;
+                ui->Poison4->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی سم صفر است");
+            }
         }
         else
         {
@@ -1272,15 +1371,23 @@ void second::on_Poison4_clicked()
         QMessageBox::information(this, "Greenhouse", "گلدان قفل است");
     }
 }
+
 void second::on_Poison5_clicked()
 {
     if (InfPtr->VaseL[4].IsOpen == true)
     {
         if (InfPtr->VaseL[4].IsEmpty == false)
         {
-            InfPtr->WareHouse.Poison--;
-            InfPtr->VaseL[4].IsPoisoned = true;
-            ui->Poison5->setEnabled(false);
+            if(InfPtr->WareHouse.Poison > 0)
+            {
+                InfPtr->WareHouse.Poison--;
+                InfPtr->VaseL[4].IsPoisoned = true;
+                ui->Poison5->setEnabled(false);
+            }
+            else
+            {
+                QMessageBox::information(this, "Greenhouse", "موجودی سم صفر است");
+            }
         }
         else
         {
@@ -1297,8 +1404,15 @@ void second::on_OsMagnolia1_clicked()
 {
     if ((InfPtr->VaseL[0].FlowerNum == 0) & (InfPtr->VaseL[0].Kind == 3))
     {
-        InfPtr->VaseL[0].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsMagnolia > 0)
+        {
+            InfPtr->VaseL[0].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک مگنولیا صفر است");
+        }
     }
     else
     {
@@ -1310,8 +1424,15 @@ void second::on_OsMagnolia2_clicked()
 {
     if ((InfPtr->VaseL[1].FlowerNum == 0) & (InfPtr->VaseL[1].Kind == 3))
     {
-        InfPtr->VaseL[1].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsMagnolia > 0)
+        {
+            InfPtr->VaseL[1].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک مگنولیا صفر است");
+        }
     }
     else
     {
@@ -1323,8 +1444,15 @@ void second::on_OsMagnolia3_clicked()
 {
     if ((InfPtr->VaseL[2].FlowerNum == 0) & (InfPtr->VaseL[2].Kind == 3))
     {
-        InfPtr->VaseL[2].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsMagnolia > 0)
+        {
+            InfPtr->VaseL[2].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک مگنولیا صفر است");
+        }
     }
     else
     {
@@ -1336,8 +1464,15 @@ void second::on_OsMagnolia4_clicked()
 {
     if ((InfPtr->VaseL[3].FlowerNum == 0) & (InfPtr->VaseL[3].Kind == 3))
     {
-        InfPtr->VaseL[3].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsMagnolia > 0)
+        {
+            InfPtr->VaseL[3].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک مگنولیا صفر است");
+        }
     }
     else
     {
@@ -1349,8 +1484,15 @@ void second::on_OsMagnolia5_clicked()
 {
     if ((InfPtr->VaseL[4].FlowerNum == 0) & (InfPtr->VaseL[4].Kind == 3))
     {
-        InfPtr->VaseL[4].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsMagnolia > 0)
+        {
+            InfPtr->VaseL[4].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره مگنولیا به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک مگنولیا صفر است");
+        }
     }
     else
     {
@@ -1362,8 +1504,15 @@ void second::on_OsLilium1_clicked()
 {
     if ((InfPtr->VaseL[0].FlowerNum == 1) & (InfPtr->VaseL[0].Kind == 3))
     {
-        InfPtr->VaseL[0].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsLilium > 0)
+        {
+            InfPtr->VaseL[0].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک لیلیوم صفر است");
+        }
     }
     else
     {
@@ -1375,8 +1524,15 @@ void second::on_OsLilium2_clicked()
 {
     if ((InfPtr->VaseL[1].FlowerNum == 1) & (InfPtr->VaseL[1].Kind == 3))
     {
-        InfPtr->VaseL[1].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsLilium > 0)
+        {
+            InfPtr->VaseL[1].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک لیلیوم صفر است");
+        }
     }
     else
     {
@@ -1388,8 +1544,15 @@ void second::on_OsLilium3_clicked()
 {
     if ((InfPtr->VaseL[2].FlowerNum == 1) & (InfPtr->VaseL[2].Kind == 3))
     {
-        InfPtr->VaseL[2].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsLilium > 0)
+        {
+            InfPtr->VaseL[2].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک لیلیوم صفر است");
+        }
     }
     else
     {
@@ -1401,8 +1564,15 @@ void second::on_OsLilium4_clicked()
 {
     if ((InfPtr->VaseL[3].FlowerNum == 1) & (InfPtr->VaseL[3].Kind == 3))
     {
-        InfPtr->VaseL[3].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsLilium > 0)
+        {
+            InfPtr->VaseL[3].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک لیلیوم صفر است");
+        }
     }
     else
     {
@@ -1414,8 +1584,15 @@ void second::on_OsLilium5_clicked()
 {
     if ((InfPtr->VaseL[4].FlowerNum == 1) & (InfPtr->VaseL[4].Kind == 3))
     {
-        InfPtr->VaseL[4].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsLilium > 0)
+        {
+            InfPtr->VaseL[4].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره لیلیوم به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک لیلیوم صفر است");
+        }
     }
     else
     {
@@ -1427,8 +1604,15 @@ void second::on_OsOrkide1_clicked()
 {
     if ((InfPtr->VaseL[0].FlowerNum == 2) & (InfPtr->VaseL[0].Kind == 3))
     {
-        InfPtr->VaseL[0].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsOrkide > 0)
+        {
+            InfPtr->VaseL[0].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک ارکیده صفر است");
+        }
     }
     else
     {
@@ -1440,8 +1624,15 @@ void second::on_OsOrkide2_clicked()
 {
     if ((InfPtr->VaseL[1].FlowerNum == 2) & (InfPtr->VaseL[1].Kind == 3))
     {
-        InfPtr->VaseL[1].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsOrkide > 0)
+        {
+            InfPtr->VaseL[1].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک ارکیده صفر است");
+        }
     }
     else
     {
@@ -1453,8 +1644,15 @@ void second::on_OsOrkide3_clicked()
 {
     if ((InfPtr->VaseL[2].FlowerNum == 2) & (InfPtr->VaseL[2].Kind == 3))
     {
-        InfPtr->VaseL[2].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsOrkide > 0)
+        {
+            InfPtr->VaseL[2].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک ارکیده صفر است");
+        }
     }
     else
     {
@@ -1466,8 +1664,15 @@ void second::on_OsOrkide4_clicked()
 {
     if ((InfPtr->VaseL[3].FlowerNum == 2) & (InfPtr->VaseL[3].Kind == 3))
     {
-        InfPtr->VaseL[3].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsOrkide > 0)
+        {
+            InfPtr->VaseL[3].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک ارکیده صفر است");
+        }
     }
     else
     {
@@ -1479,8 +1684,15 @@ void second::on_OsOrkide5_clicked()
 {
     if ((InfPtr->VaseL[4].FlowerNum == 2) & (InfPtr->VaseL[4].Kind == 3))
     {
-        InfPtr->VaseL[4].Osare = true;
-        QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        if(InfPtr->WareHouse.OsOrkide > 0)
+        {
+            InfPtr->VaseL[4].Osare = true;
+            QMessageBox::information(this, "GreenHouse", " عصاره اورکیده به خاک اضافه شد");
+        }
+        else
+        {
+            QMessageBox::information(this, "GreenHouse", "موجودی عصاره خاک ارکیده صفر است");
+        }
     }
     else
     {

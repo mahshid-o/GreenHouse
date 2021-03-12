@@ -10,6 +10,9 @@ Forooshgah::Forooshgah(Information *in, QWidget *parent) : QDialog(parent),
     ui->labelAadiNumber->setText(QString::number(InfPtr->WareHouse.SeedNormalFlowerCount));
     ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.SeedRareFlowerCount));
     ui->labelZinatiNumber->setText(QString::number(InfPtr->WareHouse.SeedDecorativeFlowerCount));
+    ui->labelKhakNumber->setText(QString::number(InfPtr->WareHouse.Soil));
+    ui->labelAbNumber->setText(QString::number(InfPtr->WareHouse.Water));
+    ui->labelPoisonNumber->setText(QString::number(InfPtr->WareHouse.Poison));
 
     ui->labelKokabNumber->setText(QString::number(InfPtr->WareHouse.KokabCount));
     ui->labelLaleNumber->setText(QString::number(InfPtr->WareHouse.LalehCount));
@@ -20,9 +23,9 @@ Forooshgah::Forooshgah(Information *in, QWidget *parent) : QDialog(parent),
     ui->labelOrkideNumber->setText(QString::number(InfPtr->WareHouse.OrkidehCount));
     ui->labelNargesNumber->setText(QString::number(InfPtr->WareHouse.NargesCount));
     ui->labelMaryamNumber->setText(QString::number(InfPtr->WareHouse.MaryamCount));
-    ui->labelSeedAadiNumberWh->setText(QString::number(InfPtr->WareHouse.NormalFlowerCount));
-    ui->labelSeedDecorativeNumber->setText(QString::number(InfPtr->WareHouse.DecorativeFlowerCount));
-    ui->labelSeedRareNumber->setText(QString::number(InfPtr->WareHouse.RareFlowerCount));
+    ui->labelSeedAadiNumberWh->setText(QString::number(InfPtr->WareHouse.SeedNormalFlowerCount));
+    ui->labelSeedDecorativeNumber->setText(QString::number(InfPtr->WareHouse.SeedDecorativeFlowerCount));
+    ui->labelSeedRareNumber->setText(QString::number(InfPtr->WareHouse.SeedRareFlowerCount));
 
     this->setWindowTitle("فروشگاه");
 }
@@ -77,6 +80,7 @@ void Forooshgah::on_pushButtonBuyAadi_clicked()
     InfPtr->WareHouse.SeedNormalFlowerCount++;
     ui->labelAadiNumber->setText(QString::number(InfPtr->WareHouse.SeedNormalFlowerCount));
     InfPtr->WareHouse.Money -= 1000;
+    ui->labelSeedAadiNumberWh->setText(QString::number(InfPtr->WareHouse.SeedNormalFlowerCount));
 
     showMessage();
 }
@@ -86,6 +90,7 @@ void Forooshgah::on_pushButtonBuyZinati_clicked()
     InfPtr->WareHouse.SeedDecorativeFlowerCount++;
     ui->labelZinatiNumber->setText(QString::number(InfPtr->WareHouse.SeedDecorativeFlowerCount));
     InfPtr->WareHouse.Money -= 20000;
+    ui->labelSeedDecorativeNumber->setText(QString::number(InfPtr->WareHouse.SeedDecorativeFlowerCount));
 
     showMessage();
 }
@@ -95,6 +100,7 @@ void Forooshgah::on_pushButtonBuyNader_clicked()
     InfPtr->WareHouse.SeedRareFlowerCount++;
     ui->labelRareNumber->setText(QString::number(InfPtr->WareHouse.SeedRareFlowerCount));
     InfPtr->WareHouse.Money -= 5000;
+    ui->labelSeedRareNumber->setText(QString::number(InfPtr->WareHouse.SeedRareFlowerCount));
 
     showMessage();
 }
